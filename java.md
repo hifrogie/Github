@@ -1,14 +1,15 @@
 ## 1. [예외 Exception](https://github.com/hifrogie/Github/blob/main/java.md#1-%EC%98%88%EC%99%B8-exception)
  ### 목차
      1.[예외 Exception](https://github.com/hifrogie/Github/blob/main/java.md#1-%EC%98%88%EC%99%B8-exception-1)
-     2.[try-catch]()
-     3.[예외의 종류는 3가지]()
-     4.[java.lang.Throwable]()
-     5.[Throwable의 생성자]()
-     6.[Throwable클래스에 선언되어있고, Exception클래스에서 Overriding한 메소드]()
+     2.[try-catch](https://github.com/hifrogie/Github/blob/main/java.md#2-try-catch)
+     3.[예외의 종류는 3가지](https://github.com/hifrogie/Github/blob/main/java.md#3-%EC%98%88%EC%99%B8%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-3%EA%B0%80%EC%A7%80)
+     4.[java.lang.Throwable](https://github.com/hifrogie/Github/blob/main/java.md#4-javalangthrowable)
+     5.[Throwable의 생성자](https://github.com/hifrogie/Github/blob/main/java.md#5-throwable%EC%9D%98-%EC%83%9D%EC%84%B1%EC%9E%90)
+     6.[Throwable클래스에 선언되어있고, Exception클래스에서 Overriding한 메소드](https://github.com/hifrogie/Github/blob/main/java.md#6-throwable-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90-%EC%84%A0%EC%96%B8%EB%90%98%EC%96%B4-%EC%9E%88%EA%B3%A0-exception-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90%EC%84%9C-overriding%ED%95%9C-%EB%A9%94%EC%86%8C%EB%93%9C)
 ### 1. 예외 Exception
    - 예상한, 예상치 못한 일이 발생하는 것을 미리 예견하고 안전장치 하는 것
 ### 2. try-catch
+
      ```
      try{
          //예외가 발생하는 문장
@@ -18,6 +19,7 @@
          //어떤 경우에도 반드시 실행됨
      }
      ```
+
 1. try 안에서 예외가 발생하면 그 이하의 문장은 실행되지 않고 바로 catch 블록으로 넘어간다.
 2. try에서 예외 발생하지 않으면 catch코드를 실행하지 않음
 3. try블록 내에서 선언한 변수를 catch에서 사용 불가
@@ -36,7 +38,7 @@
      - 오류 이름이 Error로 끝나면 error, Exception으로 끝나면 예외
      - 더 큰 차이는 프로그램이 멈추느냐 계속 실행할 수 있느냐
      - Error는 프로세스에 영향을 주고 Exception은 쓰레드에만 영향을 준다.
-    #### 2. runtime exception
+     #### 2. runtime exception
      - 런타임 예외는 예외가 발생한 것을 미리 감지하지 못했을 때 발생
      - 런타임 예외에 해당하는 모든 예외들은 Runtime Exception을 확장한 예외
      - ex) NullPointerException
