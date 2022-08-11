@@ -2,7 +2,8 @@
 ## 목차
 1. [마크다운의 장단점](https://github.com/hifrogie/Github/blob/main/markdown.md#%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90)
 2. [마크다운 문법](https://github.com/hifrogie/Github/blob/main/markdown.md#%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95)
-  1. [제목(Header)](https://github.com/hifrogie/Github/blob/main/markdown.md#%EC%A0%9C%EB%AA%A91)
+    1. [제목(Header)](https://github.com/hifrogie/Github/blob/main/markdown.md#1-%EC%A0%9C%EB%AA%A9header)
+    2. [강조(Emphasis)](https://github.com/hifrogie/Github/blob/main/markdown.md#2-%EA%B0%95%EC%A1%B0emphasis)
 ### 마크다운의 장단점
 1. 마크다운의 장점
     - 문법이 쉽다.
