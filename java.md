@@ -7,6 +7,8 @@
  5. [Throwable의 생성자](https://github.com/hifrogie/Github/blob/main/java.md#5-throwable%EC%9D%98-%EC%83%9D%EC%84%B1%EC%9E%90)
  6. [Throwable클래스에 선언되어있고, Exception클래스에서 Overriding한 메소드](https://github.com/hifrogie/Github/blob/main/java.md#6-throwable-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90-%EC%84%A0%EC%96%B8%EB%90%98%EC%96%B4-%EC%9E%88%EA%B3%A0-exception-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90%EC%84%9C-overriding%ED%95%9C-%EB%A9%94%EC%86%8C%EB%93%9C)
  7. [throw와 throws](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
+ 8. [예외 만들기]()
+ 9. [자바 예외 처리 전략]()
 ### 1. 예외 Exception
    - 예상한, 예상치 못한 일이 발생하는 것을 미리 예견하고 안전장치를 하는 것
 ### 2. try-catch
@@ -72,7 +74,7 @@
 ### 7. throw와 throws
 #### 1. throw
   1. 예외 클래스의 객체 생성을 하려면 try 블록 내에서 throw라고 명시한 후 new를 이용해서 객체를 생성하면 된다.
-  2. 
+  2. 코드
      ```java
       if(number>12){
          throw new Exception("예외 메세지");
@@ -82,7 +84,7 @@
   4. catch 블록 중에 throw한 예외와 동일하거나 상속 관계에 있는 예외가 있다면 그 블록에서 예외를 처리할 수 있다.
 #### 2. throws
   1. 해당하는 예외가 없다면 발생된 예외는 메소드 밖으로 던져버린다. 즉, 예외가 발생된 메소드를 호출한 메소드로 던진다는 의미이다. 이럴 떄 사용하는 것이 throws 구문이다.
-  2. 
+  2. 코드
      ```java
      public void throwsException(int number) throws Exception {
         if(number>12){
@@ -96,3 +98,54 @@
    5. 메소드에서 두 가지 이상의 예외를 던질 수 있다면 콤마로 구분하여 예외클래스 이름을 적어주면 된다.
    6. catch 블록에서 예외를 throw할 경우에도 메소드 선언의 throws 구문에 해당 예외가 정의되어 있어야만 한다.
    7. 예외를 throw하는 이유는 해당 메소드에서 예외를 처리하지 못하는 상황이거나, 미처 처리하지 못한 예외가 있을 경우에 대비하기 위함이다.
+
+### 8. 예외 만들기
+   1. Exception을 처리하는 예외 클래스는 개발자가 임의로 추가해서 만들 수 있다.
+   2. 조건
+   : Throwable이나 그 자식 클래스의 상속을 받아야 한다.
+   : 하지만 Exception을 처리하는 클래스라면 java.lang.Exception 클래스의 상속을 받는 것이 좋다. 
+   3. 내가 만든 예외 클래스 코드
+   ```java
+   public class MyException extends Exception {
+      public MyException(){
+         super();
+      }
+      public MyException(String message){
+         super(message);
+      }
+   }
+   ```
+   4. 내가 만든 예외 클래스 코드를 사용하는 클래스
+   ```java
+   public class CustomException {
+      public static void main(String args[]){
+         CustomException sample = new CustomException();
+         try{
+            sample.throwMyException(13);
+         } catch(MyException mye) {
+            mye.printStackTrace();
+         }
+      }
+      public void throwMyException(int number) throws MyException{
+         try {
+            if(number>12){
+               throw new MyException("Number is over than 12");
+            }
+         } catch (MyException e){
+            e.printStackTrace();
+         }
+      }
+   }
+   ```
+   5. 코드 해석
+      1. 직접 만든 예외를 던지고, catch 블록에서 사용하면 된다.
+      2. throwMyException 메소드를 호출하는 메소드에서(여기서는 main() 메소드) 반드시 MyException으로 catch할 필요는 없다. MyException의 부모클래스인 Exception클래스로 catch해도 무방하다.
+
+### 9. 자바 예외 처리 전략
+   1. 자바에 예외를 처리할 때에는 표준을 정해 두어야만 한다.
+   2. 예
+      1. 나만의 예외 클래스를 만들 때 예외가 항상 발생하지 않고, 실행시에 발생할 확률이 매우 높은 경우에는 런타임 예외로 만드는 것이 나을 수도 있다. 
+      2. 이렇게 되면 해당 예외를 던지는 메소드를 사용하더라도 try-catch로 묶지 않아도 컴파일시에 예외가 발생하지 않는다.
+      3. 하지만, 이런 경우에는 예외가 발생할 경우 해당 클래스를 호출하는 다른 클래스에서 예외를 처리하도록 구조적인 안전 장치가 되어 있어야만 한다.
+      4. 안전 장치라고 하는 것은 try-catch로 묶지 않은 메소드를 호출하는 메소드에서 예외를 처리하는 try-catch가 되어 잇는 것을 이야기한다.
+   3. '자바 예외 전략'이나 'Java Exception Strategy'로 구글에 검색하면 많은 자료를 찾을 수 있다.
