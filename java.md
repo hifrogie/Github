@@ -9,6 +9,8 @@
  7. [throw와 throws](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
  8. [예외 만들기](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
  9. [자바 예외 처리 전략](https://github.com/hifrogie/Github/blob/main/java.md#9-%EC%9E%90%EB%B0%94-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EC%A0%84%EB%9E%B5)
+### 2. String
+## 1. 예외
 ### 1. 예외 Exception
    - 예상한, 예상치 못한 일이 발생하는 것을 미리 예견하고 안전장치를 하는 것
 ### 2. try-catch
@@ -149,3 +151,36 @@
       3. 하지만, 이런 경우에는 예외가 발생할 경우 해당 클래스를 호출하는 다른 클래스에서 예외를 처리하도록 구조적인 안전 장치가 되어 있어야만 한다.
       4. 안전 장치라고 하는 것은 try-catch로 묶지 않은 메소드를 호출하는 메소드에서 예외를 처리하는 try-catch가 되어 잇는 것을 이야기한다.
    3. '자바 예외 전략'이나 'Java Exception Strategy'로 구글에 검색하면 많은 자료를 찾을 수 있다.
+
+## 2. String
+### 1. String 클래스 선언부
+  1. 코드
+   ```java
+   public final class String extends Object implements Serializable, Comparable<String>, CharSequence
+   ```
+  2. Serializable
+  - 인터페이스를 implements 한 클래스는 선언되어 있는 메소드의 몸통을 구현해야만 한다. 하지만 Serializable 인터페이스는 구현해야 하는 메소드가 하나도 없는 인터페이스다.
+  - Serializable 인터페이스를 구현한다고 선언해 놓으면 해당 객체를 파일로 저장하거나 다른 서버에 전송 가능한 상태가 된다.
+  3. Comparable<String>
+  - 이 인터페이스는 compareTo()라는 메소드 하나만 선언되어 있다.
+  - compareTo() 메소드는 매개 변수로 넘어가는 객체와 현재 객체가 같은지를 비교하는 데 사용된다.
+  - equals() 메소드와 다른 점은 compareTo() 메소드의 리턴 타입은 int다.
+  - compareTo() 메소드는 같으면 0이지만 순서 상으로 앞에 있으면 -1, 뒤에 있으면 1을 리턴한다. 객체의 순서를 처리할 때 유용하다.
+  - <String>은 generic이다. generic은 클래스나 메소드에서 사용할 내부 데이터 타입을 컴파일 시에 미리 지정하는 방법
+  4. CharSequence
+  - 이 인터페이스는 해당 클래스가 문자열을 다루기 위한 클래스라는 것을 명시적으로 나타내는 데 사용된다.
+### 2. String 생성자
+   1. 용어
+      1. Character Set(캐릭터 셋)
+      - 문자의 집합을 의미하며, 특정 나라의 글자를 말한다.
+      2. Decoding(디코딩)
+      - 일반적으로 암호화되어 있거나 컴퓨터가 이해할 수 있는 값들을 알아보기 쉽게 변환하는 것을 말한다.
+   2. String 클래스의 생성자
+      1. String()
+      - 비어있는 String 객체를 생성한다.
+      - String name = null;
+      - 위의 코드가 더 효율적이다.
+      2. String(byte[] bytes)
+      - 현재 사용중인 플랫폼의 캐릭터 셋을 사용하여 제공된 byte배열을 디코딩한 String 객체를 생성한다.
+      3. String(byte[] bytes, Charset charset)
+      - 지정된 캐릭터 셋을 사용하여 제공된 byte 배열을 디코딩한 String 객체를 생성한다.
