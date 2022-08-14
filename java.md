@@ -66,6 +66,31 @@
     2. getMessage() 보다 자세히, 예외 클래스 이름도 같이 제공한다.
  3. printStackTrace()
     1. 가장 첫 줄에는 예외 메세지 출력, 두번째줄 부터는 예외가 발생하게된 메소드들의 stack trace를 출력해줌. 
-    2. printStackTrace()는 개발할 때만 사용하자. 시스템에 사용하면 많은 양의 로그가 쌓일 것이다.
+    2. 개발할 때만 사용하자. 시스템에 사용하면 많은 양의 로그가 쌓일 것이다.
             
-       
+### 7. throw와 throws
+  1. 예외 클래스의 객체 생성
+     1. try 블록 내에서 throw라고 명시한 후 new를 이용해서 객체를 생성하면 된다.
+     2. 
+     ```java
+      if(number>12){
+         throw new Exception("예외 메세지");
+         }
+     ```
+     3. throw한 문장 이후에 있는 모든 try블록 내의 문장들은 수행 되지 않고, catch 블록으로 이동한다.  
+     4. catch 블록 중에 throw한 예외와 동일하거나 상속 관계에 있는 예외가 있다면 그 블록에서 예외를 처리할 수 있다.
+     5. 해당하는 예외가 없다면 발생된 예외는 메소드 밖으로 던져버린다. 즉, 예외가 발생된 메소드를 호출한 메소드로 던진다는 의미이다. 이럴 떄 사용하는 것이 throws 구문이다.
+     6. 
+     ```java
+     public void throwsException(int number) throws Exception {
+        if(number>12){
+           throw new Exception("Number is over than 12");
+        }
+        System.out.println("Number is "+number);
+     }
+     ```
+     7. 메소드에 선언해놓으면 예외가 발생했을 때 try-catch로 묶어주지 않아도 그 메소드를 호출한 메소드로 예외 처리를 위임하는 것이기 때문에 문제가 되지 않는다.
+     8. throws로 메소드를 선언하면 개발이 어려워진다. 왜냐하면, throwsException을 호출한 메소드에서는 반드시 try-catch를 사용하거나 호출한 메소드를 throws 해주어야 한다. 후자는 좋은 습관이 아님
+     9. 메소드에서 두 가지 이상의 예외를 던질 수 있다면 콤마로 구분하여 예외클래스 이름을 적어주면 된다.
+    10. catch 블록에서 예외를 throw할 경우에도 메소드 선언의 throws 구문에 해당 예외가 정의되어 있어야만 한다.
+    11. 예외를 throw하는 이유는 해당 메소드에서 예외를 처리하지 못하는 상황이거나, 미처 처리하지 못한 예외가 있을 경우에 대비하기 위함이다.
