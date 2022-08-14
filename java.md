@@ -7,8 +7,8 @@
  5. [Throwable의 생성자](https://github.com/hifrogie/Github/blob/main/java.md#5-throwable%EC%9D%98-%EC%83%9D%EC%84%B1%EC%9E%90)
  6. [Throwable클래스에 선언되어있고, Exception클래스에서 Overriding한 메소드](https://github.com/hifrogie/Github/blob/main/java.md#6-throwable-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90-%EC%84%A0%EC%96%B8%EB%90%98%EC%96%B4-%EC%9E%88%EA%B3%A0-exception-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90%EC%84%9C-overriding%ED%95%9C-%EB%A9%94%EC%86%8C%EB%93%9C)
  7. [throw와 throws](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
- 8. [예외 만들기]()
- 9. [자바 예외 처리 전략]()
+ 8. [예외 만들기](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
+ 9. [자바 예외 처리 전략](https://github.com/hifrogie/Github/blob/main/java.md#9-%EC%9E%90%EB%B0%94-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EC%A0%84%EB%9E%B5)
 ### 1. 예외 Exception
    - 예상한, 예상치 못한 일이 발생하는 것을 미리 예견하고 안전장치를 하는 것
 ### 2. try-catch
