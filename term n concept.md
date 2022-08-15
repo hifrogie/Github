@@ -1,4 +1,10 @@
-#term & concept
+# 목차
+### 1.Git
+ 1. Git
+ 2. Gitd을 사용하는 이유
+### 2. term & concept
+### 3. command
+
 ## Git
 1. Git 
     - 프로젝트의 어떤 부분도 겹쳐쓰지 않도록 프로젝트의 변경을 관리하는 버전 관리 소프트웨어이다.
@@ -7,6 +13,13 @@
     - 이전에 만들어진 모든 변경 사항의 스냅샷을 저장한다.
     이는 이전 시점의 버전으로 되돌릴 수 있다.
     - 다른 깃허브 사용자의 프로젝트를 둘러보고 배우기 위해 자신만의 복사본으로 가져올 수 있다.
+3. Git의 동작 원리
+    1. git 프로젝터에 담겨있는 데이터들은 파일 시스템 상에서 일종의 '스냅샷'이라고 볼 수 있음.
+        - 스냅샷: 사진 찍듯이 특정 시점에 스토리지(저장소)의 파일 시스템을 포착해 보관하는 기술
+    2. 프로젝트를 commit하여 적용할 때의 순간을 중요시한다는 특징이 있음.
+    3. 파일 자체를 저장하기 보다는 수정 내역 자체를 저장함. 
+    4. ![동작 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fczxu6b%2FbtqxJw0zusR%2F9EkX1Un1VRduwA4DN8FCGK%2Fimg.png)
+    
 ## term & concept
 1. Repository(저장소)
     - 프로젝트가 거주할 수 있는 디렉토리나 저장 공간.

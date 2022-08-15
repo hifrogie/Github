@@ -184,3 +184,23 @@
       - 현재 사용중인 플랫폼의 캐릭터 셋을 사용하여 제공된 byte배열을 디코딩한 String 객체를 생성한다.
       3. String(byte[] bytes, Charset charset)
       - 지정된 캐릭터 셋을 사용하여 제공된 byte 배열을 디코딩한 String 객체를 생성한다.
+      4. String(byte[] bytes, String charsetName)
+      - 지정한 이름을 같는 캐릭터 셋을 사용하여 지정한 byte 배열을 디코딩한 String 객체를 생성한다.
+      5. String(byte[] bytes, int offset, int length)
+      - 현재 사용주인 플랫폼의 기본 캐릭터 셋을 사용하여 지정한 byte 배열의 일부를 디코딩한 String 객체를 생성한다.
+      6. String(byte[] bytes, int offset, int length, Charset charset)
+      - 지정된 캐릭터 셋을 사용하여 byte 배열의 일부를 디코딩한 String 객체를 생성한다.
+      7. String(byte[] bytes, int offset, int length, String charsetName)
+      - 지정한 이름을 갖는 캐릭터 셋을 사용하여 byte 배열의 일부를 디코딩한 String 객체를 생성한다.
+      8. String(char[] value)
+      - char 배열의 내용들을 붙여 String 객체를 생성한다.
+      9. String(char[] value, int offset, int count)
+      - char 배열의 일부 내용들을 붙여 String 객체를 생성한다.
+      10. String(int[] codePoints, int offset, int count)
+      - 유니코드 코드 위치(Unicode code point)로 구성되어 있는 배열의 일부를 새로운 String 객체를 생성한다.
+      11. String(String original)
+      - 매개 변수로 넘어온 String과 동일한 값을 갖는 String 객체를 생성한다. 복제본을 생성한다.
+      12. String(StringBuffer buffer)
+      - 매개 변수로 넘어온 StringBuffer 클래스에 정의 되어 있는 문자열의 값과 동일한 String 객체를 생성한다.
+      13. String(StringBuilder builder)
+      - 매개 변수로 넘어온 StringBuilder 클래스에 정의되어 잇는 문자열의 값과 동일한 String 객체를 생성한다.
