@@ -1,18 +1,19 @@
 # 목차
-### 1.Git
- 1. Git
- 2. Gitd을 사용하는 이유
-### 2. term & concept
-### 3. command
+### 1.[Git](https://github.com/hifrogie/Github/blob/main/term%20n%20concept.md#git)
+ 
+### 2. [term & concept](https://github.com/hifrogie/Github/blob/main/term%20n%20concept.md#term--concept)
+### 3. [command](https://github.com/hifrogie/Github/blob/main/term%20n%20concept.md#command)
 
-## Git
-1. Git 
+## 1. Git
+1. ** Git ** 
     - 프로젝트의 어떤 부분도 겹쳐쓰지 않도록 프로젝트의 변경을 관리하는 버전 관리 소프트웨어이다.
+
 2. Git을 사용하는 이유
     - 협업을 할 때 같은 페이지에 각자 수정사항을 업로드할 수 있고 이를 병합할 수있다.
     - 이전에 만들어진 모든 변경 사항의 스냅샷을 저장한다.
     이는 이전 시점의 버전으로 되돌릴 수 있다.
     - 다른 깃허브 사용자의 프로젝트를 둘러보고 배우기 위해 자신만의 복사본으로 가져올 수 있다.
+
 3. Git의 동작 원리
     1. git 프로젝터에 담겨있는 데이터들은 파일 시스템 상에서 일종의 '스냅샷'이라고 볼 수 있음.
         - 스냅샷: 사진 찍듯이 특정 시점에 스토리지(저장소)의 파일 시스템을 포착해 보관하는 기술
@@ -20,7 +21,7 @@
     3. 파일 자체를 저장하기 보다는 수정 내역 자체를 저장함. 
     4. ![동작 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fczxu6b%2FbtqxJw0zusR%2F9EkX1Un1VRduwA4DN8FCGK%2Fimg.png)
     
-## term & concept
+## 2. term & concept
 1. Repository(저장소)
     - 프로젝트가 거주할 수 있는 디렉토리나 저장 공간.
     - repo라고도 줄여 사용한다.
@@ -43,7 +44,7 @@
     - github라 생각해도 무방
 9. head
     - 현재 작업 중인 branch
-## command
+## 3. command
 1. git init
     - 깃 저장소를 초기화한다.
     - 이 명령을 실행하기 전까지는 일반 폴더이다.
