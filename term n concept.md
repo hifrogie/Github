@@ -18,8 +18,12 @@
         - 스냅샷: 사진 찍듯이 특정 시점에 스토리지(저장소)의 파일 시스템을 포착해 보관하는 기술
     2. 프로젝트를 commit하여 적용할 때의 순간을 중요시한다는 특징이 있음.
     3. 파일 자체를 저장하기 보다는 수정 내역 자체를 저장함. 
-    
+
     4. ![동작 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fczxu6b%2FbtqxJw0zusR%2F9EkX1Un1VRduwA4DN8FCGK%2Fimg.png)
+        - Working directory : 작업할 파일이 있는 디렉토리
+        - Staging Area : 커밋을 수행할 파일들이 올라가는 영역
+        - git directory : git 프로젝트의 메타 데이터와 데이터 정보가 저장되는 디렉토리, .git을 말함
+        - 메타 데이터: 
     
 ## 2. term & concept
 1. **Repository(저장소)**
