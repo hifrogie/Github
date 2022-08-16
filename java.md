@@ -245,6 +245,79 @@
 	   }
       }
 
-     ```
-      
-   
+      ```
+      1. '한글'이라는 값을 갖는 String 객체인 korean을 생성했다.
+      2. getByte() 메소드를 사용하여 korean을 byte 배열로 만들었다.
+      3. 만들어진 byte 배열에 어떤 값들이 있는지 보기 위해서 for루프를 사용하여 각각의 byte값을 출력하도록 해놓았다.
+      4. byte 배열을 갖고 String 객체를 만들기 위해서 byte 배열(array1)을 매개 변수로 갖는 String 객체를 생성하고, 그 문자열을 출력했다.
+      5. try-catch로 감싼 이유 
+         1. 캐릭터 셋을 지정하는 메소드 및 생성자들 때문이다.
+         2. byte 배열과 String 타입의 캐릭터 셋을 받는 생성자와 getBytes() 메소드 중에서 String 타입의 캐릭터 셋을 받는 메소드
+         3. 2번의 생성자와 메소드는  UnsupportedEncodingException을 발생시킬 수있다. 존재하지 않는 캐릭터 셋의 이름을 지정할 경우에는 이 예외가 발생하게 됨.
+
+### 3. null check
+   1. 모든 객체를 처리할 때에는 널 체크를 반드시 해야한다.
+   2. 객체가 null 이라는 것은 객체가 아무런 초기화도 되어있지 않으며, 클래스에 선언되어있는 어떤 메소드도 사용할 수 없다.
+
+### 4. String의 메소드
+   1. length()
+      1. 리턴 타입 : int
+      2. 문자열의 길이를 리턴한다.
+      3. 배열은 메소드가 없는 특수한 객체이다. 배열은 괄호가 없는 length를 사용하고 배열을 제외한 클래스의 String 객체의 길이를 확인하기 위해서는 length()라는 메소드를 사용해야한다.
+      4. 공백도 길이에 포함됨
+      ```java
+      System.out.println(text.length);
+      ```
+   2. isEmpty()
+      1. 리턴 타입 : boolean
+      2. 문자열이 비어 있는지를 확인한다. 
+      3. 비어있으면 true를 리턴한다.
+      ```java
+      System.out.println(text.isEmpty());
+      ```
+   3. 문자열이 같은지 비교하는 메소드
+      - boolean : equals(Object anObject)
+      - boolean : equalsIgnoreCase(String anotherStr)
+      - int : compareTo(String anotherStr)
+      - int : compareToIgnoreCase(String str)
+      - boolean : contentEquals(CharSequence cs)
+      - boolean : contentEquals(StringBuffer sb)
+         1. IgnoreCase가 붙은 메소드들은 대소문자 구분을 할지 안할지 여부가 다름
+         2. equals() 메소드
+         ```java
+         public void checkCompare(){
+            String text = "Check value";
+            String text2 = "Check value";
+            String text3 = "check value";
+            if(text==text2){
+               System.out.println("text==text2 result is same.");
+            } else {
+               System.out.println("text==text2 result is different")
+            }
+            if(text.equals("Check value")){
+               System.out.println("text.equals(text2) result is same.");
+            }
+            if(text.equalsIgnoreCase(text3)){
+               System.out.println("text.equalsIgnoreCase(text3) result is same.");
+            }
+            }
+         ```
+         - text==text2가 성립하는 이유는 자바에서 객체들을 재사용하기 위해 Constant Pool이라는 것이 존재하기 때문이다. 
+         -  String의 경우 동일한 값을 갖는 객체가 있으면 이미 만든 객체를 재사용한다.
+         3. compareTo()
+         - 보통 정렬(sorting)할 때 사용한다.
+         - true, false의 결과가 아니라 비교하려는 매개 변수로 넘겨준 String 객체가 알파벳 순으로 앞에 있으면 양수를 뒤에 있으면 음수를 리턴한다. 알파벳 순서만큼 그 숫자 값은 커진다.
+         - 
+         ```java
+         public void checkCompareTo(){
+            String text = "a";
+            String text2 = "b";
+            String text3 = "c";
+
+            System.out.println(text2.compareTo(text));//1
+            System.out.println(text2.compareTo(text3));//-1
+            System.out.println(text.compareTo(text3));//-2
+         }
+         ```
+         4. contentEquals(CharSequence cs), contentEquals(StringBuffer sb)
+         - contentEquals() 메소드는 매개 변수로 넘어오는 CharSequence와 StringBuffer객체가 String 객체와 같은지를 비교하는 데 사용된다.
