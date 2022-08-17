@@ -321,3 +321,51 @@
          ```
          4. contentEquals(CharSequence cs), contentEquals(StringBuffer sb)
          - contentEquals() 메소드는 매개 변수로 넘어오는 CharSequence와 StringBuffer객체가 String 객체와 같은지를 비교하는 데 사용된다.
+   4. 특정 조건에 맞는 문자열이 있는지를 확인하는 메소드
+      - boolean : startsWith(String prefix)
+      - boolean : startsWith(String prefix, int toffset)
+      - boolean : endWith(String suffix)
+      - boolean : contains(CharSequence s)
+      - boolean : matches(String regex)
+      - boolean : regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)
+      - boolean : regionMatches(int toffset, String other, int ooffset, int len)
+         1. startsWith()
+            1. 매개변수로 넘겨준 값으로 시작하는지를 확인한다.
+         2. indexOf()
+            1. 매개 변수로 넘겨준 값이 있는지 확인
+            2. 단점은 문자열의 모든 내용을 확인해 봐야 한다.
+         3. endWith()
+            1. 매개 변수로 넘어온 값으로 해당 문자열이 끝나는지 확인
+         4. 코드
+         ```java
+         public class StringCheck{
+            public static void main(String args[]){
+               StringCheck sample = new StringCheck();
+
+               String addresses[]=new String[]{
+                  "서울시 구로구 신도림동",
+                  "경기도 성남시 분당구 정자동 개발 공장",
+                  "서울시 구로구 개봉동",
+               };
+               sample.checkAddress(addresses);
+            }
+            public void checkAddress(String[] addresses){
+               int startCount=0,endCount=0;
+               String startText="서울시";
+               String endText = "동";
+               for(String adress:addresses){
+                  if(address.startWith(startText)){
+                     startCount++
+                  }
+                  if(address.endsWith(endText)){
+                     endCount++;
+                  }
+               }
+               System.out.println("Starts with "+ startText+" count is "+ startCount);
+               System.out.println("Ends with "+endText+" count is "+endCount);
+            }
+         }
+         ```
+         - Starts with 서울시 count is 2
+         - Ends with 동 count is 2
+
