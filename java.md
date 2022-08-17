@@ -366,6 +366,39 @@
             }
          }
          ```
+         - 실행 결과
          - Starts with 서울시 count is 2
          - Ends with 동 count is 2
 
+         5. contains(CharSequence s)
+            1. 매개변수로 넘어온 값이 문자열에 존재하는지를 확인한다.
+         6. matches(String regex)
+            1. contains()와 비슷하지만 매개 변수로 넘어오는 값이 '정규 표현식(Regular Expression)'으로 되어 있어야 한다.
+            2. 정규 표현식
+               - 이메일을 점검하거나, 웹 페이지에 있는 URL을 점검하는 등의 작업을 쉽게 하기 위해서 공식에 따라 만든 식
+         7. regionMatches()
+            - regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)
+            - regionMatches(int toffset, String other, int ooffset, int len)
+
+            1. 문자열 중에서 특정 영역이 매개 변수로 넘어온 문자열과 동일한지를 확인하는 데 사용한다.
+            2. 매개 변수
+               1. ignoreCase : true일 경우 대소문자 구분을 하지 않고, 값을 비교한다.
+               2. toffset : 비교 대상 문자열의 확인 시작 위치를 지정한다.
+               3. other : 존재하는지를 확인할 문자열을 의미한다.
+               4. oofset : other 객체의 확인 시작 위치를 지정한다.
+               5. len : 비교할 char의 개수를 지정한다.
+            3. 코드
+            ```java
+            public void checkMatch() {
+               String text = "This is a text";
+               String compare1 = "is";
+               String compare2 = "this";
+               System.out.println(text.regionMatches(2, compare1, 0, 1));
+               System.out.println(text.regionMatches(5, compare1, 0, 2));
+               System.out.println(text.regionMatches(true,0 ,compare2, 0, 4));
+            }
+            ```
+            4. 각 char의 위치
+            |T|h|i|s| |i|s| |a| |t|e|x|t|
+            |-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+            |0|1|2|3|4|5|6|7|8|9|10|11|12|13|
