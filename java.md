@@ -1,21 +1,21 @@
 ### 목차
-### 1. [다형성]()
-1. [다형성이란?]()
-2. [다형성의 장점]()
-3. [다형성 필수 조건]()
-4. [다형성 구현 방법]()
-### 2. [동일성 vs 동등성이 무엇인가?]()
-1. [동일성]()
-2. [동등성]()
-### 3. [equals, hashCode에 대해서]()
-1. [equals, hashCode가 왜 중요한가?]()
-2. [equals와 hashCode는 동시에 오버라이드 되어야한다]()
-3. [equals와 hashCode의 관계]()
-4. [중요한 이유]()
-5. [equals, hashCode의 차이점]()
-6. [구현하는 방법]()
-### 4. [enum 클래스의 메모리 구조]()
-1. [enum과 메모리 구조]()
+### 1. [다형성](https://github.com/hifrogie/Github/blob/main/java.md#1-%EB%8B%A4%ED%98%95%EC%84%B1-1)
+1. [다형성이란?](https://github.com/hifrogie/Github/blob/main/java.md#1-%EB%8B%A4%ED%98%95%EC%84%B1polymorphism%EC%9D%B4%EB%9E%80)
+2. [다형성의 장점](https://github.com/hifrogie/Github/blob/main/java.md#2-%EB%8B%A4%ED%98%95%EC%84%B1%EC%9D%98-%EC%9E%A5%EC%A0%90)
+3. [다형성 필수 조건](https://github.com/hifrogie/Github/blob/main/java.md#3-%EB%8B%A4%ED%98%95%EC%84%B1-%ED%95%84%EC%88%98-%EC%A1%B0%EA%B1%B4)
+4. [다형성 구현 방법](https://github.com/hifrogie/Github/blob/main/java.md#4-%EB%8B%A4%ED%98%95%EC%84%B1-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95)
+### 2. [동일성 vs 동등성이 무엇인가?](https://github.com/hifrogie/Github/blob/main/java.md#2-%EB%8F%99%EC%9D%BC%EC%84%B1-vs-%EB%8F%99%EB%93%B1%EC%84%B1%EC%9D%B4-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-1)
+1. [동일성](https://github.com/hifrogie/Github/blob/main/java.md#1-%EB%8F%99%EC%9D%BC%EC%84%B1identity)
+2. [동등성](https://github.com/hifrogie/Github/blob/main/java.md#2-%EB%8F%99%EB%93%B1%EC%84%B1equality)
+### 3. [equals, hashCode에 대해서](https://github.com/hifrogie/Github/blob/main/java.md#3-equals-hashcode%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-1)
+1. [equals, hashCode가 왜 중요한가?](https://github.com/hifrogie/Github/blob/main/java.md#1-equals-hashcode%EA%B0%80-%EC%99%9C-%EC%A4%91%EC%9A%94%ED%95%9C%EA%B0%80)
+2. [equals와 hashCode는 동시에 오버라이드 되어야한다](https://github.com/hifrogie/Github/blob/main/java.md#2-equals%EC%99%80-hashcode%EB%8A%94-%EB%8F%99%EC%8B%9C%EC%97%90-%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%90%98%EC%96%B4%EC%95%BC%ED%95%9C%EB%8B%A4)
+3. [equals와 hashCode의 관계](https://github.com/hifrogie/Github/blob/main/java.md#3-equals%EC%99%80-hashcode%EC%9D%98-%EA%B4%80%EA%B3%84)
+4. [중요한 이유](https://github.com/hifrogie/Github/blob/main/java.md#4-%EC%A4%91%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0)
+5. [equals, hashCode의 차이점](https://github.com/hifrogie/Github/blob/main/java.md#5-equals-hashcode%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
+6. [구현하는 방법](https://github.com/hifrogie/Github/blob/main/java.md#6-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+### 4. [enum 클래스의 메모리 구조](https://github.com/hifrogie/Github/blob/main/java.md#4-enum-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0-1)
+1. [enum과 메모리 구조](https://github.com/hifrogie/Github/blob/main/java.md#1-enum%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0)
 ### 5. [예외 Exception](https://github.com/hifrogie/Github/blob/main/java.md#1-%EC%98%88%EC%99%B8-exception)
  1. [예외 Exception](https://github.com/hifrogie/Github/blob/main/java.md#1-%EC%98%88%EC%99%B8-exception-1)
  2. [try-catch](https://github.com/hifrogie/Github/blob/main/java.md#2-try-catch)
@@ -26,7 +26,11 @@
  7. [throw와 throws](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
  8. [예외 만들기](https://github.com/hifrogie/Github/blob/main/java.md#7-throw%EC%99%80-throws)
  9. [자바 예외 처리 전략](https://github.com/hifrogie/Github/blob/main/java.md#9-%EC%9E%90%EB%B0%94-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EC%A0%84%EB%9E%B5)
-### 2. String
+### 6. [String](https://github.com/hifrogie/Github/blob/main/java.md#6-string)
+1. [String클래스 선언부](https://github.com/hifrogie/Github/blob/main/java.md#1-string-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%84%A0%EC%96%B8%EB%B6%80)
+2. [String 생성자](https://github.com/hifrogie/Github/blob/main/java.md#2-string-%EC%83%9D%EC%84%B1%EC%9E%90)
+3. [null check](https://github.com/hifrogie/Github/blob/main/java.md#3-null-check)
+4. [String의 메소드](https://github.com/hifrogie/Github/blob/main/java.md#4-string%EC%9D%98-%EB%A9%94%EC%86%8C%EB%93%9C)
 ## 1. 다형성
 #### 1. 다형성(polymorphism)이란?
    1. 부모-자식 상속 관계에 있는 클래스에서 상위클래스가 동일한 메세지로 하위 클래스들을 서로 다르게 동작시키는 객체 지향 원리
@@ -107,7 +111,7 @@
    2. 두 객체가 equals()에 의해 동일하다면, 두 객체의 hashCode() 값도 일치해야 한다.
    3. 두 객체가 equals()에 의해 동일하지 않다면 두 객체의 hashCode()값은 일치하지 않아도 된다.
 ### 4. 중요한 이유
-    1. 같은 값인지 비교하기 위해서 중요하다.
+   1. 같은 값인지 비교하기 위해서 중요하다.
 ### 5. equals, hashCode의 차이점
    1. equals는 비교하는 것이고 hashCode는 고유한 숫자를 나타내는 것이다.
 ### 6. 구현하는 방법
@@ -267,64 +271,64 @@
    ```java
    public final class String extends Object implements Serializable, Comparable<String>, CharSequence
    ```
-  2. Serializable
+  2. **Serializable**
   - 인터페이스를 implements 한 클래스는 선언되어 있는 메소드의 몸통을 구현해야만 한다. 하지만 Serializable 인터페이스는 구현해야 하는 메소드가 하나도 없는 인터페이스다.
   - Serializable 인터페이스를 구현한다고 선언해 놓으면 해당 객체를 파일로 저장하거나 다른 서버에 전송 가능한 상태가 된다.
-  3. Comparable<String>
+  3. **Comparable<String>**
   - 이 인터페이스는 compareTo()라는 메소드 하나만 선언되어 있다.
   - compareTo() 메소드는 매개 변수로 넘어가는 객체와 현재 객체가 같은지를 비교하는 데 사용된다.
   - equals() 메소드와 다른 점은 compareTo() 메소드의 리턴 타입은 int다.
   - compareTo() 메소드는 같으면 0이지만 순서 상으로 앞에 있으면 -1, 뒤에 있으면 1을 리턴한다. 객체의 순서를 처리할 때 유용하다.
   - <String>은 generic이다. generic은 클래스나 메소드에서 사용할 내부 데이터 타입을 컴파일 시에 미리 지정하는 방법
-  4. CharSequence
+  4. **CharSequence**
   - 이 인터페이스는 해당 클래스가 문자열을 다루기 위한 클래스라는 것을 명시적으로 나타내는 데 사용된다.
 ### 2. String 생성자
    1. 용어
-      1. Character Set(캐릭터 셋)
+      1. **Character Set(캐릭터 셋)**
       - 문자의 집합을 의미하며, 특정 나라의 글자를 말한다.
-      2. Decoding(디코딩)
+      2. **Decoding(디코딩)**
       - 일반적으로 암호화되어 있거나 컴퓨터가 이해할 수 있는 값들을 알아보기 쉽게 변환하는 것을 말한다.
    2. String 클래스의 생성자
-      1. String()
+      1. **String()**
       - 비어있는 String 객체를 생성한다.
       - String name = null;
       - 위의 코드가 더 효율적이다.
-      2. String(byte[] bytes)
+      2. **String(byte[] bytes)**
       - 현재 사용중인 플랫폼의 캐릭터 셋을 사용하여 제공된 byte배열을 디코딩한 String 객체를 생성한다.
-      3. String(byte[] bytes, Charset charset)
+      3. **String(byte[] bytes, Charset charset)**
       - 지정된 캐릭터 셋을 사용하여 제공된 byte 배열을 디코딩한 String 객체를 생성한다.
-      4. String(byte[] bytes, String charsetName)
+      4. **String(byte[] bytes, String charsetName)**
       - 지정한 이름을 같는 캐릭터 셋을 사용하여 지정한 byte 배열을 디코딩한 String 객체를 생성한다.
-      5. String(byte[] bytes, int offset, int length)
+      5. **String(byte[] bytes, int offset, int length)**
       - 현재 사용중인 플랫폼의 기본 캐릭터 셋을 사용하여 지정한 byte 배열의 일부를 디코딩한 String 객체를 생성한다.
-      6. String(byte[] bytes, int offset, int length, Charset charset)
+      6. **String(byte[] bytes, int offset, int length, Charset charset)**
       - 지정된 캐릭터 셋을 사용하여 byte 배열의 일부를 디코딩한 String 객체를 생성한다.
-      7. String(byte[] bytes, int offset, int length, String charsetName)
+      7. **String(byte[] bytes, int offset, int length, String charsetName)**
       - 지정한 이름을 갖는 캐릭터 셋을 사용하여 byte 배열의 일부를 디코딩한 String 객체를 생성한다.
-      8. String(char[] value)
+      8. **String(char[] value)**
       - char 배열의 내용들을 붙여 String 객체를 생성한다.
-      9. String(char[] value, int offset, int count)
+      9. **String(char[] value, int offset, int count)**
       - char 배열의 일부 내용들을 붙여 String 객체를 생성한다.
-      10. String(int[] codePoints, int offset, int count)
+      10. **String(int[] codePoints, int offset, int count)**
       - 유니코드 코드 위치(Unicode code point)로 구성되어 있는 배열의 일부를 새로운 String 객체를 생성한다.
-      11. String(String original)
+      11. **String(String original)**
       - 매개 변수로 넘어온 String과 동일한 값을 갖는 String 객체를 생성한다. 복제본을 생성한다.
-      12. String(StringBuffer buffer)
+      12. **String(StringBuffer buffer)**
       - 매개 변수로 넘어온 StringBuffer 클래스에 정의 되어 있는 문자열의 값과 동일한 String 객체를 생성한다.
-      13. String(StringBuilder builder)
+      13. **String(StringBuilder builder)**
       - 매개 변수로 넘어온 StringBuilder 클래스에 정의되어 잇는 문자열의 값과 동일한 String 객체를 생성한다.
    3. getBytes()
       1. 생성자의 매개 변수로 받는 byte배열을 생성하는 방법이다.
       2. getBytes()
-         1. getBytes()
+         1. **getBytes(**
             1. 리턴 타입 : byte[]
             2. 기본 캐릭터 셋의 바이트 배열을 생성한다.
             3. 같은 프로그램 내에서 문자열을 byte배열로 만들 때 사용
-         2. getBytes(Charset charset)
+         2. **getBytes(Charset charset)**
             1. 리턴 타입 : byte[]
             2. 지정한 캐릭터 셋 객체 타입으로 바이트 배열을 생성한다.
             3. 다른 시스템에서 전달 받은 문자열을 byte 배열로 변환 할때 사용. 서로 다른 캐릭터 셋을 사용할 수 있기 때문이다.
-         3. getBytes(String charsetName)
+         3. **getBytes(String charsetName)**
             1. 리턴 타입 : byte[]
             2. 지정한 이름의 캐릭터 셋을 갖는 바이트 배열을 생성한다.
             3. 다른 시스템에서 전달 받은 문자열을 byte 배열로 변환 할때 사용. 서로 다른 캐릭터 셋을 사용할 수 있기 때문이다.
@@ -549,4 +553,50 @@
             1. 뒤에서부터(가장 오른쪽) 찾는다.
    6. String의 값의 일부를 추출하기 위한 메소드
       1. char 단위의 값을 추출하는 메소드
+         1. **charAt(int index)**
+            1. 리턴 타입 : char
+            2. 특정 위치의 char 값을 리턴한다.
+         2. **getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)**
+            1. 리턴 타입 : void
+            2. 매개 변수로 넘어온 dst라는 char 배열 내에 srcBegin에서 srcEnd에 있는 char를 저장한다. 
+            3. dst 배열의 시작위치는 dstBegin이다.
+         3. **codePointAt(int index)**
+            1. 리턴 타입 : int
+            2. 특정 위치의 유니코드 값을 리턴한다.
+            3. 리턴 타입은 int지만, 이 값을 char로 형 변환하면 char 값을 출력할 수 있다.
+         4. **codePointBefore(int index)**
+            1. 리턴 타입 : int
+            2. 특정 위치 앞에 있는 char의 유니코드 값을 리턴한다.
+            3. 리턴 타입은 int지만, 이 값을 char로 형 변환하면 char 값을 출력할 수 있다.
+         5. **codePointCount(int beginIndex, int endIndex)**
+            1. 리턴 타입 : int
+            2. 지정한 범위에 있는 유니코드 개수를 리턴한다.
+         6. **offsetByCodePoints(int index, int codePointOffset)**
+            1. 리턴 타입 : int
+            2. 지정된 index부터 오프셋이 설정된 인덱스를 리턴한다.
+            3. 문자열 인코딩과 관련된 문제를 해결하기 위해서 사용된다.
+      2. char 배열의 값을 String으로 변환하는 메소드
+         1. **copyValueOf(char[] data)**
+            1. 리턴 타입 : static String
+            2. char 배열에 있는 값을 문자열로 변환한다.
+         2. **copyValueOf(char[] data, int offset, int count)**
+            1. 리턴 타입 : static String
+            2. char 배열에 있느 값을 문자열로 변환한다.
+            3. 단 offset위치부터 count까지의 개수만큼만 문자열로 변환한다.
+            4. 코드
+            ```java
+            char value[] = new char[]{'J','a','v','a'};
+            String javaText = String.copyValueOf(values);
+            ```
+      3. String의 값을 char 배열로 변환하는 메소드
+         1. **toCharArray()**
+            1. 리턴 타입 : char[]
+            2. 문자열을 char 배열로 변환하는 메소드
+      4. 문자열의 일부 값을 잘라내는 메소드
+         1. **substring(int beginIndex)**
+            1. 리턴 타입 : String
+            2. beginIndex부터 끝까지 대상 문자열을 잘라 String으로 리턴한다.
+         2. 
+ 
+
 
