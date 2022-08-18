@@ -31,7 +31,12 @@
 2. [String 생성자](https://github.com/hifrogie/Github/blob/main/java.md#2-string-%EC%83%9D%EC%84%B1%EC%9E%90)
 3. [null check](https://github.com/hifrogie/Github/blob/main/java.md#3-null-check)
 4. [String의 메소드](https://github.com/hifrogie/Github/blob/main/java.md#4-string%EC%9D%98-%EB%A9%94%EC%86%8C%EB%93%9C)
-5. [StringBuffer와 StringBuilder]()
+5. [StringBuffer와 StringBuilder](https://github.com/hifrogie/Github/blob/main/java.md#5-stringbuffer%EC%99%80-stringbuilder)
+### 7. [Nested 클래스](https://github.com/hifrogie/Github/blob/main/java.md#7-nested-%ED%81%B4%EB%9E%98%EC%8A%A4)
+1. [Nested 클래스](https://github.com/hifrogie/Github/blob/main/java.md#1-nested-%ED%81%B4%EB%9E%98%EC%8A%A4)
+2. [Static nested 클래스의 특징](https://github.com/hifrogie/Github/blob/main/java.md#2-static-nested-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95)
+3. [내부 클래스와 익명 클래스](https://github.com/hifrogie/Github/blob/main/java.md#3-%EB%82%B4%EB%B6%80-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EC%9D%B5%EB%AA%85-%ED%81%B4%EB%9E%98%EC%8A%A4)
+
 ## 1. 다형성
 #### 1. 다형성(polymorphism)이란?
    1. 부모-자식 상속 관계에 있는 클래스에서 상위클래스가 동일한 메세지로 하위 클래스들을 서로 다르게 동작시키는 객체 지향 원리
@@ -920,11 +925,39 @@
       - setListener() 메소드를 보면 new EventListener()로 생성자를 호출한 후 바로 중괄호를 열었다. 그 중괄호 안에는 onClick()메소드를 구현한 후 중괄호를 닫았다. 이것이 바로 "익명클래스"이다.
       - 주의할 점은 괄호와 세미콜론이다. setListener() 메소드를 호출하는 과정 내에 익명 클래스가 있는 것이기 때문에 이와 같이 소괄호를 닫고 세미콜론을 해 줘야한다.
       - 클래스를 만들고 호출하면 그 정보는 메모리에 올라간다. 클래스를 많이 만들수록 메모리가 많이 필요하고, 앱을 시작할 때 더 많은 시간이 소요된다.
-       
 
-
-            
-            
+## 8. 어노테이션(Annotation)
+### 1. 어노테이션이란?
+ 1. 클래스나 메소드, 변수 등의 선언시에 @를 사용하는 것
+ 2. Metadata라고도 불린다.
+ 3. 사용할 때 
+   1. 컴파일러에게 정보를 알려줄 때
+   2. 컴파일할 때와 설치시의 작업을 지정하거나
+   3. 실행할 떄 별도의 처리가 필요할 때
+ 4. @Override
+   1. 해당 메소드가 부모 클래스에 있는 메소드를 Override 했다는 것을 명시적으로 선언한다.
+ 5. @Deprecated
+   1. 클래스나 메소드가 더이상 사용되지 않는 경우에 컴파일러에게 알려주는 것
+ 6. @SupressWarnings
+   1. 경고가 뜰 때 경고해줄 필요 없다고 컴파일러에게 이야기하는 것
+   2. 코드
+   ```java
+   public class AnnotationDeprecated{
+      @Deprecated
+      public void noMoreUse(){    
+      }
+   }
+   ```
+   ```java
+   public class AnnotationSample{
+      @SuppressWarnings("deprecation")
+      public void useDeprecated(){
+         AnnotationDeprecated child = new AnnotationDeprecated();
+         child.noMoreUse();
+      }
+   }
+   ```
+      - 소괄호 속에 문자열을 넘겨주었다. 어노테이션의 종류에 따라서, 속성값을 지정하는 것도 존재한다.
  
 
 
