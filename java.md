@@ -31,6 +31,7 @@
 2. [String 생성자](https://github.com/hifrogie/Github/blob/main/java.md#2-string-%EC%83%9D%EC%84%B1%EC%9E%90)
 3. [null check](https://github.com/hifrogie/Github/blob/main/java.md#3-null-check)
 4. [String의 메소드](https://github.com/hifrogie/Github/blob/main/java.md#4-string%EC%9D%98-%EB%A9%94%EC%86%8C%EB%93%9C)
+5. [StringBuffer와 StringBuilder]()
 ## 1. 다형성
 #### 1. 다형성(polymorphism)이란?
    1. 부모-자식 상속 관계에 있는 클래스에서 상위클래스가 동일한 메세지로 하위 클래스들을 서로 다르게 동작시키는 객체 지향 원리
@@ -751,10 +752,19 @@
    12. String과 StringBuilder, StringBuffer 클래스의 공통점의 첫번째는 모두 문자열을 다룬다는 점이다.
    13. 두번째는 CharSequence 인터페이스를 구현했다는 점이다. 세 가지 중 하나의 클래스를 사용하여 매개 변수를 받는 작업을 할 때 CharSequence 타입으로 받는 것이 좋다.
    14. 언제 StringBuilder를 사용하고, 언제 StringBuffer클래스를 사용할까? 
-      1. 하나의 메소드 내에서 문자열을 생성하여 더할 경우에는 StringBuilder를 사용해도 전혀 상관없다.
-      2. 어떤 클래스에서 문자열을 생성하여 더하기 위한 문자열을 처리하기 위한 인스턴스 변수가 선언되었고, 여러 쓰레드에서 이 변수를 동시에 접근하는 일이 있을 경우에는 StringBuffer를 사용해야한다.
+       1. 하나의 메소드 내에서 문자열을 생성하여 더할 경우에는 StringBuilder를 사용해도 전혀 상관없다.
+       2. 어떤 클래스에서 문자열을 생성하여 더하기 위한 문자열을 처리하기 위한 인스턴스 변수가 선언되었고, 여러 쓰레드에서 이 변수를 동시에 접근하는 일이 있을 경우에는 StringBuffer를 사용해야한다.
 
-
+## 7. Nested 클래스
+### 1. Nested 클래스
+   1. 클래스 안에 클래스가 들어간 형태.
+   2. 존재 이유
+      1. 자바 기반의 UI 처리를 할 때 사용자의 입력이나, 외부의 이벤트에 대한 처리를 하는 곳의 코드를 간단하게 표현하기 위함.
+   3. Nested 클래스는 static으로 선언되었는지에 따라 "Static nested 클래스"와 "inner(내부) 클래스"로 구분된다.
+   4. 내부 클래스는 두 가지로 나뉘는데 이름이 있는 내부 클래스는 "로컬(지역)내부클래스 local inner class", 이름이 없는 내부 클래스는 "익명 내부 클래스 anonymous inner class"라고 부른다. 
+   
+   ![내부클래스 이미지](https://compmath.korea.ac.kr/indust/_images/graphviz-2cb2987cf743035df2c1e58b0c128d9e94993d48.png)
+   
  
 
 
