@@ -596,7 +596,170 @@
          1. **substring(int beginIndex)**
             1. 리턴 타입 : String
             2. beginIndex부터 끝까지 대상 문자열을 잘라 String으로 리턴한다.
-         2. 
+            3. 코드
+            ```java
+            public void checkSubstring(){
+               String text = "Java technology";
+               String technology = text.substring(5);
+               System.out.println(technology); //technology
+            }
+            ```
+         2. **substring(int beginIndex, int endIndex)**
+            1. 리턴 타입 : String
+            2. beginIndex부터 endIndex까지 대상 문자열을 잘라 String으로 리턴한다.
+         3. **subSequence(int beginIndex, int endIndex)**
+            1. 리턴 타입 : CharSequence
+            2. beginIndex부터 endIndex까지 대상 문자열을 잘라 CharSequence 타입으로 리턴한다.
+      5. 문자열을 여러 개의 String 배열로 나누는 split 메소드
+         1. **split(String regex)**
+            1. 리턴 타입 : String[]
+            2. regex에 있는 정규 표현식에 맞추어 문자열을 잘라 String의 배열로 리턴한다.
+         2. **split(String regex, int limit)**
+            1. 리턴 타입 : String[]
+            2. regex에 있는 정규 표현식에 맞추어 문자열을 잘라 String의 배열로 리턴한다. 
+            3. 이때 String 배열의 크기는 limit 보다 커서는 안 된다.
+         3. **java.util.StringTokenizer**
+            1. 문자열을 여러 개의 문자열의 배열로 나누는 방법
+            2. 정규 표현식을 사용하여 문자열을 나누려고 한다면 String클래스의 split()메소드를 사용하면 되고 그냥 특정 String으로 문자열을 나누려고 한다면 StringTokenizer 클래스를 사용 하는 것이 편하다.
+   7. String 값을 바꾸는 메소드
+      1. 문자열을 합치는 메소드와 공백을 없애는 메소드
+         1. **concat(String str)**
+            1. 리턴 타입 : String
+            2. 매개 변수로 받은 str을 기존 문자열의 우측에 붙인 새로운 문자열 객체를 생성하여 리턴한다.
+            3. concat() 메소드를 사용하여 문자열을 더할 일이 있다면, StringBuffer나 StringBuilder 클래스를 사용하여 문자열을 더하는 것이 좋다.
+         2. **trim()**
+            1. 리턴 타입 : String
+            2. 문자열의 맨 앞과 맨 뒤에 있는 공백들을 제거한 문자열 객체를 리턴한다.
+            3. 작업하려는 문자열이 공백만으로 이루어진 값인지, 공백을 제외한 값이 있는지 확인하기 편리하다.
+            4. 코드
+            ```java
+            String text = " a ";
+            if(text!= null && text.trim().length()>0){
+               System.out.println("OK");
+            }
+            ```
+            5. null 체크를 하지 않으면, 값이 null인 객체의 메소드를 호출하면 NullPointerException이 발생한다. String을 조작하기 전에는 null 체크하는 습관을 갖자.
+      2. 내용을 교체하는 메소드
+         1. **replace(char oldChar, char newChar)**
+            1. 리턴 타입 : String
+            2. 해당 문자열에 있는 oldChar의 값을 newChar로 대치한다.
+         2. **replace(CharSequence target, CharSequence replacement)**
+            1. 리턴 타입 : String
+            2. 해당 문자열에 있는 target과 같은 값을 replacement로 대치한다.
+         3. **replaceAll(String regex, String replacement)**
+            1. 리턴 타입 : String
+            2. 해당 문자열의 내용중 regex에 표현된 정규 표현식에 포함되는 모든 내용을 replacement로 대치한다.
+         4. **replaceFirst(String regex, String replacement)**
+            1. 리턴 타입 : String
+            2. 해당 문자열의 내용 중 regex에 표현된 정규 표현식에 포함되는 첫번째 내용을 replacement로 대치한다.
+         5. **문자열에 있는 내용 중 일부를 변경하는 작업을 수행한다.**
+         6. **이 메소드를 수행해도 기존 문자열의 값은 바뀌지 않는다.**
+
+      3. 특정 형식에 맞춰 값을 치환하는 메소드
+         1. **format(String format, Object... args)**
+            1. 리턴 타입 : static String
+            2. format에 있는 문자열의 내용 중 변환해야 하는 부분을 args의 내용으로 변경한다.
+         2. **format(Locale l, String format, Object... args)**
+            1. 리턴 타입 : static String
+            2. format에 있는 문자열의 내용 중 변환해야 하는 부분을 args의 내용으로 변경한다. 단 첫 매개 변수인 Locale 타입의 l에 선언된 지역에 맞추어 출력한다.
+            2. Locale은 지역적으로 다른 표현 형식을 제공하기 위한 것이다.보통 Locale을 지정하지 않으면 기본적으로 자바 프로그램이 수행되는 OS의 지역 정보를 기본으로 따른다.
+         3. **정해진 기준에 맞춘 문자열이 있으면, 그 기준에 있는 내용을 변환한다. 자바에서는 %d는 정수형을, %s는 String을, %f는 소수점이 있는 숫자, %%는 %를 의미한다.**
+         4. **코드**
+         ```java
+         public void checkFormat(){
+            String text="제 이름은 %s입니다. 지금까지 %d 권의 책을 썻고, " +"gkfndp %f %%의 시간을 책을 쓰는데 할애하고 있습니다."
+            String realText=String.format(text, "이상민",7,10.5);
+            System.out.println(realText);
+         } 
+         ```
+      4. 대소문자를 바꾸는 메소드
+         1. **toLowerCase()**
+            1. 리턴 타입 : String
+            2. 모든 문자열의 내용을 소문자로 변경한다.
+         2. **toLowerCase(Locale locale)**
+            1. 리턴 타입 : String
+            2. 지정한 지역 정보에 맞추어 모든 문자열의 내용을 소문자로 변경한다.
+         3. **toUpperCase()**
+            1. 리턴 타입 : String
+            2. 모든 문자열의 내용을 대문자로 변경한다.
+         4. **toUpperCase(Locale locale)**
+            1. 리턴 타입 : String
+            2. 지정한 지역 정보에 맞추어 모든 문자열의 내용을 대문자로 변경한다.
+      5. 기본 자료형을 문자열로 변환하는 메소드
+         - static String : valueOf(boolean b)
+         - static String : valueOf(char c)
+         - static String : valueOf(char[] data)
+         - static String : valueOf(char[] data, int offset, int count)
+         - static String : valueOf(double d)
+         - static String : valueOf(float f)
+         - static String : valueOf(int i)
+         - static String : valueOf(long l)
+         - static String : valueOf(Object obj)
+         ```java
+         byte b = 1;
+         String byte1 = String.valueOf(b);
+         String byte2 = b + "";
+         ```
+         1. 대부분 기본 자료형을 String 타입으로 변환할 필요가 있을 때에는 String과 합치는 과정을 거친다. 그럴 경우에는 valueOf() 메소드를 사용할 필요가 없다. 하지만 String으로 변환만 해놓고 별도의 문자열과 합치는 과정이 없을 경우에는 valueOf()메소드를 사용하는 것을 권장한다.
+         2. valueOf 메소드의 매개 변수로 객체가 넘어왔을 경우는 주의 해야한다. toString을 구현한 객체나, 정상적인 객체를 valueOf()메소드에 넘겨주면 toString()의 결과를 리턴해준다.
+         3. 하지만 null의 객체인 경우에는 이야기가 달라진다. null인 객체는 toString() 메소드를 사용할 수 없다. NullPointerException이 발생한다. 
+         4. 그러한 결과를 방지하기 위해서 객체를 출력할 때 valueOf()메소드를 사용하면 좋다. valueOf()메소드는 객체가 null이면 "null"이라는 문자열을 리턴해주기 때문이다. 만약 null이 아니면, toString() 메소드를 호출한 결과가 리턴된다.
+         5. System.out.println()나 System.out.print() 메소드에서 null인 객체를 출력했을 때 NullPointerException이 발생하지 않는 이유도 이 떄문이다.
+      
+   8. 절대 사용하면 안 되는 intern()메소드가 있다.
+         1. 자바가 아닌 c로 구현되어 있는 native 프로그래밍 언어로 작성한 메소드 중 하나다. native 메소드 이기 때문에 쓰지 말라는 것이 아니고, 시스템의 심각한 성능 저하를 발생 시킬 수 있다.
+         2. 코드
+         ```java
+         public void internCheck(){
+            String text1 = "Java Basic";
+            String text2 = "Java Basic";
+            String text3 = new String("Java Basic");
+            text3 = text3.intern();
+            System.out.println(text==text2); //true
+            System.out.println(text1==text3); //true
+            System.out.println(text1.equals(text3)); //true
+         }
+         ```
+         - new String(String)으로 생성한 문자열 객체라고 할지라도, 풀에 해당 값이 있으면 풀에 있는 값을 참조하는 객체를 리턴한다.
+         - 동일한 문자열이 없으면 풀에 값을 추가한다. 
+         - intern()메소드를 사용한 후 equals()가 아닌 ==으로 동일한지 비교할 수 있다.
+         - ==으로 비교하는 것이 훨씬 빠르다.
+         - 새로운 문자열을 다수 만드는 프로그램에서 intern() 메소드로 문자열 풀에 값을 할당하도록 만들면 저장되는 영역은 한계가 있어 그 영역을 별도로 메모리를 청소한다.
+         - 따라서 작은 연산 하나를 위해 전체 자바 시스템의 성능에 악영향을 준다.
+         - 우리가 만드는 앱에서 생성하는 문자열이 정해져 있고, 그 문자열들만 intern()메소드를 호출하여 사용하면 사용 가능
+         - 하지만 생성되는 문자열이 완전히 정해져 있는 시스템은 거의 없다.
+
+### 5. StringBuffer와 StringBuilder
+   1. String은 immutable(불변)한 객체다. 한 번 만들어지면 더 이상 그 값을 바꿀 수 없다.
+   2. String 문자열을 더하면 새로운 String 객체가 생성되고, 기존의 객체는 버려진다. 하나의 String을 만들고 더하는 작업을 하면 계속 쓰레기를 만들게 된다. 이러한 단점을 보완하기 위해 StringBuffer와 StringBuilder가 생겼다.
+   3. 두 클래스에서 제공하는 메소드는 동일하다.
+   4. StringBuffer는 Thread safe 하고, StringBuilder는 Thread safe 하지 않다고 한다.
+   5. 기능은 같지만 StringBuffer가 StringBuilder 보다 안전하다.
+   6. 속도는 Thread safe 하지 않는 클래스가 더 빠르다.
+   7. StringBuffer와 StringBuilder 클래스는 문자열을 더하더라도 새로운 객체를 생성하지 않는다.
+   8. (+)를 사용하여 더할 수 없다. append()를 사용한다. 매개 변수로 모든 기본 자료형과 참조 자료형을 포함한다.
+
+   ```java
+   StringBuilder sb = new StringBuilder();
+   sb.append("Hello");
+   sb.append(" world");
+   sb.append("Hello").append(" world"); 
+   ```
+   9. append()의 매개 변수가 정해진 문자열이라면 무쓸모 이지만 매개 변수가 항상 변하는 값(변수로 받은 값)이라면 유용하다.
+   10. append()는 세미콜론이 나오기 전에 계속 붙여도 된다. append()를 수행한 후에는 해당 StringBuilder 객체가 리턴 되므로 그 객체에 계속 붙여도 무방하다.
+   11. JDK 5 이상에서는 String의 더하기 연산을 할 경우, 컴파일할 때 자동으로 해당 연산을 StringBuilder로 변환해 준다. 하지만 for루프등 반복 연산을 할 때에는 자동으로 변환을 해주지 않는다.
+   12. String과 StringBuilder, StringBuffer 클래스의 공통점의 첫번째는 모두 문자열을 다룬다는 점이다.
+   13. 두번째는 CharSequence 인터페이스를 구현했다는 점이다. 세 가지 중 하나의 클래스를 사용하여 매개 변수를 받는 작업을 할 때 CharSequence 타입으로 받는 것이 좋다.
+   14. 언제 StringBuilder를 사용하고, 언제 StringBuffer클래스를 사용할까? 
+      1. 하나의 메소드 내에서 문자열을 생성하여 더할 경우에는 StringBuilder를 사용해도 전혀 상관없다.
+      2. 어떤 클래스에서 문자열을 생성하여 더하기 위한 문자열을 처리하기 위한 인스턴스 변수가 선언되었고, 여러 쓰레드에서 이 변수를 동시에 접근하는 일이 있을 경우에는 StringBuffer를 사용해야한다.
+
+
+ 
+
+
+            
+            
  
 
 
