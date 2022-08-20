@@ -71,7 +71,7 @@
 ## 3. equals, hashCode에 대해서
 ### 1. equals, hashCode가 왜 중요한가?
  #### 1. equals() 메소드 란?
-   1. 메개변수로 들어오는 객체와 자신의 객체가 같은지 비교하는 기능
+   1. 매개변수로 들어오는 객체와 자신의 객체가 같은지 비교하는 기능
    2. equals()는 Object에 포함되어 있기 때문에 모든 하위 클래스에서 재정의 해서 사용이 가능하다.
    3. ==는 주소값이 같은지 아닌지 비교하는 것이고, equals()연산도 내부적으로 주소값을 비교하지만 String클래스에서는 equals()를 재정의해 내용을 비교하게 되어있다.
    4. 코드
@@ -106,7 +106,7 @@
         }
         ```
         - equals()변수로 들어온 객체가 자기 자신과 주소값이 같으면 if(this == anObject) true를 리턴한다.
-        - 주소 값이 다르면 String 객체의 문자열 Char 타입으로 하나씩 비교해 보면서 끝까지 같다면 true를 리턴 다르다면 false를 리턴한다.
+        - 주소 값이 다르면 String 객체의 문자열 Char 타입으로 하나씩 비교해 보면서 끝까지 같다면 true를 리턴, 다르다면 false를 리턴한다.
   #### 2. hashCode()란?
    1. hashCode()는 객체의 hashCode를 리턴한다.
    2. hashCode는 일반적으로 각 객체의 주소값을 변환하여 생성한 객체의 고유한 정수값
@@ -116,12 +116,34 @@
    1. Java 프로그램을 실행하는 동안 equals에 사용된 정보가 수정되지 앟았다면, hashCode는 항상 동일한 정수값을 반환해야한다.(프로그램을 실행할 때 마다 달라지는 것은 상관이 없다.)
    2. 두 객체가 equals()에 의해 동일하다면, 두 객체의 hashCode() 값도 일치해야 한다.
    3. 두 객체가 equals()에 의해 동일하지 않다면 두 객체의 hashCode()값은 일치하지 않아도 된다.
-### 4. 중요한 이유
-   1. 같은 값인지 비교하기 위해서 중요하다.
+### 4. Hashcode 중요한 이유
+   1. 객체를 비교할 때 드는 비용을 낮추기 위해서 사용한다.
+   2. equals()를 사용하면 Integer를 비교하는 것에 비해 많은 시간이 소요된다.
 ### 5. equals, hashCode의 차이점
    1. equals는 비교하는 것이고 hashCode는 고유한 숫자를 나타내는 것이다.
 ### 6. 구현하는 방법
    1. Object에 명시되어있기 때문에 그냥 사용하거나 overriding해서 사용한다.
+
+   ```java
+   public final class String {
+    private final char value[];
+
+    public int hashCode() {
+        int h = hash;
+        if (h == 0 && value.length > 0) {
+            char val[] = value;
+
+            for (int i = 0; i < value.length; i++) {
+                h = 31 * h + val[i];
+            }
+            hash = h;
+        }
+        return h;
+    }
+   }
+   ```
+### 7. equals를 재정의한 클래스에서 hashcode를 재정의하지 않을 때
+   1. hash를 사용하는 HashMap, HashSet과 같은 컬랙션의 원소로 사용될 때 문제가 발생한다.
 
 ## 4. enum 클래스의 메모리 구조
 ### 1. enum과 메모리 구조
@@ -168,7 +190,9 @@
      - ex) NullPointerException
      - 이 예외를 catch에 넣지 않는다고 해서 컴파일할 때 예외가 발생하지 않는다. 하지만 실행시에는 발생할 가능성이 있다.
      - 컴파일시 체크하지 않기 때문에 unchecked exception이라고도 부름
-     
+     #### 3. checked, unchecked 예외의 차이
+     - checked exception은 반드시 에러 처리를 해야하는 특징을 가지고 있다.
+     - unchecked exception은 에러 처리를 강제하지 않는다.
 ### 4. java.lang.Throwable
  1. exception과 error의 공통 부모 클래스는 object, throwable클래스이다.
  2. throwable 클래스를 상속 받아 처리하도록 되어있는 이유는 exception, error 성격은 다르지만, 모두 동일한 이름의 메소드를 사용하여 처리하기위함. 
@@ -981,13 +1005,15 @@
          - 접근 불가능 상태로 되지 않아 Young 영역에서 살아남은 객체가 여기로 복사된다. 
          - 대부분 Young 영역보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생된다.
          - 이 영역에서 객체가 사라질 때 Major GC(Full GC)가 발생한다고 말한다.
+
    ![GC 영역 및 데이터 흐름도](https://d2.naver.com/content/images/2015/06/helloworld-1329-1.png)
+   
       3. 위 그림의 Permanent Generation 영역(이하 Perm 영역)은 Method Area라고도 한다. 객체나 억류(intern)된 문자열 정보를 저장하는 곳이며, Old 영역에서 살아남은 객체가 영원히 남아 있는 곳은 절대 아니다. 이 영역에서 GC가 발생할 수도 있는데, 여기서 GC가 발생해도 Major GC의 횟수에 포함된다.
       4. Old 영역에 있는 객체가 Young 영역의 객체를 참조하는 경우가 있을 때는 어떻게 처리될까?
          - 이러한 경우를 위해 Old 영역에는 512바이트의 덩어리로 되어있는 card table이 존재한다.
          - 카드 테이블에는 Old 영역에 객체가 Young 영역의 객체를 참조할 때마다 정보가 표시된다.
          - Young 영역의 GC를 실행할 때에는 Old 영역에 있는 모든 객체의 참조를 확인하지 않고, 이 카드 테이블만 뒤져서 GC 대상인지 식별한다.
-         
+
       ![카드 테이블 구조](https://d2.naver.com/content/images/2015/06/helloworld-1329-2.png) 
 
 
