@@ -36,7 +36,10 @@
 1. [Nested 클래스](https://github.com/hifrogie/Github/blob/main/java.md#1-nested-%ED%81%B4%EB%9E%98%EC%8A%A4)
 2. [Static nested 클래스의 특징](https://github.com/hifrogie/Github/blob/main/java.md#2-static-nested-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95)
 3. [내부 클래스와 익명 클래스](https://github.com/hifrogie/Github/blob/main/java.md#3-%EB%82%B4%EB%B6%80-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EC%9D%B5%EB%AA%85-%ED%81%B4%EB%9E%98%EC%8A%A4)
-
+### 8. [어노테이션(Annotation)](https://github.com/hifrogie/Github/blob/main/java.md#8-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98annotation)
+### 9. [Java Garbage Collection](https://github.com/hifrogie/Github/blob/main/java.md#9-java-gabage-collection)
+1. ['stop-the-world'](https://github.com/hifrogie/Github/blob/main/java.md#stop-the-world)
+2. [Garbage Collector는 두가지 가정 하에 만들어졌다.](https://github.com/hifrogie/Github/blob/main/java.md#garbage-collector%EB%8A%94-%EB%91%90%EA%B0%80%EC%A7%80-%EA%B0%80%EC%A0%95-%ED%95%98%EC%97%90-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%8B%A4)
 ## 1. 다형성
 #### 1. 다형성(polymorphism)이란?
    1. 부모-자식 상속 관계에 있는 클래스에서 상위클래스가 동일한 메세지로 하위 클래스들을 서로 다르게 동작시키는 객체 지향 원리
@@ -150,7 +153,11 @@
    1. 열거 상수는 상수 각각을 내부적으로 public static final 필드 이면서 객체로 제공되도록 합니다.
    2. static이 붙어있기 때문에 각각의 상수는 클래스 변수로 클래스 로더가 로드 시점에 JVM Method 영역에 해당 클래스 변수들을 항상 상주시켜 프로그램이 종료되기 전에는 언제든 가져다 쓸 수 있는 주소 공간을 확보합니다.
     ![메소드 영역 이미지](https://honbabzone.com/assets/images/post/java/emum-memory.png)
-
+### 2. enum, 싱글톤 패턴의 공통점
+   1. 생성자의 제한자가 private 이다.
+   2. enum은 run-time이 아닌 compile-time에 모든 값을 알고 있어야함. 즉 다른 패키지나 클래스에서 enum 타입에 접근해서 동적으로 어떤 값을 정해줄 수 없다.
+### 3. enum, 싱글톤 패턴의 차이점
+   1. enum의 메소드에 접근할 때는 
 ## 5. 예외
 ### 1. 예외 Exception
    - 예상한, 예상치 못한 일이 발생하는 것을 미리 예견하고 안전장치를 하는 것
@@ -955,32 +962,32 @@
  1. 클래스나 메소드, 변수 등의 선언시에 @를 사용하는 것
  2. Metadata라고도 불린다.
  3. 사용할 때 
-   1. 컴파일러에게 정보를 알려줄 때
-   2. 컴파일할 때와 설치시의 작업을 지정하거나
-   3. 실행할 떄 별도의 처리가 필요할 때
+    1. 컴파일러에게 정보를 알려줄 때
+    2. 컴파일할 때와 설치시의 작업을 지정하거나
+    3. 실행할 떄 별도의 처리가 필요할 때
  4. @Override
-   1. 해당 메소드가 부모 클래스에 있는 메소드를 Override 했다는 것을 명시적으로 선언한다.
+    1. 해당 메소드가 부모 클래스에 있는 메소드를 Override 했다는 것을 명시적으로 선언한다.
  5. @Deprecated
-   1. 클래스나 메소드가 더이상 사용되지 않는 경우에 컴파일러에게 알려주는 것
+    1. 클래스나 메소드가 더이상 사용되지 않는 경우에 컴파일러에게 알려주는 것
  6. @SupressWarnings
-   1. 경고가 뜰 때 경고해줄 필요 없다고 컴파일러에게 이야기하는 것
-   2. 코드
-   ```java
-   public class AnnotationDeprecated{
+    1. 경고가 뜰 때 경고해줄 필요 없다고 컴파일러에게 이야기하는 것
+    2. 코드
+    ```java
+    public class AnnotationDeprecated{
       @Deprecated
       public void noMoreUse(){    
       }
-   }
-   ```
-   ```java
-   public class AnnotationSample{
+    }
+    ```
+    ```java
+    public class AnnotationSample{
       @SuppressWarnings("deprecation")
       public void useDeprecated(){
          AnnotationDeprecated child = new AnnotationDeprecated();
          child.noMoreUse();
       }
-   }
-   ```
+    }
+    ```
       - 소괄호 속에 문자열을 넘겨주었다. 어노테이션의 종류에 따라서, 속성값을 지정하는 것도 존재한다.
 
 ## 9. Java Gabage Collection
