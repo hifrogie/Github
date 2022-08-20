@@ -987,6 +987,7 @@
          - 이러한 경우를 위해 Old 영역에는 512바이트의 덩어리로 되어있는 card table이 존재한다.
          - 카드 테이블에는 Old 영역에 객체가 Young 영역의 객체를 참조할 때마다 정보가 표시된다.
          - Young 영역의 GC를 실행할 때에는 Old 영역에 있는 모든 객체의 참조를 확인하지 않고, 이 카드 테이블만 뒤져서 GC 대상인지 식별한다.
-   ![카드 테이블 구조](https://d2.naver.com/content/images/2015/06/helloworld-1329-2.png) 
+         
+      ![카드 테이블 구조](https://d2.naver.com/content/images/2015/06/helloworld-1329-2.png) 
 
 
