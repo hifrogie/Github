@@ -36,8 +36,8 @@
   2. 두껍게
   - "**"
   - "__"
-  - "<strong>"
-  -<strong>사용예시</strong>
+  - " <strong> "
+  - <strong>사용예시</strong>
 
   3. 취소선
   - "~~"
