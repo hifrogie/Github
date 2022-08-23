@@ -25,9 +25,13 @@
 1. System 클래스는 생성자가 없다.
 2. 3개의 static 변수
     |선언 및 리턴 타입|변수명|설명|
-    | ------------|----|---|
+    | :------------:|:----:|:---:|
     |static PrintStream | err | 에러 및 오류를 출력할 때 사용한다.|
     | static InputStream|  in |  입력값을 처리할 때 사용한다.|
     |static PrintStream |out | 출력값을 처리할 떄 사용한다.|
 3. 시스템 속성(Property)값 관리
-    - static String  clearProperty(String key) 
+    |리턴 타입|메소드 이름 및 매개 변수|설명|
+    |:------:|:--------------:|:---:|
+    |static String|clearProperty(String key)| key에 지정된 시스템 속성을 제거한다.|
+    |static Properties|getProperties()|현재 시스템 속성을 Properties 클래스 형태로 제공한다.|
+    |static void|setProperties(Properties props)|Properties 타입으로 넘겨주는 매개변수에 있는 값들을 시스템 속성에 넣는다.| 
