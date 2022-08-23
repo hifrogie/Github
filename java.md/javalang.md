@@ -35,3 +35,25 @@
     |static String|clearProperty(String key)| key에 지정된 시스템 속성을 제거한다.|
     |static Properties|getProperties()|현재 시스템 속성을 Properties 클래스 형태로 제공한다.|
     |static void|setProperties(Properties props)|Properties 타입으로 넘겨주는 매개변수에 있는 값들을 시스템 속성에 넣는다.| 
+4. 시스템 환경(Environment)값 조회
+    |리턴 타입|메소드 이름 및 매개 변수|설명|
+    |:------:|:--------------:|:---:|
+    |static Map<String,String>|getenv()|현재 시스템 환경에 대한 Map형태의 리턴값을 받는다.|
+    |static String|getenv(String name)|지정한 name에 해당하는 값을 받는다.|
+
+5. GC 수행
+    |리턴 타입|메소드 이름 및 매개 변수|설명|
+    |:------:|:--------------:|:---:|
+    |static void|gc()|가비지 컬랙터를 실행한다.|
+    |static void|runFinalization()|GC 처리를 기다리는 모든 객체에 대하여 finalize() 메소드를 실행한다.|
+
+6. JVM 종료
+    |리턴 타입|메소드 이름 및 매개 변수|설명|
+    |:------:|:--------------:|:---:|
+    |static void|exit(int status)|현재 수행중인 JVM을 멈춘다.|
+
+7. 현재 시간 조회
+    |리턴 타입|메소드 이름 및 매개 변수|설명|
+    |:------:|:--------------:|:---:|
+    |static long| currentTimeMillis()|현재 시간을 밀리초 단위로 리턴한다.|
+    |static long| nanoTime()|현재 시간을 나노초 단위로 리턴한다.|
