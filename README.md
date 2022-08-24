@@ -50,7 +50,7 @@
 1. [Nested 클래스](https://github.com/hifrogie/Github/blob/main/java.md/nested.md#1-nested-%ED%81%B4%EB%9E%98%EC%8A%A4)
 2. [Static nested 클래스의 특징](https://github.com/hifrogie/Github/blob/main/java.md/nested.md#2-static-nested-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%ED%8A%B9%EC%A7%95)
 3. [내부 클래스와 익명 클래스](https://github.com/hifrogie/Github/blob/main/java.md/nested.md#3-%EB%82%B4%EB%B6%80-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EC%9D%B5%EB%AA%85-%ED%81%B4%EB%9E%98%EC%8A%A4)
-### 8. [java,lang 패키지](https://github.com/hifrogie/Github/blob/main/java.md/javalang.md#8javalang-%ED%8C%A8%ED%82%A4%EC%A7%80)
+### 8. [java.lang 패키지](https://github.com/hifrogie/Github/blob/main/java.md/javalang.md#8javalang-%ED%8C%A8%ED%82%A4%EC%A7%80)
 1. [숫자를 처리하는 클래스들](https://github.com/hifrogie/Github/blob/main/java.md/javalang.md#1-%EC%88%AB%EC%9E%90%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%93%A4)
 2. [각종 정보를 확인하기 위한 System 클래스](https://github.com/hifrogie/Github/blob/main/java.md/javalang.md#2-%EA%B0%81%EC%A2%85-%EC%A0%95%EB%B3%B4%EB%A5%BC-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-system-%ED%81%B4%EB%9E%98%EC%8A%A4)
 # [ComputerScience](https://github.com/hifrogie/Github/blob/main/computerScience.md#1-http-%ED%86%B5%EC%8B%A0)
