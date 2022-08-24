@@ -33,5 +33,5 @@
 |생성자|설명|
 |:--:|:--:|
 |ArrayList()|객체를 저장할 공간이 10개인 ArrayList를 만든다.|
-|ArrayList(Collection<? extends E> c)매개 변수로 넘어온 컬렉션 객체가 저장되어 있는 ArrayList를 만든다.|
+|ArrayList(Collection<? extends E> c)|매개 변수로 넘어온 컬렉션 객체가 저장되어 있는 ArrayList를 만든다.|
 |ArrayList(int initialCapacity)|매개 변수로 넘어온 initialCapacity 개수만큼의 저장 공간을 갖는 ArrayList를 만든다.|
