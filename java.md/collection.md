@@ -30,6 +30,7 @@
     - > java.util.AbstractList< E >
     - > java.util.ArrayList< E >
 2. ArrayList의 생성자
+
 |생성자|설명|
 |:--:|:--:|
 |ArrayList()|객체를 저장할 공간이 10개인 ArrayList를 만든다.|
