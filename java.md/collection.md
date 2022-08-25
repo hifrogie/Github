@@ -26,9 +26,10 @@
 ### 4. ArrayList
 1. ArrayList 클래스의 상속 관계
     - java.lang.Object
-    - > java.util.AbstractCollection< E >
-    - > java.util.AbstractList< E >
-    - > java.util.ArrayList< E >
+    - -> java.util.AbstractCollection< E >
+    - -> java.util.AbstractList< E >
+    - -> java.util.ArrayList< E >
+
 2. ArrayList의 생성자
 
 |생성자|설명|
@@ -40,3 +41,42 @@
 3. ArrayList에 데이터를 담아보자
  - 하나의 데이터를 담을 때는 add()
  - Collection을 구현한 객체를 한꺼번에 담을 때는 addAll()
+
+4. ArrayList에서 데이터를 꺼내자
+
+|리턴 타입|메소드 이름 및 매개 변수|설명|
+|:------:|:----------------:|:-:|
+|int|size()|ArrayList 객체에 들어가 있는 데이터의 개수를 리턴한다.|
+|E|get(int index)|매개 변수에 지정한 위치에 있는 데이터를 리턴한다.|
+|int|indexOf(Object o)|매개 변수로 넘어온 객체와 동일한 데이터의 위치를 리턴한다.|
+|int|lastIndexOf(Object o)|매개 변수로 넘어온 객체와 동일한 마지막 데이터의 위치를 리턴한다.|
+
+5. ArrayList에 있는 데이터를 삭제하자
+
+|리턴 타입|메소드 이름 및 매개 변수|설명|
+|:------:|:----------------:|:-:|
+|void|clear()|모든 데이터를 삭제한다.|
+|E|remove(int index)|매개 변수에서 지정한 위치에 있는 데이터를 삭제하고, 삭제한 데이터를 리턴한다.|
+|boolean|remove(Object o)|매개 변수에 넘어온 객체와 동일한 첫 번째 데이터를 삭제한다.|
+|boolean|removeAll(Collection<?> c)|매개 변수로 넘어온 컬렉션 객체에 있는 데이터와 동일한 모든 데이터를 삭제한다.|
+
+### 5. Stack 클래스
+1. 마지막에 들어온 데이터를 가장 처음 꺼내는 LIFO 기능을 구현하려고 할 때 필요한 클래스다.
+2. Stack 클래스의 상속관계
+    - java.lang.Object
+    - -> java.util.AbstractCollection< E >
+    - -> java.util.AbstractList< E >
+    - -> java.util.Vector< E >
+    - -> java.util.Stack< E >
+
+3. Stack클래스의 생성자는 Stack()이고 아무 데이터도 없는 Stack 객체를 만든다.
+
+4. Stack 클래스의 메소드
+
+|리턴 타입|메소드 이름 및 매개 변수|설명|
+|:------:|:----------------:|:-:|
+|boolean|empty()|객체가 비어있는지를 확인한다.|
+|E|peek()|객체의 가장 위에 있는 데이터를 리턴한다.|
+|E|pop()|객체의 가장 위에 있는 데이터를 지우고, 리턴한다.|
+|E|push(E item)|매개 변수로 넘어온 데이터를 가장 위에 저장한다.|
+|int|search(Objec o)|매개 변수로 넘어온 데이터의 위치를 리턴한다.|
