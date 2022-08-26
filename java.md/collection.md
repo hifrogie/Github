@@ -110,8 +110,57 @@
 - 데이터의 개수가 증가하여 로드 팩터 보다 커지면 저장공간의 크기는 증가되고 해시 재정리 작업을(rehash) 해야만 한다. 해시 재정리 작업에 들어가면 내부에 갖고 있는 자료 구조를 다시 생성하는 단계를 거쳐야 하므로 성능에 영향이 발생한다.
 
 3. HashSet의 주요 메소드
+
 |리턴 타입|메소드 이름 및 매개 변수|설명|
 |:-----:|:----------------:|:--:|
 |boolean|add(E e)|데이터를 추가한다.|
 |void|clear()|모든 데이터를 삭제한다.|
 |Object|clone()|HashSet 객체를 복사한다.|
+|boolean|contains(Object o)|지정한 객체가 존재하는 지를 확인한다.|
+|boolean|isEmpty()|데이터가 있는지 확인한다.|
+|Iterator< E >|iterator()|데이터를 꺼내기 위한 Iterator 객체를 리턴한다.|
+|boolean|remove(Object o)|매개 변수로 넘어온 객체를 삭제한다.|
+|int|size()|데이터의 개수를 리턴한다.|
+
+### 8. Queue
+1. LinkedList 클래스
+    - LinkedList에서는 앞의 데이터와 뒤에 있는 데이터만 기억한다.
+    - 중간에 있는 데이터가 지속적으로 삭제되고 추가될 경우에 배열보다 메모리 공간 측면에서 훨씬 유리하다.
+    - 배열은 각 위치가 정해져 있고 값을 삭제하면 그 뒤에 있는 값들은 하나씩 앞으로 위치를 이동해야하지만 LinkedList는 중간에 있는 데이터 삭제하면, 지운 데이터의 앞에 있는 데이터와 뒤에 있는 데이터를 연결하면 된다.
+    - LinkedList는 List 인터페이스뿐만 아니라 Queue와 Deque 인터페이스도 구현하고 있다. LinkedList 자체가 List이면서도 Queue,Deque도 된다.
+
+2. Queue
+    - FIFO(First In First Out)
+    - 사용자들의 요청을 순서대로 처리할 때 사용
+    - Deque : Queue 인터페이스를 확장하였기 때문에 Queue의 기능을 전부 포함한다. 맨 앞과 뒤를 넣거나 빼는 작업을 수행하는데 용이하도록 되어있다.
+
+3. LinkedList의 상속관계
+- java.lnag.Object
+- -> java.util.AbstractCollection< E >
+- -> java.util.AbstractList< E >
+- -> java.util.AbstractSequentialList< E >
+- -> java.util.LinkedList< E >
+
+4. LinkedList의 생성자
+|생성자|설명|
+|:--:|:--:|
+|LinkedList()|비어 있는 LinkedList 객체를 생성한다.|
+|LinkedList(Collection<? extends E> c)|매개 변수로 받은 컬렉션 객체의 데이터를 LinkedList에 담는다.|
+
+5. LinkedList의 메소드
+
+|리턴 타입|메소드 이름 및 매개 변수|설명|
+|:------:|:----------------:|:-:|
+|void|addFirst(Object)|LinkedList 객체의 가장 앞에 데이터를 추가 한다.|
+|boolean|offerFirst(Object)|LikedList 객체의 가장 앞에 데이터를 추가한다.|
+|void|push(Object)|LikedList 객체의 가장 앞에 데이터를 추가한다.|
+|boolean|add(Object)|LinkedList 객체의 가장 뒤에 데이터를 추가한다.|
+|void|addLast(Object)|LinkedList 객체의 가장 뒤에 데이터를 추가한다.|
+|boolean|offer(Object)|LinkedList 객체의 가장 뒤에 데이터를 추가한다.|
+|boolean|offerLast(Object)|LinkedList 객체의 가장 뒤에 데이터를 추가한다.|
+|void|add(int,Object)|LinkedList 객체의 특정 위치에 데이터를 추가한다.|
+|Object|set(int,Object)|LinkedList 객체의 특정 위치에 있는 데이터를 수정한다. 그리고, 기존에 있던 데이터를 리턴한다.|
+|boolean|addAll(Collection)|매개 변수로 넘긴 컬렉션의 데이터를 추가한다.|
+|boolean|addAll(int, Collection)|매개 변수로 넘긴 컬렉션의 데이터를 지정된 위치에 추가한다.|
+
+
