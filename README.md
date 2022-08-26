@@ -68,6 +68,7 @@
 6. [Set](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#6-set)
 7. [HashSet](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#7-hashset)
 8. [Queue](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#8-queue)
+9. [Map](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#9-map)
 
 
 # [ComputerScience](https://github.com/hifrogie/Github/blob/main/computerScience.md#1-http-%ED%86%B5%EC%8B%A0)
