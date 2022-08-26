@@ -80,3 +80,38 @@
 |E|pop()|객체의 가장 위에 있는 데이터를 지우고, 리턴한다.|
 |E|push(E item)|매개 변수로 넘어온 데이터를 가장 위에 저장한다.|
 |int|search(Objec o)|매개 변수로 넘어온 데이터의 위치를 리턴한다.|
+
+### 6. Set
+1. Set이 왜 필요하지?
+ - 중복되는 것을 방지하고 순서에 상관없이 어떤 데이터가 존재하는지 확인하기 위한 용도로 사용
+
+ 2. Set 인터페이스를 구현한 주요 클래스
+    - HashSet : 순서가 전혀 필요없는 데이터를 hash table에 저장한다, Set중에 가장 성능이 좋다.
+    - TreeSet : 저장된 데이터의 값에 따라서 정렬되는 셋이다. red-black이라는 트리 타입으로 값이 저장되며 HashSet보다 성능이 느리다.
+    - LinkedHashSet : 연결된 목록 타입으로 구현된 해시 테이블에 테이터를 저장한다. 저장된 순서에 따라서 값이 정렬된다. 성능은 제일 나쁘다.
+
+### 7. HashSet
+ 1. HashSet 클래스의 상속 관계
+  - java.lang.Object
+  - -> java.util.AbstractCollection< E >
+  - -> java.util.AbstractSet< E >
+  - -> java.util.HashSet< E >
+
+2. HashSet의 생성자
+
+|생성자|설명|
+|:---:|:-:|
+|HashSet()|데이터를 저장할 수 있는 16개의 공간과 0.75의 load factor를 갖는 객체를 생성한다.|
+|HashSet(Collection<? extends E> c)|매개 변수로 받은 컬랙션 객체의 데이터를 HashSet에 담는다.|
+|HashSet(int initialCapacity)|매개 변수로 받은 개수만큼의 데이터 저장 공간과 0.75 load factor를 갖는 객체를 생성한다.|
+|HashSet(int initialCapacity, float loadFactor)|첫 매개 변수로 받은 개수만큼의 데이터 저장 공간과 두 번째 매개 변수로 받은 만큼의 load factor를 갖는 객체를 생성한다.|
+
+- load factor는 (데이터의 개수/저장 공간)을 의미한다.
+- 데이터의 개수가 증가하여 로드 팩터 보다 커지면 저장공간의 크기는 증가되고 해시 재정리 작업을(rehash) 해야만 한다. 해시 재정리 작업에 들어가면 내부에 갖고 있는 자료 구조를 다시 생성하는 단계를 거쳐야 하므로 성능에 영향이 발생한다.
+
+3. HashSet의 주요 메소드
+|리턴 타입|메소드 이름 및 매개 변수|설명|
+|:-----:|:----------------:|:--:|
+|boolean|add(E e)|데이터를 추가한다.|
+|void|clear()|모든 데이터를 삭제한다.|
+|Object|clone()|HashSet 객체를 복사한다.|
