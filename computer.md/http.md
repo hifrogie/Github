@@ -43,9 +43,10 @@
     4. Headers : 서버에 대한 추가 정보를 전달하는 선택적 헤더들/
     5. etc : POST와 같은 몇 가지 메서드를 위한, 전송된 리소스를 포함하는 응답의 본문과 유사한 본문.
  
-2. HTTP 응답 메세지(Response)
  
   ![응답 메세지](https://velog.velcdn.com/images%2Fgparkkii%2Fpost%2Fc5ee6879-e3af-49f9-a8d0-5922b49c53ce%2FHTTP_Response.png)
+
+2. HTTP 응답 메세지(Response)
 
     1. Version of the Protocol : HTTP 프로토콜의 버전
     2. Status Code : 요청의 성공 여부와, 그 이유를 나타내는 상태 코드.

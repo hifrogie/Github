@@ -71,8 +71,16 @@
 9. [Map](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#9-map)
 
 
-# [ComputerScience](https://github.com/hifrogie/Github/blob/main/computerScience.md#1-http-%ED%86%B5%EC%8B%A0)
-1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computerScience.md#1-http-%ED%86%B5%EC%8B%A0)
+# ComputerScience
+1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
+    1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
+    2. [HTTP 프로토콜의 특징](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#2-http-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%ED%8A%B9%EC%A7%95)
+    3. [HTTP 통신의 동작 순서](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#3-http-%ED%86%B5%EC%8B%A0%EC%9D%98-%EB%8F%99%EC%9E%91-%EC%88%9C%EC%84%9C)
+    4. [HTTP messages](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#4-http-messages)
+    5. [요청과 응답의 구조](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#5-%EC%9A%94%EC%B2%ADrequests%EA%B3%BC-%EC%9D%91%EB%8B%B5responses%EC%9D%98-%EA%B5%AC%EC%A1%B0)
+    6. [HTTP 메세지 구조](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#6-http-%EB%A9%94%EC%84%B8%EC%A7%80-%EA%B5%AC%EC%A1%B0)
 2. [JVM](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#1-jvm)
-
+    1. [JIT 컴파일러](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#1-jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC)
+    2. [HotSpot](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#2-hotspot)
+    3. [JVM과 GC](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#3-jvm%EA%B3%BC-gc)
 
