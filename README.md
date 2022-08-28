@@ -83,4 +83,6 @@
     1. [JIT 컴파일러](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#1-jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC)
     2. [HotSpot](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#2-hotspot)
     3. [JVM과 GC](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#3-jvm%EA%B3%BC-gc)
+    4. [인터프리터 언어/컴파일 언어의 특징과 차이점](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#4-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%EC%96%B8%EC%96%B4%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%96%B8%EC%96%B4%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90)
+    5. [프레임워크/라이브러리 공통점과 차이점](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B3%B5%ED%86%B5%EC%A0%90%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
