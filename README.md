@@ -95,5 +95,5 @@
     4. [스택 영역](https://github.com/hifrogie/Github/blob/main/computer.md/memoryStructure.md#4-%EC%8A%A4%ED%83%9Dstack-%EC%98%81%EC%97%AD)
     5. [힙 영역](https://github.com/hifrogie/Github/blob/main/computer.md/memoryStructure.md#5-%ED%9E%99heap%EC%98%81%EC%97%AD)
     6. [Java Primitive Type VS Reference Type](https://github.com/hifrogie/Github/blob/main/computer.md/memoryStructure.md#6-java-primitive-type-vs-reference-type)
-4. [시간복잡도와 공간복잡도]()
+4. [시간복잡도와 공간복잡도](https://github.com/hifrogie/Github/blob/main/computer.md/TimeComplexity.md#4-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%99%80-%EA%B3%B5%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84time-complexity--space-complexity)
     
