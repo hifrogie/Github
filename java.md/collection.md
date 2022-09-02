@@ -59,8 +59,8 @@
 |E|remove(int index)|매개 변수에서 지정한 위치에 있는 데이터를 삭제하고, 삭제한 데이터를 리턴한다.|
 |boolean|remove(Object o)|매개 변수에 넘어온 객체와 동일한 첫 번째 데이터를 삭제한다.|
 |boolean|removeAll(Collection<?> c)|매개 변수로 넘어온 컬렉션 객체에 있는 데이터와 동일한 모든 데이터를 삭제한다.|
-
-### 5. Stack 클래스
+### 5. 
+### 6. Stack 클래스
 1. 마지막에 들어온 데이터를 가장 처음 꺼내는 LIFO 기능을 구현하려고 할 때 필요한 클래스다.
 2. Stack 클래스의 상속관계
     - java.lang.Object
@@ -81,7 +81,7 @@
 |E|push(E item)|매개 변수로 넘어온 데이터를 가장 위에 저장한다.|
 |int|search(Objec o)|매개 변수로 넘어온 데이터의 위치를 리턴한다.|
 
-### 6. Set
+### 7. Set
 1. Set이 왜 필요하지?
  - 중복되는 것을 방지하고 순서에 상관없이 어떤 데이터가 존재하는지 확인하기 위한 용도로 사용
 
@@ -90,7 +90,7 @@
     - TreeSet : 저장된 데이터의 값에 따라서 정렬되는 셋이다. red-black이라는 트리 타입으로 값이 저장되며 HashSet보다 성능이 느리다.
     - LinkedHashSet : 연결된 목록 타입으로 구현된 해시 테이블에 테이터를 저장한다. 저장된 순서에 따라서 값이 정렬된다. 성능은 제일 나쁘다.
 
-### 7. HashSet
+### 8. HashSet
  1. HashSet 클래스의 상속 관계
   - java.lang.Object
   - -> java.util.AbstractCollection< E >
@@ -122,7 +122,7 @@
 |boolean|remove(Object o)|매개 변수로 넘어온 객체를 삭제한다.|
 |int|size()|데이터의 개수를 리턴한다.|
 
-### 8. Queue
+### 9. Queue
 1. LinkedList 클래스
     - LinkedList에서는 앞의 데이터와 뒤에 있는 데이터만 기억한다.
     - 중간에 있는 데이터가 지속적으로 삭제되고 추가될 경우에 배열보다 메모리 공간 측면에서 훨씬 유리하다.
@@ -163,7 +163,7 @@
 |boolean|addAll(Collection)|매개 변수로 넘긴 컬렉션의 데이터를 추가한다.|
 |boolean|addAll(int, Collection)|매개 변수로 넘긴 컬렉션의 데이터를 지정된 위치에 추가한다.|
 
-### 9. Map
+### 10. Map
 
 1. Map의 특징
     1. 모든 데이터는 키와 값이 존재한다.
