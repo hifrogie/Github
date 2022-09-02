@@ -59,7 +59,13 @@
 |E|remove(int index)|매개 변수에서 지정한 위치에 있는 데이터를 삭제하고, 삭제한 데이터를 리턴한다.|
 |boolean|remove(Object o)|매개 변수에 넘어온 객체와 동일한 첫 번째 데이터를 삭제한다.|
 |boolean|removeAll(Collection<?> c)|매개 변수로 넘어온 컬렉션 객체에 있는 데이터와 동일한 모든 데이터를 삭제한다.|
-### 5. 
+### 5. ArrayList와 LinkedList의 차이
+1. LinkedList는 ArrayList와 달리 List인터페이스를 구현한 AbstractList를 상속하지 않고 AbstractSequentialList를 상속하고 있습니다.
+2. ArrayList는 데이터들이 순서대로 쭉 늘어선 배열의 형식을 취하고 있는 반면 LinkedList는 자료의 주소 값으로 서로 연결되어 있는 구조이다.
+3. ArrayList에서는 무작위 접근(random access)이 가능하지만, LinkedList에서는 순차 접근(sequential access)만 가능합니다.
+4. 특히, 단순 LinkedList는 단방향성을 가지고 있기 때문에 인덱스를 이용하여 자료를 검색하는 앱에는 적합하지않다.
+5. n개의 자료를 저장할 때, ArrayList는 자료들을 하나의 연속적인 묶음으로 묶어 자료를 저장하는 반면, LinkedList는 자료들을 저장 공간에 불연속적인 단위로 저장하게 됩니다. 그래서 LinkedList는 메모리 이곳저곳에 산재해 저장되어있는 노드들을 접근하는데 ArrayList보다는 긴 지연 시간이 소모됩니다.
+6. LinkedList의 또 다른 단점은 참조자를 위해 추가적인 메모리를 할당해야하는  점입니다. 
 ### 6. Stack 클래스
 1. 마지막에 들어온 데이터를 가장 처음 꺼내는 LIFO 기능을 구현하려고 할 때 필요한 클래스다.
 2. Stack 클래스의 상속관계
@@ -80,8 +86,14 @@
 |E|pop()|객체의 가장 위에 있는 데이터를 지우고, 리턴한다.|
 |E|push(E item)|매개 변수로 넘어온 데이터를 가장 위에 저장한다.|
 |int|search(Objec o)|매개 변수로 넘어온 데이터의 위치를 리턴한다.|
-
-### 7. Set
+### 7. Stack이 Vector을 상속받아서 망한 이유
+1. Vector의 단점
+    - get,set,forEach,add()메소드가 모두 synchronized되어 있다.
+    - 그래서 사용시 오버헤드가 발행한다.
+    - 오버헤드(overhead) : 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간 및 메모리
+    - 멀티쓰레드 환경에서 안전히 사용할 수 있지만 그외의 환경에서는 성능저하가 일어난다.
+    - 하지만 ArrayList도 멀티쓰레드 환경에서 쓸 수 있고 Vector보다 좋은 성능을 가지고 있기 때문에 Vector 보다는 ArrayList를 쓰는 것이 좋다.
+### 8. Set
 1. Set이 왜 필요하지?
  - 중복되는 것을 방지하고 순서에 상관없이 어떤 데이터가 존재하는지 확인하기 위한 용도로 사용
 
@@ -90,7 +102,7 @@
     - TreeSet : 저장된 데이터의 값에 따라서 정렬되는 셋이다. red-black이라는 트리 타입으로 값이 저장되며 HashSet보다 성능이 느리다.
     - LinkedHashSet : 연결된 목록 타입으로 구현된 해시 테이블에 테이터를 저장한다. 저장된 순서에 따라서 값이 정렬된다. 성능은 제일 나쁘다.
 
-### 8. HashSet
+### 9. HashSet
  1. HashSet 클래스의 상속 관계
   - java.lang.Object
   - -> java.util.AbstractCollection< E >
@@ -122,7 +134,7 @@
 |boolean|remove(Object o)|매개 변수로 넘어온 객체를 삭제한다.|
 |int|size()|데이터의 개수를 리턴한다.|
 
-### 9. Queue
+### 10. Queue
 1. LinkedList 클래스
     - LinkedList에서는 앞의 데이터와 뒤에 있는 데이터만 기억한다.
     - 중간에 있는 데이터가 지속적으로 삭제되고 추가될 경우에 배열보다 메모리 공간 측면에서 훨씬 유리하다.
@@ -163,7 +175,7 @@
 |boolean|addAll(Collection)|매개 변수로 넘긴 컬렉션의 데이터를 추가한다.|
 |boolean|addAll(int, Collection)|매개 변수로 넘긴 컬렉션의 데이터를 지정된 위치에 추가한다.|
 
-### 10. Map
+### 11. Map
 
 1. Map의 특징
     1. 모든 데이터는 키와 값이 존재한다.
