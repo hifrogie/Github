@@ -105,4 +105,4 @@
 5. [힙 영역](https://github.com/hifrogie/Github/blob/main/computer.md/memoryStructure.md#5-%ED%9E%99heap%EC%98%81%EC%97%AD)
 6. [Java Primitive Type VS Reference Type](https://github.com/hifrogie/Github/blob/main/computer.md/memoryStructure.md#6-java-primitive-type-vs-reference-type)
 ### 4. [시간복잡도와 공간복잡도](https://github.com/hifrogie/Github/blob/main/computer.md/TimeComplexity.md#4-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%99%80-%EA%B3%B5%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84time-complexity--space-complexity)
-    
+### 5. [운영체제(OS)](https://github.com/hifrogie/Github/blob/main/computer.md/os.md#5-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9Cos)
