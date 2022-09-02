@@ -66,7 +66,7 @@
 4. [ArrayList](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#4-arraylist)
 5. [ArrayList와 LinkedList의 차이](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#5)
 6. [Stack 클래스](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#5-stack-%ED%81%B4%EB%9E%98%EC%8A%A4)
-7. [Stack이 Vector을 상속받아서 망한 이유]()
+7. [Stack이 Vector을 상속받아서 망한 이유](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#7-stack%EC%9D%B4-vector%EC%9D%84-%EC%83%81%EC%86%8D%EB%B0%9B%EC%95%84%EC%84%9C-%EB%A7%9D%ED%95%9C-%EC%9D%B4%EC%9C%A0)
 8. [Set](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#6-set)
 9. [HashSet](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#7-hashset)
 10. [Queue](https://github.com/hifrogie/Github/blob/main/java.md/collection.md#8-queue)

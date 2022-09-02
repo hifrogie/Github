@@ -102,7 +102,35 @@
     - TreeSet : 저장된 데이터의 값에 따라서 정렬되는 셋이다. red-black이라는 트리 타입으로 값이 저장되며 HashSet보다 성능이 느리다.
     - LinkedHashSet : 연결된 목록 타입으로 구현된 해시 테이블에 테이터를 저장한다. 저장된 순서에 따라서 값이 정렬된다. 성능은 제일 나쁘다.
 
-### 9. HashSet
+### 9. Hash란 무엇인가?
+1. 내부적으로 배열을 사용하여 데이터를 저장하기 때문에 빠른 검색속도를 갖는다.
+2. 데이터 추가/삭제시 기존 데이터를 밀어내거나 당기는 작업이 필요없도록 특별한 알고리즘을 이용하여 데이터와 연관된 고유한 숫자를 만들어 낸뒤 이를 인덱스로 사용한다.
+3. 특정 데이터가 저장되는 인덱스를 그 데이터만의 고유한 위치로 정하여서 데이터 추가/삭제시 데이터의 이동이 없도록 만들어진 구조이다.
+4. Hash Table
+    - Hash가 내부적으로 사용하는 배열을 Hash Table 이라고 하며 크기에 따라 성능 차이가 날 수있다.
+    - key-value에서 key를 테이블에 저장할 때 key값을 Hash Method를 이용해 계산을 수행한 후, 그 결과값을 배열의 인덱스로 사용하여 저장하는 방식이다. 
+    - 여기서 key값을 계산하는 것이 Hash Method이다.
+5. Hash Method
+    - Hash는 특별한 알고리즘을 이용하여 데이터의 고유한 숫자값을 만들어 인덱스로 사용한다고 했다.
+    - 이 알고리즘을 구현한 메소드를 Hash Method라고 하며 이 메소드에 의해 반환된 데이터의 고유 숫자값을 Hash Code 라고 한다.
+    - 자바에서는 Object클래스의 hashCode()메소드를 이용하여 모든 객체의 Hahs Code를 쉽게 구할 수있다.
+    - Hash Method를 이용해서 데이터를 Hash Table에 저장하고 검색하는 기법을 Hashing이라 한다.
+    - Hash Method는 데이터가 저장되어 있는 곳을 알려주기 때문에 다량의 데이터 중에서도 원하는 데이터를 빠르게 찾을 수 있다.
+6. Hashing
+    - HashMap과 같이 Hashing을 구현한 컬렉션 클래스에서는 Object클래스에 정의된 hashCode()를 Hash Method로 사용한다.
+    - Object 클래스에 정의된 hashCode()는 객체의 주소를 이용하는 알고리즘으로 해시 코드를 만들어내기 때문에 모든 객체에 대해 중복되지 않는 값을 제공한다.
+    - String클래스의 경우 Object로 부터 상속받은 hashCode()를 오버 라이딩하여 문자열의 내용으로 해시 코드를 만들어 낸다.
+    - 서로다른 Stirng 인스턴스 일지라도 같은 내용의 문자열을 가졌다면 hashCode()를 호출했을 때 같은 값을 갖는다.
+7. HashMap에서 중복검사등을 담당하는 것이 Hash
+8. Hash는 key-value를 HahTable에 저장한다. 이때 저장할 key를 HashMethod인 hashCode()를 사용해 중복없는 고유의 값으로 만든다.
+9. 방법은 String 클래스를 보면 알 수 있다. 
+    - String 클래스에서 값이 입력되면 Object의 hashCode()를 오버라이딩하여 해당 값을 코드로 변환한다. 
+    - 그렇기 때문에 서로 다른 String 객체라도 입력된 값이 같다면 hashCode는 동일한 코드를 반환한다. 
+    - 이때 String 클래스의 equals()로 두 객체를 비교하면 값도 같고 hashCode도 동일하기 때문에 같은 객체로 인지하게 되는 것이다.
+    - 이 방법 그대로 HashTable에 key를 저장할 때 HashCode()를 사용하여 특정 코드로 변환하고 변환된 코드를 저장한다.
+    - 같은 key값이 들어오면 hashCode로 변환 후 같은 값을 찾아 덮어쓴다.
+    - 이렇게 HashMethod를 써서 HashTable에 저장하는 것을 Hashing이라고 한다.
+### 10. HashSet
  1. HashSet 클래스의 상속 관계
   - java.lang.Object
   - -> java.util.AbstractCollection< E >
@@ -134,7 +162,7 @@
 |boolean|remove(Object o)|매개 변수로 넘어온 객체를 삭제한다.|
 |int|size()|데이터의 개수를 리턴한다.|
 
-### 10. Queue
+### 11. Queue
 1. LinkedList 클래스
     - LinkedList에서는 앞의 데이터와 뒤에 있는 데이터만 기억한다.
     - 중간에 있는 데이터가 지속적으로 삭제되고 추가될 경우에 배열보다 메모리 공간 측면에서 훨씬 유리하다.
@@ -175,7 +203,7 @@
 |boolean|addAll(Collection)|매개 변수로 넘긴 컬렉션의 데이터를 추가한다.|
 |boolean|addAll(int, Collection)|매개 변수로 넘긴 컬렉션의 데이터를 지정된 위치에 추가한다.|
 
-### 11. Map
+### 12. Map
 
 1. Map의 특징
     1. 모든 데이터는 키와 값이 존재한다.
@@ -184,4 +212,32 @@
     4. 키는 해당 Map에서 고유해야만 한다.
     5. 값은 Map에서 중복되어도 상관없다.
 
-
+### 13. HashMap, Hashtable, ConcurrentHashMap
+1. Map 인터페이스의 구현체이다.
+2. HashMap
+    1. key와 value에 null을 허용한다.
+    2. 동기화를 보장하지 않는다.
+    3. HashMap은 thread-safe 하지 않아, 싱글 쓰레드 환경에서 사용하는 게 좋다.
+    4. 동기화 처리를 하지 안히 때문에 데이터를 탄색하는 속도가 빠르다.
+    5. 동기화 : 프로세스(스레드)가 수행되는 시점을 조절하여 서로가 알고 있는 정보가 일치하는 것
+    6. 결국, HashTable과 ConcurrentHashMap보다 데이터를 찾는 속도는 빠르지만, 신뢰성과 안정성이 떨어진다.
+3. HashTable
+    1. key와 value에 null을 허용하지 않는다.
+    2. 동기화를 보장한다.
+    3. HashTable은 thread-safe하기 때문에, 멀티 쓰레드 환경에서 사용할 수있습니다. 이는 데이터를 다루는 메소드(get(),put(),remove()등)에 synchronized 키워드가 붙어 있다. 
+    4. 해당 키워드는 메소드를 호출하기전에 쓰레드간 동기화 락을 건다.
+    5. 그래서 멀티 쓰레드 환경에서도 데이터의 무결성을 보장한다.
+    6. 쓰레드간 동기화 락은 매우 느린 동작이라는 단점이 있다.
+4. ConcurrentHashMap
+    1. key와 value에 null을 허용하지 않는다.
+    2. 동기화를 보장한다.
+    3. ConcurrentHashMap은 thread-safe하기 때문에, 멀티 쓰레드 환경에서 사용할 수있다.
+    4. 이 구현체는 HashMap의 동기화 문제를 보완하기 위해 나타났다.
+    5. 동기화 처리를 할 때, 어떤 Entry를 조작하는 경우에 해당 Entry에 대해서만 락을 건다. 그래서 HashTable보다 데이터를 다루는 속도가 빠르다.
+    6. Entry 아이템 별로 락을 걸어 멀티 쓰레드 환경에서의 성능을 향상시킨다. 
+    7. Entry
+        - Map.Entry는 Map형태의 인터페이스를 만드는 데 사용한다.
+        - 실제 사용은 아래와 같이 Map을 For문에서 돌려줄 경우, 인터페이스 용도로 사용하거나
+        - stream 사용시 Map 형식의 데이터에서 처리가 필요할 때 Map.Entry를 사용하여 처리하게 된다.
+        
+![엔트리](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZYadc%2FbtriYpaxdw0%2F2ytECKtedpewiV1BWdVVv1%2Fimg.png)
