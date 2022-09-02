@@ -88,6 +88,7 @@
 4. [HTTP messages](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#4-http-messages)
 5. [요청과 응답의 구조](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#5-%EC%9A%94%EC%B2%ADrequests%EA%B3%BC-%EC%9D%91%EB%8B%B5responses%EC%9D%98-%EA%B5%AC%EC%A1%B0)
 6. [HTTP 메세지 구조](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#6-http-%EB%A9%94%EC%84%B8%EC%A7%80-%EA%B5%AC%EC%A1%B0)
+7. [GET,POST 데이터 전송 방식](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#7-getpost-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%EB%B0%A9%EC%8B%9D)
 ### 2. [JVM](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#1-jvm)
 1. [JIT 컴파일러](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#1-jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC)
 2. [HotSpot](https://github.com/hifrogie/Github/blob/main/computer.md/jit.md#2-hotspot)
