@@ -80,6 +80,7 @@
 4. [Thread 클래스의 생성자](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#4-thread-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EC%83%9D%EC%84%B1%EC%9E%90)
 5. [sleep() 메소드](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#5-sleep-%EB%A9%94%EC%86%8C%EB%93%9C)
 6. [Thread 클래스의 주요 메소드](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#6-thread-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EC%A3%BC%EC%9A%94-%EB%A9%94%EC%86%8C%EB%93%9C)
+7. [프로세서(코어)와 쓰레드의 관계]()
 ### 12. [I/O](https://github.com/hifrogie/Github/blob/main/java.md/io.md#12-io)
 1. [I/O](https://github.com/hifrogie/Github/blob/main/java.md/io.md#1-io)
 2. [File과 Files 클래스](https://github.com/hifrogie/Github/blob/main/java.md/io.md#2-file%EA%B3%BC-files-%ED%81%B4%EB%9E%98%EC%8A%A4)
