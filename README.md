@@ -82,7 +82,7 @@
 6. [Thread 클래스의 주요 메소드](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#6-thread-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EC%A3%BC%EC%9A%94-%EB%A9%94%EC%86%8C%EB%93%9C)
 7. [프로세서(코어)와 쓰레드의 관계](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#7-%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C%EC%BD%94%EC%96%B4%EC%99%80-%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%EA%B4%80%EA%B3%84)
 8. [프로세스와 쓰레드의 구조](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#8-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%EA%B5%AC%EC%A1%B0)
-9. [운영체제에서 프로세스와 스레드를 어떻게 다루는가?]()
+9. [운영체제에서 프로세스와 스레드를 어떻게 다루는가?](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#9-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EC%97%90%EC%84%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8B%A4%EB%A3%A8%EB%8A%94%EA%B0%80)
 ### 12. [I/O](https://github.com/hifrogie/Github/blob/main/java.md/io.md#12-io)
 1. [I/O](https://github.com/hifrogie/Github/blob/main/java.md/io.md#1-io)
 2. [File과 Files 클래스](https://github.com/hifrogie/Github/blob/main/java.md/io.md#2-file%EA%B3%BC-files-%ED%81%B4%EB%9E%98%EC%8A%A4)
