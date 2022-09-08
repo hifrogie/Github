@@ -94,7 +94,10 @@
 2. [상대경로](https://github.com/hifrogie/Github/blob/main/java.md/path.md#2-%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C)
 
 # kotilin
-###
+### 1. [함수와 변수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#1-%ED%95%A8%EC%88%98%EC%99%80-%EB%B3%80%EC%88%98)
+1. [함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#1-%ED%95%A8%EC%88%98)
+2. [변수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#2-%EB%B3%80%EC%88%98)
+3. [변경가능한 변수와 변경 불가능한 변수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#3-%EB%B3%80%EA%B2%BD-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B3%80%EC%88%98%EC%99%80-%EB%B3%80%EA%B2%BD-%EB%B6%88%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B3%80%EC%88%98)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
