@@ -101,7 +101,10 @@
 ### 2. [클래스와 프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#2-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
 1. [클래스](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#1-%ED%81%B4%EB%9E%98%EC%8A%A4)
 2. [프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#2-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
-
+### 3. [enum과 when](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#3-enum%EA%B3%BC-when)
+1. [enum](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#1-enum)
+2. [when](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#2-when)
+3. [when과 임의의 객체를 함께 사용](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#3-when%EA%B3%BC-%EC%9E%84%EC%9D%98%EC%9D%98-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
