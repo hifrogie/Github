@@ -98,6 +98,10 @@
 1. [함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#1-%ED%95%A8%EC%88%98)
 2. [변수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#2-%EB%B3%80%EC%88%98)
 3. [변경가능한 변수와 변경 불가능한 변수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#3-%EB%B3%80%EA%B2%BD-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B3%80%EC%88%98%EC%99%80-%EB%B3%80%EA%B2%BD-%EB%B6%88%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B3%80%EC%88%98)
+### 2. [클래스와 프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#2-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+1. [클래스](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#1-%ED%81%B4%EB%9E%98%EC%8A%A4)
+2. [프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#2-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
