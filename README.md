@@ -106,6 +106,10 @@
 1. [enum](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#1-enum)
 2. [when](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#2-when)
 3. [when과 임의의 객체를 함께 사용](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#3-when%EA%B3%BC-%EC%9E%84%EC%9D%98%EC%9D%98-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9)
+### 4. [while과 for](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#4-while%EA%B3%BC-for-%EB%A3%A8%ED%94%84)
+1. [while loop](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#1-while-%EB%A3%A8%ED%94%84)
+2. [for loop](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#2-for-%EB%A3%A8%ED%94%84)
+3. [map에 대한 이터레이션](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#3-map%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%EC%85%98)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
