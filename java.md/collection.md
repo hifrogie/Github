@@ -266,3 +266,14 @@
         - stream 사용시 Map 형식의 데이터에서 처리가 필요할 때 Map.Entry를 사용하여 처리하게 된다.
         
 ![엔트리](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZYadc%2FbtriYpaxdw0%2F2ytECKtedpewiV1BWdVVv1%2Fimg.png)
+
+### 14. Big-O 표기법
+1. Big-O notation
+    - 알고리즘의 시간 복잡도를 나타내는 표기법이며, O(f(n))으로 나타낸다.
+2. 시간 복잡도는 다음과 같은 순서로 빠르다.
+    - O(1) > O(logn) > O(n) > O(nlogn) > O(n^c) > O(c^n) > O(n!)
+3. 빅오 표기법의 특징
+    - O(2) → O(1)
+    - O(2n) → O(n)
+    - O(3n^2 + 2n + 3) → O(n^2)
+    - 상수항을 없애고, 하위 항들은 제거해야함.
