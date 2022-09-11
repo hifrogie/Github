@@ -110,6 +110,8 @@
 1. [while loop](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#1-while-%EB%A3%A8%ED%94%84)
 2. [for loop](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#2-for-%EB%A3%A8%ED%94%84)
 3. [map에 대한 이터레이션](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#3-map%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%EC%85%98)
+### 5. [exception](https://github.com/hifrogie/Github/blob/main/kotlin.md/exception.md#5-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%98-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC)
+
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
