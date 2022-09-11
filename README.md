@@ -111,6 +111,12 @@
 2. [for loop](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#2-for-%EB%A3%A8%ED%94%84)
 3. [map에 대한 이터레이션](https://github.com/hifrogie/Github/blob/main/kotlin.md/whileFor.md#3-map%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%EC%85%98)
 ### 5. [exception](https://github.com/hifrogie/Github/blob/main/kotlin.md/exception.md#5-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%98-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC)
+### 6. [함수를 호출하기 쉽게 만들기](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#6-%ED%95%A8%EC%88%98%EB%A5%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+1. [toString 기본 구현](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#1-tostring-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%ED%98%84)
+2. [원하는 출력 형식으로 바꾸는 방법](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#2-%EC%9B%90%ED%95%98%EB%8A%94-%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EB%B0%94%EA%BE%B8%EB%8A%94-%EB%B0%A9%EB%B2%95)
+3. [이름 붙인 인자](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#3-%EC%9D%B4%EB%A6%84-%EB%B6%99%EC%9D%B8-%EC%9D%B8%EC%9E%90)
+4. [디폴트 파라미터 값](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#4-%EB%94%94%ED%8F%B4%ED%8A%B8-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EA%B0%92)
+
 
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
