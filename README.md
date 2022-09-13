@@ -116,8 +116,10 @@
 2. [원하는 출력 형식으로 바꾸는 방법](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#2-%EC%9B%90%ED%95%98%EB%8A%94-%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EB%B0%94%EA%BE%B8%EB%8A%94-%EB%B0%A9%EB%B2%95)
 3. [이름 붙인 인자](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#3-%EC%9D%B4%EB%A6%84-%EB%B6%99%EC%9D%B8-%EC%9D%B8%EC%9E%90)
 4. [디폴트 파라미터 값](https://github.com/hifrogie/Github/blob/main/kotlin.md/call.md#4-%EB%94%94%ED%8F%B4%ED%8A%B8-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EA%B0%92)
-
-
+### 7. [확장 함수와 확장 프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#7-%ED%99%95%EC%9E%A5-%ED%95%A8%EC%88%98%EC%99%80-%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+1. [확장 함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#1-%ED%99%95%EC%9E%A5-%ED%95%A8%EC%88%98)
+2. [임포트와 확장 함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#2-%EC%9E%84%ED%8F%AC%ED%8A%B8%EC%99%80-%ED%99%95%EC%9E%A5-%ED%95%A8%EC%88%98)
+3. [확장 프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#3-%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
