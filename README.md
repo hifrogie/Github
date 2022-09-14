@@ -120,7 +120,9 @@
 1. [확장 함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#1-%ED%99%95%EC%9E%A5-%ED%95%A8%EC%88%98)
 2. [임포트와 확장 함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#2-%EC%9E%84%ED%8F%AC%ED%8A%B8%EC%99%80-%ED%99%95%EC%9E%A5-%ED%95%A8%EC%88%98)
 3. [확장 프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/extension.md#3-%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
-
+### 8. [클래스 계층 정의](https://github.com/hifrogie/Github/blob/main/kotlin.md/interface.md#8-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B3%84%EC%B8%B5-%EC%A0%95%EC%9D%98)
+1. [인터페이스](https://github.com/hifrogie/Github/blob/main/kotlin.md/interface.md#1-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
+2. [open, final, abstract 변경자](https://github.com/hifrogie/Github/blob/main/kotlin.md/interface.md#2-open-final-abstract-%EB%B3%80%EA%B2%BD%EC%9E%90)
 
 
 # ComputerScience
