@@ -104,6 +104,7 @@
 ### 2. [클래스와 프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#2-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
 1. [클래스](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#1-%ED%81%B4%EB%9E%98%EC%8A%A4)
 2. [프로퍼티](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#2-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+3. [프로퍼티와 변수의 차이](https://github.com/hifrogie/Github/blob/main/kotlin.md/class.md#3-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%B3%80%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 ### 3. [enum과 when](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#3-enum%EA%B3%BC-when)
 1. [enum](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#1-enum)
 2. [when](https://github.com/hifrogie/Github/blob/main/kotlin.md/enum.md#2-when)
