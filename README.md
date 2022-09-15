@@ -84,6 +84,7 @@
 7. [프로세서(코어)와 쓰레드의 관계](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#7-%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C%EC%BD%94%EC%96%B4%EC%99%80-%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%EA%B4%80%EA%B3%84)
 8. [프로세스와 쓰레드의 구조](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#8-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%EA%B5%AC%EC%A1%B0)
 9. [운영체제에서 프로세스와 스레드를 어떻게 다루는가?](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#9-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EC%97%90%EC%84%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8B%A4%EB%A3%A8%EB%8A%94%EA%B0%80)
+10. [코어가 여러개일 때 여러개 쓰레드 사용하는 것](https://github.com/hifrogie/Github/blob/main/java.md/thread.md#10-%EC%BD%94%EC%96%B4%EA%B0%80-%EC%97%AC%EB%9F%AC%EA%B0%9C%EC%9D%BC-%EB%95%8C-%EC%97%AC%EB%9F%AC%EA%B0%9C-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EA%B2%83)
 ### 12. [I/O](https://github.com/hifrogie/Github/blob/main/java.md/io.md#12-io)
 1. [I/O](https://github.com/hifrogie/Github/blob/main/java.md/io.md#1-io)
 2. [File과 Files 클래스](https://github.com/hifrogie/Github/blob/main/java.md/io.md#2-file%EA%B3%BC-files-%ED%81%B4%EB%9E%98%EC%8A%A4)
