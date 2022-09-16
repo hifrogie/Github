@@ -129,7 +129,11 @@
 ### 9. [주생성자와 부생성자](https://github.com/hifrogie/Github/blob/main/kotlin.md/init.md#9-%EC%A3%BC%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80-%EB%B6%80%EC%83%9D%EC%84%B1%EC%9E%90)
 1. [주생성자(primary constructor)](https://github.com/hifrogie/Github/blob/main/kotlin.md/init.md#1-%EC%A3%BC%EC%83%9D%EC%84%B1%EC%9E%90primary-constructor)
 2. [부생성자(secondary)](https://github.com/hifrogie/Github/blob/main/kotlin.md/init.md#2-%EB%B6%80%EC%83%9D%EC%84%B1%EC%9E%90secondary)
-
+### 10. [데이터 클래스](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#10-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%81%B4%EB%9E%98%EC%8A%A4)
+1. [toString()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#1-tostring)
+2. [equals()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#2-equals)
+3. [hashCode()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#3-hashcode)
+4. [데이터 클래스](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#4-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%81%B4%EB%9E%98%EC%8A%A4)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
