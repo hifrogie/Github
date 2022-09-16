@@ -126,7 +126,9 @@
 ### 8. [클래스 계층 정의](https://github.com/hifrogie/Github/blob/main/kotlin.md/interface.md#8-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B3%84%EC%B8%B5-%EC%A0%95%EC%9D%98)
 1. [인터페이스](https://github.com/hifrogie/Github/blob/main/kotlin.md/interface.md#1-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
 2. [open, final, abstract 변경자](https://github.com/hifrogie/Github/blob/main/kotlin.md/interface.md#2-open-final-abstract-%EB%B3%80%EA%B2%BD%EC%9E%90)
-
+### 9. [주생성자와 부생성자](https://github.com/hifrogie/Github/blob/main/kotlin.md/init.md#9-%EC%A3%BC%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80-%EB%B6%80%EC%83%9D%EC%84%B1%EC%9E%90)
+1. [주생성자(primary constructor)](https://github.com/hifrogie/Github/blob/main/kotlin.md/init.md#1-%EC%A3%BC%EC%83%9D%EC%84%B1%EC%9E%90primary-constructor)
+2. [부생성자(secondary)](https://github.com/hifrogie/Github/blob/main/kotlin.md/init.md#2-%EB%B6%80%EC%83%9D%EC%84%B1%EC%9E%90secondary)
 
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
