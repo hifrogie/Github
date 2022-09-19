@@ -162,3 +162,12 @@
 ### 4. [시간복잡도와 공간복잡도](https://github.com/hifrogie/Github/blob/main/computer.md/TimeComplexity.md#4-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%99%80-%EA%B3%B5%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84time-complexity--space-complexity)
 ### 5. [운영체제(OS)](https://github.com/hifrogie/Github/blob/main/computer.md/os.md#5-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9Cos)
 ### 6. [API](https://github.com/hifrogie/Github/blob/main/computer.md/api.md#6-api)
+
+# 객체지향
+### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
+1. [SOLID 원칙](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-solid-%EC%9B%90%EC%B9%99)
+2. [단일 책임의 원칙 : SRP(Single Responsibility Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#2-%EB%8B%A8%EC%9D%BC-%EC%B1%85%EC%9E%84%EC%9D%98-%EC%9B%90%EC%B9%99--srpsingle-responsibility-principle)
+3. [개방 폐쇄 원픽 OCP(Open Close Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#3-%EA%B0%9C%EB%B0%A9-%ED%8F%90%EC%87%84-%EC%9B%90%ED%94%BD-ocpopen-close-principle)
+4. [리스코브 치환의 원칙 : LSP(the Liskov Substitution Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#4-%EB%A6%AC%EC%8A%A4%EC%BD%94%EB%B8%8C-%EC%B9%98%ED%99%98%EC%9D%98-%EC%9B%90%EC%B9%99--lspthe-liskov-substitution-principle)
+5. [인터페이스 분리의 원칙 : ISP(Interface Segregation Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B6%84%EB%A6%AC%EC%9D%98-%EC%9B%90%EC%B9%99--ispinterface-segregation-principle)
+6. [의존성 역전의 원칙 : DIP(Dependency Inversion Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#6-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%97%AD%EC%A0%84%EC%9D%98-%EC%9B%90%EC%B9%99--dipdependency-inversion-principle)
