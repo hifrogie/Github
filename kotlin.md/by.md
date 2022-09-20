@@ -6,10 +6,10 @@
 ### 2. by키워드
 1. 인터페이스를 구현할 떄 by키워드를 통해 그 인터페이스에 대한 구현을 다른 객체에 위임 중이라는 사실을 명시할 수 있다.
 
-    ```
+```
     class CountingSet<T>(
     val innerSet: MutableCollection<T> = HashSet<T>()
-) : MutableCollection<T> by innerSet {
+    ) : MutableCollection<T> by innerSet {
     var objectsAdded = 0
 
     override fun add(element: T): Boolean {
@@ -22,4 +22,4 @@
         return innerSet.addAll(c)
     }
 }
-    ```
+```
