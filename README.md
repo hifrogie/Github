@@ -134,6 +134,10 @@
 2. [equals()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#2-equals)
 3. [hashCode()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#3-hashcode)
 4. [데이터 클래스](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#4-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%81%B4%EB%9E%98%EC%8A%A4)
+### 11. [클래스 위임](https://github.com/hifrogie/Github/blob/main/kotlin.md/by.md#11-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%9C%84%EC%9E%84)
+1. [위임(Class Delegation)](https://github.com/hifrogie/Github/blob/main/kotlin.md/by.md#1-%EC%9C%84%EC%9E%84class-delegation)
+2. [by키워드](https://github.com/hifrogie/Github/blob/main/kotlin.md/by.md#2-by%ED%82%A4%EC%9B%8C%EB%93%9C)
+
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
