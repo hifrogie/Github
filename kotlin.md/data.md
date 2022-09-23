@@ -76,3 +76,62 @@ data class Client(val name: String, val postalCode: Int)
     2. HashMap과 같은 해시 기반 컨테이너에서 키로 사용할 수 있는 hashCode
     3. 클래스의 각 필드를 선언 순서대로 표시하는 문자열 표현을 만들어 주는 toString
     
+### 5. copy()
+1. copy()는 왜 사용되나요?
+    1. copy() : 객체를 복사하면서 일부 프로퍼티를 바꿀 수 있게 해준다.
+    2. 왜 사용하나? 
+        1. 객체를 메모리상에서 직접 바꾸는 대신 복사본을 만드는 편이 더 낫다.
+        2. 복사본은 원본과 다른 생명주기를 가지며, 복사를 하면서 일부 프로퍼티 값을 바꾸거나 복사본을 제거해도 프로그램에서 원본을 참조하는 다른 부분에 전혀 영향을 끼치지 않는다.
+
+```
+class Client(val name: String, val postalCode: Int){
+fun copy(name: String = this.name, postalCode:Int = this.postalCode) = Client(name,postalCode)
+}
+
+fun main(args: Array<String>){
+    val lee = Client("개구리",4122)
+    println(lee.copy(postalCode = 4000)) // Client(name=개구리,postalCode=4000)
+}
+```
+
+### 6. data 클래스
+
+```
+data class User(val age: Int, val name: String)
+
+fun main() {
+    val a = User(20, "tom")
+    val b = User(20, "tom")
+    println("a == b: ${a == b} a.hashCode(): ${a.hashCode()}, b.hashCode(): ${b.hashCode()}")
+}
+
+a == b: true a.hashCode(): 115646, b.hashCode(): 115646
+```
+
+```
+open class SuperUser(var gender: Int = 0)
+data class User(val age: Int, val name: String) : SuperUser(0)
+
+fun main() {
+    val a = User(20, "tom")
+    val b = User(20, "tom").apply {
+        gender = 1
+    }
+    println("a == b: ${a == b} a.hashCode(): ${a.hashCode()}, b.hashCode(): ${b.hashCode()}")
+}
+
+//a == b: true a.hashCode(): 115646, b.hashCode(): 115646
+```
+
+```
+abstract class SuperUser { abstract var gender: Int }
+data class User(val age: Int, val name: String, override var gender: Int) : SuperUser()
+```
+
+1. data class로 클래스를 만들면 객체 간의 동등성 비교시 사용되는 hashCode 함수를 자동으로 만들어주기 때문에 단순히 데이터를 관리하는 것 뿐만 아니라 데이터 간의 비교도 쉬워진다.
+2. 첫번째 코드의 User 데이터 클래스로 선언된 a,b변수는 모두 다른 메모리에서 선언됐지만 hashCode 상으로는 동일한 값을 보이므로 동등성 비교에서는 같은 값을 보인다.
+3. data class에서 상속을 사용하는 경우 주의가 필요하다.
+4. 값을 변경했어도 data class 내부 멤버 변수가 아니라 부모 클래스의 변수를 변경했을 때는 hashCode 값이 변경되지 않는다.
+5. 이는 data class가 자동으로 생성한 hashCode 함수가 부모 클래스의 변수를 포함하지 않아서 발생하는 문제다.
+6. 그래서 가능하면 상속을 쓰지 않는 것이 좋다.
+7. 꼭 써야한다면 data class가 자동 생성하는 hashCode가 동작할 수 있도록 추상 클래스나 인터페이스를 활용하는 것이 좋다.
