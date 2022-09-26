@@ -4,7 +4,7 @@
 
 ### 2. 단일 책임의 원칙 : SRP(Single Responsibility Principle)
 
-```
+```kotlin
 //안 좋은예
 class UserSettings {
   constructor(user) {
