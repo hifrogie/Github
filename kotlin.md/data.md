@@ -165,3 +165,66 @@ data class User(val age: Int, val name: String, override var gender: Int) : Supe
      }
      ```
 
+### 8. deep copy & shallow copy
+
+```kotlin
+class SampleClass(var id: Int) {
+	...
+}
+```
+
+```kotlin
+val instance1 = SampleClass(1) // 인스턴스 생성
+
+val instance2 = instance1 // 인스턴스1을 2에 얕은 복사 진행
+
+instance1.id = 3 // 얕은 복사를 진행한 객체의 멤버변수를 변경
+
+println(instance2.id) // 3
+```
+
+1. shallow copy
+    1. 얕은 복사 : 객체를 복사할 때, 객체의 주솟값을 복사하는 방법
+    2. 위의 코드는 얕은 복사를 통해 주솟값이 복사되었기 때문에 두 변수가 같은 주솟값을 참조하면서 생기는 문제
+
+```kotlin
+data class SampleClass(var id: Int) {
+	...
+}
+```
+
+```kotlin
+data class SampleClass(var id: Int, var list: MutableList<Int>) {
+    fun copy() : SampleClass {
+        return SampleClass(id, list.toMutableList())
+    }
+}
+```
+
+```kotlin
+val instance1 = SampleClass(1) // 인스턴스 생성
+val instance2 = instance1.copy() // 인스턴스1을 2에 깊은 복사 진행
+
+instance1.id = 3 // 깊은 복사를 진행한 객체의 멤버변수를 변경
+
+println(instance2.id) // 1
+```
+
+2. deep copy(copy())
+    1. data class 에서 제공하는 몇가지 기본 오버라이딩 메서드 중 copy()메서드를 통해서 깊은 복사를 할 수있다.
+    2. 얕은 복사와 달리 복사한 객체의 값이 변하지 않는 것을 볼 수있다.
+
+3. deep copy(Cloneable)
+    1. Cloneable 인터페이스를 상속받아서 clone()메서드를 오버라이딩 하는 것이 이 방법의 핵심이다.
+
+    ```kotlin
+    class SampleClass(var id: Int, var list: MutableList<Int>) : Cloneable {
+    public override fun clone(): SampleClass {
+        val sampleClass = super.clone() as SampleClass
+        sampleClass.list = mutableListOf<Int>().apply{addAll(list)}
+        return sampleClass
+    }
+    }
+    ```
+
+ 
