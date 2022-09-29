@@ -170,6 +170,14 @@
 ### 4. [시간복잡도와 공간복잡도](https://github.com/hifrogie/Github/blob/main/computer.md/TimeComplexity.md#4-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%99%80-%EA%B3%B5%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84time-complexity--space-complexity)
 ### 5. [운영체제(OS)](https://github.com/hifrogie/Github/blob/main/computer.md/os.md#5-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9Cos)
 ### 6. [API](https://github.com/hifrogie/Github/blob/main/computer.md/api.md#6-api)
+### 7. [JVM과 DALVIK VM과 ART의 차이](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#7-jvm%EA%B3%BC-dalvik-vm%EA%B3%BC-art%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+1. [JVM](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#1-jvm)
+2. [Dalvik VM](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#2-dalvik-vm)
+3. [ART 방식(Android 4.4 Kitkat 이후)](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#3-art-%EB%B0%A9%EC%8B%9Dandroid-44-kitkat-%EC%9D%B4%ED%9B%84)
+4. [컴파일 방식 변화 과정(Dalvik VM -> ART)](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#4-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EB%B0%A9%EC%8B%9D-%EB%B3%80%ED%99%94-%EA%B3%BC%EC%A0%95dalvik-vm---art)
+5. [JIT Compiler vs AOT Compiler](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#5-jit-compiler-vs-aot-compiler)
+
+
 
 # 객체지향
 ### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
