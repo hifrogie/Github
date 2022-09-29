@@ -461,3 +461,58 @@ fun main(){
 - 의존성 주입의 단점
     1. 의존성 주입을 위한 선행작업이 필요함
     2. 코드를 추적하고 읽기가 어려워짐.
+
+```kotlin
+class Car {
+
+    var engine: Diesel = Diesel()
+    var tier: SnowTier = SnowTier()
+
+    fun engineStart() {
+        engine.start()
+    }
+}
+```
+
+- 이와 같이 작성한다면 Car클래스에 Disel클래스와 snowTier클래스 객체에 대한 의존성이 생긴 것이다.
+- Car클래스를 인스턴스화 해서 사용한다면 해당 자동차는 Disel엔진과 SnowTier를 강제적으로 사용해야한다.
+- 유지보수가 용이하지 못하며 유연하지 못한 코드가 된다.
+
+```kotlin
+class Car {
+
+    var engine: Engine? = null
+    var tier: Tier? = null
+
+    constructor(engine: Engine, tier: Tier) {
+        this.engine = engine
+        this.tier = tier
+    }
+
+    fun engineStart() {
+        engine?.start()
+    }
+}
+```
+
+- Car 클래스의 생성자에서 외부에서 Engine과 Tier를 넘겨줌으로써 Car 클래스에서 Disel과 SnowTier 클래스 객체의 의존성은 사라졌다.
+
+```kotlin
+// 외부에서 멤버 변수에 접근
+class Person{
+	lateinit var dog : Dog
+    	fun walk(){
+    		dog.walk()
+    	}
+}
+
+fun main(args: Array) { 
+    	val person = Person(dog)
+    	person.dog = Dog()
+    	person.walk() 
+}
+```
+
+- lateinit으로 객체를 선언한 후 person 객체를 생성한 후 dog 객체에 접근하고 있다.
+- 클래스가 시스템에 의해 생성되어 생성자로 주입 할 수 있을 때 사용할 수 있다.
+- 이런 방법을 field/setter 주입(injection)이라고 한다.
