@@ -135,3 +135,34 @@ data class User(val age: Int, val name: String, override var gender: Int) : Supe
 5. 이는 data class가 자동으로 생성한 hashCode 함수가 부모 클래스의 변수를 포함하지 않아서 발생하는 문제다.
 6. 그래서 가능하면 상속을 쓰지 않는 것이 좋다.
 7. 꼭 써야한다면 data class가 자동 생성하는 hashCode가 동작할 수 있도록 추상 클래스나 인터페이스를 활용하는 것이 좋다.
+
+### 7. data 클래스의 equals, hashCode의 동작
+1. equals()
+    1. 상속받은 equals 기본 동작은 객체의 주소 값의 비교이다.
+    2. 이것은 코틀린의 ==이 수행되었을 때 동작과 일치한다.
+    3. ==는 기본적으로 객체의 주소 값을 비교하여 일치값을 판단한다.
+    4. 코틀린에서 객체의 값을 비교하고 싶을 때는 equals를 override 할 수 밖에 없다.
+
+     ```kotlin
+     class Client(val name: String,val postalCode: Int){
+         override fun equals(other: Any?) : Boolean{
+             if(other == null || other !is Client) return false
+             return name == other.name && postalCode == other.postalCode
+         }
+     }
+     ```
+
+     5. equals()메서드와 함께 hashCode()메서드도 같이 오버라이드해야한다.
+     6. JVM 언어에는 equals()가 true를 반환하는 두 객체는 반드시 같은 hashCode()를 반환해야한다.
+
+     ```kotlin
+     class Client(val name: String, val postalCode: Int){
+         override fun equals(other: Any?) : Boolean {
+             if(other == null || other !is Client) return false
+             return name == other.name && postalCode == other.postalCode
+         }
+         override fun hashCode(): Int = name.hashCode() * 31 + postalCode
+     }
+     ```
+
+     
