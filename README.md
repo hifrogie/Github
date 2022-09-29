@@ -137,6 +137,7 @@
 5. [copy()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#5-copy)
 6. [data class()](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#6-data-%ED%81%B4%EB%9E%98%EC%8A%A4)
 7. [data 클래스의 equals, hashCode의 동작](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#7-data-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-equals-hashcode%EC%9D%98-%EB%8F%99%EC%9E%91)
+8. [deep copy & shallow copy](https://github.com/hifrogie/Github/blob/main/kotlin.md/data.md#8-deep-copy--shallow-copy)
 ### 11. [클래스 위임](https://github.com/hifrogie/Github/blob/main/kotlin.md/by.md#11-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%9C%84%EC%9E%84)
 1. [위임(Class Delegation)](https://github.com/hifrogie/Github/blob/main/kotlin.md/by.md#1-%EC%9C%84%EC%9E%84class-delegation)
 2. [by키워드](https://github.com/hifrogie/Github/blob/main/kotlin.md/by.md#2-by%ED%82%A4%EC%9B%8C%EB%93%9C)
