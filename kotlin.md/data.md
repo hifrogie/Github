@@ -151,9 +151,9 @@ data class User(val age: Int, val name: String, override var gender: Int) : Supe
          }
      }
      ```
-
-     5. equals()메서드와 함께 hashCode()메서드도 같이 오버라이드해야한다.
-     6. JVM 언어에는 equals()가 true를 반환하는 두 객체는 반드시 같은 hashCode()를 반환해야한다.
+2. hashCode()
+    1. equals()메서드와 함께 hashCode()메서드도 같이 오버라이드해야한다.
+    2. JVM 언어에는 equals()가 true를 반환하는 두 객체는 반드시 같은 hashCode()를 반환해야한다.
 
      ```kotlin
      class Client(val name: String, val postalCode: Int){
@@ -165,4 +165,3 @@ data class User(val age: Int, val name: String, override var gender: Int) : Supe
      }
      ```
 
-     
