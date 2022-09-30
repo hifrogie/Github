@@ -1,7 +1,7 @@
 ## 2. OnClickListener()
 ### 1. xml layout에 직접 넣는 방법
 
-```
+```kotlin
 <Button
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +9,7 @@
     android:text="BTN 3" />
 ```
 
-```
+```kotlin
 class MainActivity : AppCompatActivity() {
     private val TAG = MainActivity::class.java.simpleName
     .....
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
 ### 2. Activity에 interface 상속 받아서 사용할 경우
 
-```
+```kotlin
 class MainActivity : AppCompatActivity() , View.OnClickListener {
     private val TAG = MainActivity::class.java.simpleName
     private lateinit var btn1 : Button
