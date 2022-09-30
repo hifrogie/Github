@@ -196,3 +196,8 @@
 ### 1. AppCompatActivity
 1. [AppCompatActivity의 상속](https://github.com/hifrogie/Github/blob/main/android.md/appCompatActivity.md#1-appcompatactivity)
 2. [AppCompatActivity의 특징](https://github.com/hifrogie/Github/blob/main/android.md/appCompatActivity.md#2-appcompatactivity%EC%9D%98-%ED%8A%B9%EC%A7%95)
+### 2. [OnClickListener()](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#2-onclicklistener)
+1. [xml layout에 직접 넣는 방법](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#1-xml-layout%EC%97%90-%EC%A7%81%EC%A0%91-%EB%84%A3%EB%8A%94-%EB%B0%A9%EB%B2%95)
+2. [Activity에 interface 상속 받아서 사용할 경우](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#2-activity%EC%97%90-interface-%EC%83%81%EC%86%8D-%EB%B0%9B%EC%95%84%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EA%B2%BD%EC%9A%B0)
+3. [setOnCLickListener에 미리 생성된 객체를 대입하는 방법](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#3-setonclicklistener%EC%97%90-%EB%AF%B8%EB%A6%AC-%EC%83%9D%EC%84%B1%EB%90%9C-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EB%8C%80%EC%9E%85%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+4. [setOnClickListener에 익명 클래스 만들어 대입하는 방법](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#4-setonclicklistener%EC%97%90-%EC%9D%B5%EB%AA%85-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%A7%8C%EB%93%A4%EC%96%B4-%EB%8C%80%EC%9E%85%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
