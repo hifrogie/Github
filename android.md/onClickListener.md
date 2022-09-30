@@ -68,3 +68,64 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
 }
 ```
 
+1. findViewById()
+    1. xml 레이아웃 파일에서 정의한 부들을 액티비티에서 사용할 수 있게 가져옴
+
+### 3. setOnCLickListener에 미리 생성된 객체를 대입하는 방법
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private val TAG = MainActivity::class.java.simpleName
+    private lateinit var btn4 : Button
+
+    val onBtn4ClickListener = object : View.OnClickListener{
+        override fun onClick(v: View?) {
+            Log.d(TAG,"onClick() btn_4")
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        .......
+
+        btn4 = findViewById(R.id.btn_4)
+        btn4.setOnClickListener(onBtn4ClickListener)
+    }
+
+}
+```
+
+### 4. setOnClickListener에 익명 클래스 만들어 대입하는 방법
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private val TAG = MainActivity::class.java.simpleName
+    private lateinit var btn1 : Button
+    private lateinit var btn2 : Button
+    private lateinit var btn3 : Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        btn1 = findViewById(R.id.btn_1)
+        btn2 = findViewById(R.id.btn_2)
+        btn3 = findViewById(R.id.btn_3)
+  
+        btn1.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                Log.d(TAG,"onClick() btn_1")
+            }
+        })
+
+        btn2.setOnClickListener{ _ ->
+            Log.d(TAG,"onClick() btn_2")
+        }
+
+        btn3.setOnClickListener{
+            Log.d(TAG,"onClick() btn_3")
+        }
+
+    }
+
+}
+```
