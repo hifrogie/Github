@@ -190,3 +190,9 @@
 5. [인터페이스 분리의 원칙 : ISP(Interface Segregation Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B6%84%EB%A6%AC%EC%9D%98-%EC%9B%90%EC%B9%99--ispinterface-segregation-principle)
 6. [의존성 역전의 원칙 : DIP(Dependency Inversion Principle)](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#6-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%97%AD%EC%A0%84%EC%9D%98-%EC%9B%90%EC%B9%99--dipdependency-inversion-principle)
 7. [의존성 주입](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#7-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85dependency-injection)
+
+
+# Android
+### 1. AppCompatActivity
+1. [AppCompatActivity의 상속](https://github.com/hifrogie/Github/blob/main/android.md/appCompatActivity.md#1-appcompatactivity)
+2. [AppCompatActivity의 특징](https://github.com/hifrogie/Github/blob/main/android.md/appCompatActivity.md#2-appcompatactivity%EC%9D%98-%ED%8A%B9%EC%A7%95)
