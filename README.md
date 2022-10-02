@@ -201,3 +201,8 @@
 2. [Activity에 interface 상속 받아서 사용할 경우](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#2-activity%EC%97%90-interface-%EC%83%81%EC%86%8D-%EB%B0%9B%EC%95%84%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EA%B2%BD%EC%9A%B0)
 3. [setOnCLickListener에 미리 생성된 객체를 대입하는 방법](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#3-setonclicklistener%EC%97%90-%EB%AF%B8%EB%A6%AC-%EC%83%9D%EC%84%B1%EB%90%9C-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EB%8C%80%EC%9E%85%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
 4. [setOnClickListener에 익명 클래스 만들어 대입하는 방법](https://github.com/hifrogie/Github/blob/main/android.md/onClickListener.md#4-setonclicklistener%EC%97%90-%EC%9D%B5%EB%AA%85-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%A7%8C%EB%93%A4%EC%96%B4-%EB%8C%80%EC%9E%85%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+### 3. [안드로이드 4대 구성요소](https://github.com/hifrogie/Github/blob/main/android.md/component.md#3-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-4%EB%8C%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C)
+1. [액티비티(Activity)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#1-%EC%95%A1%ED%8B%B0%EB%B9%84%ED%8B%B0activity)
+2. [서비스(Service)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#2-%EC%84%9C%EB%B9%84%EC%8A%A4service)
+3. [방송 수신자 (BroadCast Receiver)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#3-%EB%B0%A9%EC%86%A1-%EC%88%98%EC%8B%A0%EC%9E%90-broadcast-receiver)
+4. [콘텐트 제공자(Content Provider)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#4-%EC%BD%98%ED%85%90%ED%8A%B8-%EC%A0%9C%EA%B3%B5%EC%9E%90content-provider)
