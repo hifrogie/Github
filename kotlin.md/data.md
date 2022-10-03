@@ -144,7 +144,7 @@ data class User(val age: Int, val name: String, override var gender: Int) : Supe
     4. 코틀린에서 객체의 값을 비교하고 싶을 때는 equals를 override 할 수 밖에 없다.
 
      ```kotlin
-     class Client(val name: String,val postalCode: Int){
+     data class Client(val name: String,val postalCode: Int){
          override fun equals(other: Any?) : Boolean{
              if(other == null || other !is Client) return false
              return name == other.name && postalCode == other.postalCode
@@ -156,7 +156,7 @@ data class User(val age: Int, val name: String, override var gender: Int) : Supe
     2. JVM 언어에는 equals()가 true를 반환하는 두 객체는 반드시 같은 hashCode()를 반환해야한다.
 
      ```kotlin
-     class Client(val name: String, val postalCode: Int){
+     data class Client(val name: String, val postalCode: Int){
          override fun equals(other: Any?) : Boolean {
              if(other == null || other !is Client) return false
              return name == other.name && postalCode == other.postalCode
