@@ -1,11 +1,11 @@
 # TIL List
 # 1. Git
-## 1. [용어와 개념 ](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#%EB%AA%A9%EC%B0%A8)
+### 1. [용어와 개념 ](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#%EB%AA%A9%EC%B0%A8)
 1. [Git](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#1-git)
 2. [term & concept](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#2-term--concept-1)
 3. [command](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#3-command-1)
 
-## 2. [Markdown](https://github.com/hifrogie/Github/blob/main/git.md/markdown.md#markdown)
+### 2. [Markdown](https://github.com/hifrogie/Github/blob/main/git.md/markdown.md#markdown)
 1. [마크다운의 장단점](https://github.com/hifrogie/Github/blob/main/git.md/markdown.md#1-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90)
 2. [마크다운 문법](https://github.com/hifrogie/Github/blob/main/git.md/markdown.md#2-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95)
 
