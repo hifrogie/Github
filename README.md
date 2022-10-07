@@ -210,3 +210,7 @@
 1. [Layout과 ViewGroup](https://github.com/hifrogie/Github/blob/main/android.md/linearLayout.md#1-layout%EA%B3%BC-viewgroup)
 2. [RelativeLayout & LinearLayout & ConstraintLayout](https://github.com/hifrogie/Github/blob/main/android.md/linearLayout.md#2-relativelayout--linearlayout--constraintlayout)
 3. [왜 ConstraintLayout을 써야할까?](https://github.com/hifrogie/Github/blob/main/android.md/linearLayout.md#3-%EC%99%9C-constraintlayout%EC%9D%84-%EC%8D%A8%EC%95%BC%ED%95%A0%EA%B9%8C)
+### 5. [ANR](https://github.com/hifrogie/Github/blob/main/android.md/anr.md#5-anr)
+1. [ANR이란?](https://github.com/hifrogie/Github/blob/main/android.md/anr.md#1-anr%EC%9D%B4%EB%9E%80)
+2. [ANR의 발생 요인](https://github.com/hifrogie/Github/blob/main/android.md/anr.md#2-anr%EC%9D%98-%EB%B0%9C%EC%83%9D-%EC%9A%94%EC%9D%B8)
+3. [ANR 예방 설계](https://github.com/hifrogie/Github/blob/main/android.md/anr.md#3-anr-%EC%98%88%EB%B0%A9-%EC%84%A4%EA%B3%84)
