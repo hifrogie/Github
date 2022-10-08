@@ -1,5 +1,5 @@
 ## 6. Jetpack 라이브러리
-1. jetpack 라이브러리
+### 1. jetpack 라이브러리
     1. jetpack : 앱 개발시 필요한 라이브러리의 모음
     2. 특징 
         1. androidx로 시작하는 패키지 명
@@ -7,13 +7,13 @@
         3. 플랫폼 API에서 제공하지 않는 다양한 기능 제공
             - 플랫폼 API : ART(Android runtime)에서 제공하는 안드로이드 앱의 핵심 라이브러리(String, Date, Activity, TextView등)
         4. API 레벨 호환성 문제 해결 : 목적이 같은 클래스를 제트팩에서 제공한다면 제트팩 클래스를 쓰는 것이 좋음
-2. jetpack 라이브러리의 내용
+### 2. jetpack 라이브러리의 내용
     1. activity, appcompat, recyclerview 많은 내용이 있었다.
     2. AppCompat
         1. appcompat의 api를 제공한다.
         2. build.gradle에 추가할 의존성도 제공한다.
         3. 버전마다 달라진 내용도 알려준다. 
-3. Jetpack이 나오게 된 배경
+### 3. Jetpack이 나오게 된 배경
     1. Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재 했었는데 여러 문제가 있었다.
     2. 이를 개선하면서 새로운 이름을 붙여 다시 나온 것이 jetpack이다.
     3. 문제 
