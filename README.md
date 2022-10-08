@@ -14,6 +14,11 @@
 2. [5가지 브랜치를 사용해서 운영](https://github.com/hifrogie/Github/blob/main/git.md/gitFlow.md#2-5%EA%B0%80%EC%A7%80-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%9A%B4%EC%98%81)
 3. [Git Flow 브랜치 설명](https://github.com/hifrogie/Github/blob/main/git.md/gitFlow.md#3-git-flow-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%84%A4%EB%AA%85)
 4. [Fork와 Pull requests](https://github.com/hifrogie/Github/blob/main/git.md/gitFlow.md#4-fork%EC%99%80-pull-requests)
+
+### 4. [Branch 사용법](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#4-branch-%EC%82%AC%EC%9A%A9%EB%B2%95)
+1. [기본적인 branch 명령어 총정리](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#1-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-branch-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC)
+2. [rebase](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#2-rebase)
+3. [Fork와 Pull Request](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#3-fork%EC%99%80-pull-request)
 # 2. Java
 ### 1. [다형성](https://github.com/hifrogie/Github/blob/main/java.md/polymorphism.md#1-%EB%8B%A4%ED%98%95%EC%84%B1)
 1. [다형성이란?](https://github.com/hifrogie/Github/blob/main/java.md/polymorphism.md#1-%EB%8B%A4%ED%98%95%EC%84%B1polymorphism%EC%9D%B4%EB%9E%80)
