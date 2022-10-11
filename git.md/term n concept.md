@@ -46,6 +46,7 @@
     ![동작 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fczxu6b%2FbtqxJw0zusR%2F9EkX1Un1VRduwA4DN8FCGK%2Fimg.png)
         1. **Working directory** : 작업할 파일이 있는 디렉토리
         2. **Staging Area** : 커밋을 수행할 파일들이 올라가는 영역
+            - 커밋 : 데이터 베이스에서 영구적인 변경을 확정하는 일
         3. **git directory** : git 프로젝트의 메타 데이터와 데이터 정보가 저장되는 디렉토리, .git을 말함
             - **메타 데이터**: 시간이 지남에 따라 많은 양의 데이터를 수집, 저장 및 분석할 수 있도록 일관된 방식으로 구조화된, 다른 데이터를 설명하는 데이터입니다.
         4. **git add** : 작업한 내용을 Staging Area에 올릴 때 사용
