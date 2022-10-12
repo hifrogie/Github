@@ -21,20 +21,23 @@
     - git diff < branch 이름> < branch 이름>
 
 ### 2. rebase
-![rebase](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
-![rebase2](https://git-scm.com/book/en/v2/images/basic-rebase-3.png)
-1. c3에서 변경된 사항을 Patch로 만들고 이를 다시 c4에 적용시키는 방법을 rebase 라고 한다.
-    - patch : 다른 내용(수정한 내용)을 빼내서 다른 환경에 적용할 수 있도록 파일을 만든다고 생각하면 된다. 
+![rebase](https://velog.velcdn.com/images%2Fkwonh%2Fpost%2Fd3f91e4a-cbc0-44d4-9ae5-dedea55cca55%2Fimage.png)
+1. experiment 브랜치로 이동해 master를 base 삼아 Rebase 하겠다는 의미
 2. 아래와 같은 명령으로 rebase 한다.
     - $ git checkout experiment
     - $ git rebase master
-3. 실제로 일어나는 일을 설명하자면 일단 두 브랜치가 가리키는 커밋 까지 diff를 차례로 만들어 어딘가에 임시로 저장해 놓는다.
-4. Rebase할 브랜치(experiment)가 합칠 브랜치(master)가 가리키는 커밋을 가리키게 하고 하까 저장해 놓았던 변경사항을 차례대로 적용한다.
-![image](https://git-scm.com/book/en/v2/images/basic-rebase-3.png)
+    1. 내부에서는 master가 base가 되고, C3,C4의 차이를 임시 저장하는 공간에 저장합니다. 이 임시 저장 공간을 Patch라고 합니다. 그리고 base가 되는 master에 patch들이 적용됩니다.
+    2. patch : 다른 내용(수정한 내용)을 빼내서 다른 환경에 적용할 수 있도록 파일을 만든다고 생각하면 된다. 
+3. 다시 정리
+    1. 공통 커밋(C2)에서 시작해서 현재 체크아웃한 experiment 브랜치가 가리키는 커밋까지 diff(코드변경)를 차례로 만들어 Patch에 저장
+    2. experiment 브랜치가 master브랜치를 가리키게 함
+    3. C3에 Patch를 순서대로 적용
+![image](https://velog.velcdn.com/images%2Fkwonh%2Fpost%2F8c779a0b-ce4b-4760-97c9-9f68bca74656%2Fimage.png)
+4. 커밋 히스토리가 한 줄로 깔끔하게 정렬된 것을 볼 수 있었다.
 5. 그리고 나서 master 브랜치를 fast-forward 시킨다.
     - $ git checkout master
     - $ git merge experiment
-
+![image](https://velog.velcdn.com/images%2Fkwonh%2Fpost%2F777b0f21-ae9d-400e-9265-6adc77188ed0%2Fimage.png)
 ### 3. Fork와 Pull Request
 1. 코드 기여 원리
     1. A가 B 개발자의 프로젝트가 맘에 들어 같이 프로젝터에 참여해 기여자로써 공헌을 하고 싶다고 한다. 하지만 내가 다른 사람의 저장소에 있는 코드를 수정하려면 관리자가 직접 나를 기여자(contribute)로 등록해주어야한다. 하지만 모든 사람을 다 기여자로 등록할 수는 없는 현실이다.
