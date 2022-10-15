@@ -228,3 +228,7 @@
 1. [jetpack 라이브러리](https://github.com/hifrogie/Github/blob/main/android.md/jetpack.md#1-jetpack-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)
 2. [jetpack 라이브러리의 내용](https://github.com/hifrogie/Github/blob/main/android.md/jetpack.md#2-jetpack-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%9D%98-%EB%82%B4%EC%9A%A9)
 3. [Jetpack이 나오게 된 배경](https://github.com/hifrogie/Github/blob/main/android.md/jetpack.md#3-jetpack%EC%9D%B4-%EB%82%98%EC%98%A4%EA%B2%8C-%EB%90%9C-%EB%B0%B0%EA%B2%BD)
+### 7. [뷰가 화면에 그려지기까지 플로우](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#7-%EB%B7%B0%EA%B0%80-%ED%99%94%EB%A9%B4%EC%97%90-%EA%B7%B8%EB%A0%A4%EC%A7%80%EA%B8%B0%EA%B9%8C%EC%A7%80-%ED%94%8C%EB%A1%9C%EC%9A%B0)
+1. [Layout이 그려지는 과정 설명](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#1-layout%EC%9D%B4-%EA%B7%B8%EB%A0%A4%EC%A7%80%EB%8A%94-%EA%B3%BC%EC%A0%95-%EC%84%A4%EB%AA%85)
+2. [Layout이 그려지는 과정](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#2-layout%EC%9D%B4-%EA%B7%B8%EB%A0%A4%EC%A7%80%EB%8A%94-%EA%B3%BC%EC%A0%95)
+3. [Custom View LifeCycle](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#3-custom-view-lifecycle)
