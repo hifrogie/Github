@@ -232,3 +232,8 @@
 1. [Layout이 그려지는 과정 설명](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#1-layout%EC%9D%B4-%EA%B7%B8%EB%A0%A4%EC%A7%80%EB%8A%94-%EA%B3%BC%EC%A0%95-%EC%84%A4%EB%AA%85)
 2. [Layout이 그려지는 과정](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#2-layout%EC%9D%B4-%EA%B7%B8%EB%A0%A4%EC%A7%80%EB%8A%94-%EA%B3%BC%EC%A0%95)
 3. [Custom View LifeCycle](https://github.com/hifrogie/Github/blob/main/android.md/onMeasure.md#3-custom-view-lifecycle)
+### 8. [< Design Pattern> MVC,MVP,MVVM 비교](https://github.com/hifrogie/Github/blob/main/android.md/mvc.md#8--design-pattern-mvcmvpmvvm-%EB%B9%84%EA%B5%90)
+1. [MVC](https://github.com/hifrogie/Github/blob/main/android.md/mvc.md#1-mvc)
+2. [MVP](https://github.com/hifrogie/Github/blob/main/android.md/mvc.md#2-mvp)
+3. [MVVM](https://github.com/hifrogie/Github/blob/main/android.md/mvc.md#3-mvvm)
+4. [Clean Architecture](https://github.com/hifrogie/Github/blob/main/android.md/mvc.md#4-clean-architecture)
