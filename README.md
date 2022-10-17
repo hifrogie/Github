@@ -188,7 +188,8 @@
 3. [ART 방식(Android 4.4 Kitkat 이후)](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#3-art-%EB%B0%A9%EC%8B%9Dandroid-44-kitkat-%EC%9D%B4%ED%9B%84)
 4. [컴파일 방식 변화 과정(Dalvik VM -> ART)](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#4-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EB%B0%A9%EC%8B%9D-%EB%B3%80%ED%99%94-%EA%B3%BC%EC%A0%95dalvik-vm---art)
 5. [JIT Compiler vs AOT Compiler](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#5-jit-compiler-vs-aot-compiler)
-
+### 8. [Retrofit](https://github.com/hifrogie/Github/blob/main/computer.md/retrofit.md#8-retrofit)
+1. [어노테이션](https://github.com/hifrogie/Github/blob/main/computer.md/retrofit.md#1-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98)
 
 
 # 객체지향
