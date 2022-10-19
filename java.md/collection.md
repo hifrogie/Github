@@ -21,6 +21,9 @@
 4. List 인터페이스를 구현한 클래스들은 매우 많다. 그 중에서 java.util 패키지에서는 ArrayList, Vector, Stack, LinkedList를 많이 사용한다.
 5. ArrayList와 Vector 클래스의 사용법은 거의 동일하고 기능도 거의 비슷하다. 이 두 클래스는 "확장 가능한 배열"이라고 생각하면 된다.
 6. ArrayList는 Thread safe 하지 않고, Vector는 Thread safe하다.
+    - thread safe : 멀티 스레드 프로그래밍에서 일반적으로 어떤 함수나 변수, 혹은 객체가 여러 스레드로 부터 동시에 접근이 이루어져도 프로그램의 실행에 문제가 없음
+    - 멀티 쓰레딩(multi-threading) : 하나의 프로세스 내에서 여러 스레드가 동시에 작업을 수행하는 것
+    - 프로세스 : 실행중인 프로그램
 7. Stack이라는 클래스는 Vector을 확장하여 만들었다.
 
 ### 4. ArrayList
