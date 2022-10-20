@@ -210,6 +210,7 @@
 - -> java.util.LinkedList< E >
 
 4. LinkedList의 생성자
+
 |생성자|설명|
 |:--:|:--:|
 |LinkedList()|비어 있는 LinkedList 객체를 생성한다.|
