@@ -154,6 +154,12 @@
 ### 12. [object](https://github.com/hifrogie/Github/blob/main/kotlin.md/object.md#12-object)
 1. [object 키워드](https://github.com/hifrogie/Github/blob/main/kotlin.md/object.md#1-object-%ED%82%A4%EC%9B%8C%EB%93%9C)
 2. [static 메모리](https://github.com/hifrogie/Github/blob/main/kotlin.md/object.md#2-staic-%EB%A9%94%EB%AA%A8%EB%A6%AC)
+### 13. [lateinit 과 lazy의 차이](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#13-lateinit-%EA%B3%BC-lazy%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+1. [lateinit](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#1-lateinit)
+2. [by lazy](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#2-by-lazy)
+3. [특징](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#3-%ED%8A%B9%EC%A7%95)
+
+
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
