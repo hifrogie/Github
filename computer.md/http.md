@@ -13,7 +13,8 @@
 1. 주소창에 URL을 입력 후 엔터를 치면 URL을 해석
 2. DNS(도메인 이름 시스템은 사람이 읽을 수 있는 도메인이름을 머신이 읽을 수있는 IP주소로 변환합니다.)를 조회하여 IP 탐색
 3. IP를 찾아 해당 IP가 존재하는 서버로 이동
-4. ARP(Address Resolution Protocol은 네트워크 상에서 IP 주소를 물리적 네트워크 주소로 대응시키기 위해 사용되는 프로토콜)을 이용하여 MAC 주소(네트워크 세그먼트의 데이터 링크 계층에서 통신을 위한 네트워크 인터페이스에 할당된 고유 식별자)로 변환
+4. ARP(Address Resolution Protocol은 네트워크 상에서 IP 주소를 물리적 네트워크 주소로 대응시키기 위해 사용되는 프로토콜)을 이용하여 MAC 주소(Media Access Control Address 네트워크 통신을 하는 하드웨어에 할당된 주소 )로 변환
+    - 하드웨어 : 컴퓨터의 물리적 부품
 5. 웹서버와 TCP(Transmission Control Protocol은 컴퓨터와 데이터 통신을 위한 규약의 일종) 연결 시도
 6. 서버에 요청을 하고 응답을 반환
 7. 연결 종료
@@ -37,11 +38,11 @@
 
   ![요청 메세지](https://velog.velcdn.com/images%2Fgparkkii%2Fpost%2F0a8a066b-b53b-4c86-a522-32e848c5f54f%2FHTTP_Request.png)
 
-    1. Method : HTTP메서드는 보통 클라이언트가 수행하고자 하는 동작을 정의한 GET,POST,OPTIONS,HEAD를 지칭한다. 클라이언트 리소스를 가져오거나 GET 사용 HTML 폼의 데이터를 전송 POST 사용한다. 다른 경우에는 다른 동작이 요구될 수도 있다.
-    2. Path : 가져오려는 리소스의 경로는 프로토콜 http://,도메인(developer.mozilla.org),또는 TCP 포트인 요소들을 제거한 리소스의 URL이다.
-    3. Version of the Protocol : HTTP 프로토콜의 버전
-    4. Headers : 서버에 대한 추가 정보를 전달하는 선택적 헤더들/
-    5. etc : POST와 같은 몇 가지 메서드를 위한, 전송된 리소스를 포함하는 응답의 본문과 유사한 본문.
+1. Method : HTTP메서드는 보통 클라이언트가 수행하고자 하는 동작을 정의한 GET,POST,OPTIONS,HEAD를 지칭한다. 클라이언트 리소스를 가져오거나 GET 사용 HTML 폼의 데이터를 전송 POST 사용한다. 다른 경우에는 다른 동작이 요구될 수도 있다.
+2. Path : 가져오려는 리소스의 경로는 프로토콜 http://,도메인(developer.mozilla.org),또는 TCP 포트인 요소들을 제거한 리소스의 URL이다.
+3. Version of the Protocol : HTTP 프로토콜의 버전
+4. Headers : 서버에 대한 추가 정보를 전달하는 선택적 헤더들/
+5. etc : POST와 같은 몇 가지 메서드를 위한, 전송된 리소스를 포함하는 응답의 본문과 유사한 본문.
  
  
   ![응답 메세지](https://velog.velcdn.com/images%2Fgparkkii%2Fpost%2Fc5ee6879-e3af-49f9-a8d0-5922b49c53ce%2FHTTP_Response.png)
