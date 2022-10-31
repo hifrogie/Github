@@ -201,7 +201,11 @@
 5. [JIT Compiler vs AOT Compiler](https://github.com/hifrogie/Github/blob/main/computer.md/dalvik.md#5-jit-compiler-vs-aot-compiler)
 ### 8. [Retrofit](https://github.com/hifrogie/Github/blob/main/computer.md/retrofit.md#8-retrofit)
 1. [어노테이션](https://github.com/hifrogie/Github/blob/main/computer.md/retrofit.md#1-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98)
-
+### 9. [트리](https://github.com/hifrogie/Github/blob/main/computer.md/tree.md#9-%ED%8A%B8%EB%A6%AC)
+1. [트리란 무엇인가?](https://github.com/hifrogie/Github/blob/main/computer.md/tree.md#1-%ED%8A%B8%EB%A6%AC%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+2. [트리용어 정리](https://github.com/hifrogie/Github/blob/main/computer.md/tree.md#2-%ED%8A%B8%EB%A6%AC-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC)
+3. [이진트리](https://github.com/hifrogie/Github/blob/main/computer.md/tree.md#3-%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%ACbinary-tree)
+4. [B-트리](https://github.com/hifrogie/Github/blob/main/computer.md/tree.md#4-b--%ED%8A%B8%EB%A6%AC)
 
 # 객체지향
 ### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
