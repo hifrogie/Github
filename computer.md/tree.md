@@ -49,3 +49,27 @@
 
     ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F22149E4958537FEB15)
 
+### 4. B- 트리
+1. 보통 B 트리라고 하면 B- 트리를 의미한다.
+2. B 트리는 트리 자료 구조의 일종으로 이진트리를 확장해 하나의 노드가 가질 수 있는 자식 노드의 최대 숫자가 2보다 큰 트리 구조이다.
+3. B 트리의 특징
+    ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtxFtg%2FbtrBfY0XYJQ%2FfcSzMZkIiltKSKISSGds31%2Fimg.webp)
+    1. 노드에는 2개 이상의 데이터(key)가 들어갈 수 있으며, 항상 정렬된 상태로 저장된다.
+    ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcgHm9w%2FbtrBgdKjl4c%2Fqa3I1iSi7DhPLruKUcmVn0%2Fimg.webp)
+    2. 내부 노드는 M/2 ~ M개의 자식을 가질 수 있다.
+    3. 최대 M개의 자식을 가질 수 있는 B트리를 M차 B트리라고 한다.
+    4. 첫 번째 그림은 3차 B트리를 나타낸다. 즉, 3차 B트리의 리프 노드를 제외한 내부 노드는 1개 ~ 3개의 자식을 가질 수 있다.
+    ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQjG5H%2FbtrBgpDJkg7%2FkX1lyLc9sDUjTRSG98A0Mk%2Fimg.webp)
+    5. 특정 노드의 데이터(key)가 K개라면, 자식 노드의 개수는 K+1개여야 한다.
+    6. 두 번째 그림을 보면 특정 노드의 데이터가 2개면 자식 노드는 3개이고 특정 노드의 데이터가 1개면 자식 노드는 2개이다.
+    ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJOl2D%2FbtrBfFAuAgh%2FyWN5ZSHC3nZb0ebKCHJh1k%2Fimg.webp)
+    7. 특정 노드의 왼쪽 서브 트리는 특정 노드의 key보다 작은 값들로, 오른쪽 서브트리는 큰 값들로 구성된다.
+    8. B-트리는 노드 내에 key값이 2개 이상 들어갈 수 있기 때문에 자식 노드를 가리키는 포인터의 개수는 key의 개수보다 1개 더 많다. 
+    9. 노드 내에서 key가 a1, a2, a3... 등으로 존재한다면, a1 왼쪽 서브 트리는 a1보다 작아야 하고, a1과 a2 사이의 서브 트리는 a1보다는 크면서 a2보다는 작아야 한다
+    10. 예를 들어 4번쨰 그림을 보자. 10의 왼쪽 서브 트리는 10보다 작은 값이 위치한다. (10, 21) 사이의 서브 트리는 10보다는 크지만 21보다는 작은 값들이 위치한다.
+    ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJOl2D%2FbtrBfFAuAgh%2FyWN5ZSHC3nZb0ebKCHJh1k%2Fimg.webp)
+    11. 노드 내에 데이터는 floor(M/2)-1개부터 최대 M-1개까지 포함될 수 있다 ( floor : 내림 함수 Ex-floor(3.7) = 3 )
+    12. 여기서 floor는 내림 함수이다. 예를 들어 floor(3.6)=3이다.
+    13/ 3차 B트리는 노드 내에 0~2개의 데이터를 가질 수있다.
+    ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVE0C%2FbtrBfY05W5E%2FRglzAA2qKUL65h73IQLoN0%2Fimg.webp)
+    13. 모든 리프 노드들이 같은 레벨에 존재한다. 즉, 루트 노드에서 모든 리프 노드로 가는 경로의 길이가 같다.
