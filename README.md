@@ -158,8 +158,11 @@
 1. [lateinit](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#1-lateinit)
 2. [by lazy](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#2-by-lazy)
 3. [특징](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#3-%ED%8A%B9%EC%A7%95)
-
-
+### 14. [람다로 프로그래밍]
+1. [람다 식과 멤버 참조](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#1-%EB%9E%8C%EB%8B%A4-%EC%8B%9D%EA%B3%BC-%EB%A9%A4%EB%B2%84-%EC%B0%B8%EC%A1%B0)
+2. [컬렉션 함수형 API](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#2-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%95%A8%EC%88%98%ED%98%95-api)
+3. [지연 계산(lazy) 컬렉션 연산](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#3-%EC%A7%80%EC%97%B0-%EA%B3%84%EC%82%B0lazy-%EC%BB%AC%EB%A0%89%EC%85%98-%EC%97%B0%EC%82%B0)
+4. [자바 함수형 인터페이스 활용](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#4-%EC%9E%90%EB%B0%94-%ED%95%A8%EC%88%98%ED%98%95-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%99%9C%EC%9A%A9)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
