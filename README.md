@@ -163,6 +163,7 @@
 2. [컬렉션 함수형 API](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#2-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%95%A8%EC%88%98%ED%98%95-api)
 3. [지연 계산(lazy) 컬렉션 연산](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#3-%EC%A7%80%EC%97%B0-%EA%B3%84%EC%82%B0lazy-%EC%BB%AC%EB%A0%89%EC%85%98-%EC%97%B0%EC%82%B0)
 4. [자바 함수형 인터페이스 활용](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#4-%EC%9E%90%EB%B0%94-%ED%95%A8%EC%88%98%ED%98%95-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%99%9C%EC%9A%A9)
+5. [수신 객체 지정 람다: with와 apply](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#5-%EC%88%98%EC%8B%A0-%EA%B0%9D%EC%B2%B4-%EC%A7%80%EC%A0%95-%EB%9E%8C%EB%8B%A4-with%EC%99%80-apply)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
