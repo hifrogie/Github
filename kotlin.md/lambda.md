@@ -81,3 +81,68 @@ button.setOnClickListener {view -> ...}
 1. 코틀린에서는 무명 클래스 인스턴스 대신 람다를 넘길 수 있다.
 2. OnClickListener를 구현하기 위해 사용한 람다에는 view라는 파라미터가 있다. 
 3. view의 타입은 View다 . 이는 onclick 메서드의 인자타입과 같다.
+4. 이런 코드가 작동하는 이유는 OnClickListener에 추상 메서드가 단 하나만 있기 때문이다.
+5. 그런 인터페이스를 함수형 인터페이스(functional interface) 또는 SAM 인터페이스라고 한다.
+6. SAM은 단일 추상 메서드 single abstract method라는 뜻이다.
+7. 코틀린은 함수형 인터페이스를 인자로 취하는 자바 메서드를 호출할 때 람다를 넘길 수 있게 해준다.
+8. 자바 메서드에 람다를 인자로 전달
+    1. 함수형 인터페이스를 인자로 원하는 자바 메서드에 코틀린 람다를 전달할 수 있다.
+
+    ```java
+    void postponeComputation(int delay, Runnable computation);
+    ```
+
+    2. 여기서 Runnable 인스턴스라는 말은 실제로는 Runnable을 구현한 무명 클래스의 인스턴스라는 뜻이다.
+    3. 컴파일러는 자동으로 그런 무명 클래스와 인스턴스를 만들어준다.
+    4. 그 무명 클래스에 있는 유일한 추상 메서드를 구현할 때 람다 본문을 메서드 본문으로 사용한다.
+    5. Runnable을 구현하는 무명 객체를 명시적으로 만들어서 사용할 수도 있습니다.
+    6. 람다와 무명 객체 사이에는 차이가 있다. 객체를 명시적으로 선언하는 경우 메서드를 호출할 때 마다 새로운 객체가 생성된다.
+    7. 람다는 정의가 들어있는 함수의 변수에 접근하지 않는 람다에 대응하는 무명 객체를 메서드를 호출할 때마다 반복 사용한다.
+    8. 람다가 주변 영역의 변수를 포획한다면 매 호출마다 같은 인스턴스를 사용할 수 없다. 컴파일러는 매번 주변 영역의 변수를 포획한 새로운 인스턴스를 생성해준다.
+
+9. SAM 생성자
+    1. SAM 생성자 : 람다를 함수형 인터페이스의 인스턴스로 변환할 수 있게 컴파일러가 자동으로 생성한 함수다.
+    2. 컴파일러가 자동으로 람다를 함수형 인터페이스 무명 클래스로 바꾸지 못하는 경우 SAM 생성자를 사용할 수 있다.
+    3. SAM 생성자의 이름은 사용하려는 함수형 인터페이스의 이름과 같다.
+    4. SAM 생성자는 그 함수형 인터페이스의 유일한 추상 메서드의 본문에 사용할 람다만을 인자로 받아서 함수형 인터페이스를 구현하는 클래스의 인스턴스를 반환한다.
+
+### 5. 수신 객체 지정 람다: with와 apply
+1. 수신 객체 지정 람다(lambda with receiver) : 수신 객체를 명시 하지 않고 람다의 본문 안에서 다른 객체의 메서드를 호출할 수 있게 하는 것
+2. with 함수
+    1. 언어 구성 요소로 제공하지 않고 with라는 라이브러리 함수를 통해 제공
+
+    ```kotlin
+    fun alphabet(): String{
+        val result = StringBuilder()
+        for(letter in 'A'..'Z'){
+            result.append(letter)
+        }
+        result.append("\nNow I know the alphabet!")
+        return result.toString()
+    }
+    ```
+
+    ```kotlin
+    fun alphabet():String {
+        val stringBuilder = StringBuilder()
+        return with(stringBuilder){ //메서드를 호출하려는 수신 객체를 지정한다.
+            for (letter in 'A'..'Z'){
+                this.append(letter) //this 를 명시해서 앞에서 지정한 수신 객체의 메서드를 호출한다.
+            }
+            append("\nNow I know the alphabet!")    //this를 생략하고 메서드를 호출한다.
+            this.toString() //람다에서 값을 반환한다.
+        }
+    }
+    ```
+
+    2. with문은 실제로는 파라미터가 2개 있는 함수다. 
+    3. 첫 번째 파라미터는 stringBuilder이고, 두 번째 파라미터는 람다다.
+    4. with 함수는 첫 번째 인자로 받은 객체를 두 번째 인자로 받은 람다의 수신 객체로 만든다.
+    5. 인자로 받은 람다 본문에서는 this를 사용해 그 수신 객체에 접근할 수 있다.
+    6. 일반적인 this와 마찬가지로 this와 .을 사용하지 않고 프로퍼티나 메서드 이름만 사용해도 수신 객체의 멤버에 접근할 수 있다.
+3. apply 함수
+    1. 람다의 결과 대신 수신 객체가 필요한 경우 사용한다.
+    2. apply 함수는 거의 with와 같다.
+    3. 유일한 차이란 apply는 항상 자신에게 전달된 객체(수신 객체)를 반환한다는 점 뿐이다.
+    
+

@@ -158,7 +158,7 @@
 1. [lateinit](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#1-lateinit)
 2. [by lazy](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#2-by-lazy)
 3. [특징](https://github.com/hifrogie/Github/blob/main/kotlin.md/lateinit.md#3-%ED%8A%B9%EC%A7%95)
-### 14. [람다로 프로그래밍]
+### 14. [람다로 프로그래밍](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#14-%EB%9E%8C%EB%8B%A4%EB%A1%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 1. [람다 식과 멤버 참조](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#1-%EB%9E%8C%EB%8B%A4-%EC%8B%9D%EA%B3%BC-%EB%A9%A4%EB%B2%84-%EC%B0%B8%EC%A1%B0)
 2. [컬렉션 함수형 API](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#2-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%95%A8%EC%88%98%ED%98%95-api)
 3. [지연 계산(lazy) 컬렉션 연산](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#3-%EC%A7%80%EC%97%B0-%EA%B3%84%EC%82%B0lazy-%EC%BB%AC%EB%A0%89%EC%85%98-%EC%97%B0%EC%82%B0)
