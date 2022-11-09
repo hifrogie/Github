@@ -215,6 +215,9 @@
 2. [그래프에서 사용하는 용어](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#2-%EA%B7%B8%EB%9E%98%ED%94%84%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9A%A9%EC%96%B4)
 3. [그래프 구현 방법](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#3-%EA%B7%B8%EB%9E%98%ED%94%84-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95)
 4. [다양한 그래프의 종류](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#4-%EB%8B%A4%EC%96%91%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%84%EC%9D%98-%EC%A2%85%EB%A5%98)
+### 11. [Java Reference와 GC](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#11-java-reference%EC%99%80-gc)
+1. [GC](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#1-gc)
+2. [GC와 Reachability](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#2-gc%EC%99%80-reachability)
 # 객체지향
 ### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
 1. [SOLID 원칙](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-solid-%EC%9B%90%EC%B9%99)
