@@ -145,4 +145,17 @@ button.setOnClickListener {view -> ...}
     2. apply 함수는 거의 with와 같다.
     3. 유일한 차이란 apply는 항상 자신에게 전달된 객체(수신 객체)를 반환한다는 점 뿐이다.
     
+    ```kotlin
+    fun alphabet() = StringBuilder().apply{
+        for (letter in 'A'..'Z'){
+            append(letter)
+        }
+        append("\nNow I know the alphabet!")
+    }.toString()
+    ```
+
+    4. apply는 확장함수로 정의돼 있다.
+    5. apply의 수신 객체가 전달받은 람다의 수신 객체가 된다.
+    6. 이 함수에서 apply를 실행한 결과는 StringBuilder객체다. 따라서 그 객체의 toString을 호출해서 String 객체를 얻을 수 있다.
+    7. 이런 apply 함수는 객체의 인스턴스를 만들면서 즉시 프로퍼티 중 일부를 초기화해야 하는 경우 유용하다.
 
