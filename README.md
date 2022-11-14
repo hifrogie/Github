@@ -215,6 +215,7 @@
 2. [그래프에서 사용하는 용어](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#2-%EA%B7%B8%EB%9E%98%ED%94%84%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9A%A9%EC%96%B4)
 3. [그래프 구현 방법](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#3-%EA%B7%B8%EB%9E%98%ED%94%84-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95)
 4. [다양한 그래프의 종류](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#4-%EB%8B%A4%EC%96%91%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%84%EC%9D%98-%EC%A2%85%EB%A5%98)
+5. [DFS,BFS](https://github.com/hifrogie/Github/blob/main/computer.md/graph.md#5-dfsbfs)
 ### 11. [Java Reference와 GC](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#11-java-reference%EC%99%80-gc)
 1. [GC](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#1-gc)
 2. [GC와 Reachability](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#2-gc%EC%99%80-reachability)
