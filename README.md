@@ -164,6 +164,10 @@
 3. [지연 계산(lazy) 컬렉션 연산](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#3-%EC%A7%80%EC%97%B0-%EA%B3%84%EC%82%B0lazy-%EC%BB%AC%EB%A0%89%EC%85%98-%EC%97%B0%EC%82%B0)
 4. [자바 함수형 인터페이스 활용](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#4-%EC%9E%90%EB%B0%94-%ED%95%A8%EC%88%98%ED%98%95-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%99%9C%EC%9A%A9)
 5. [수신 객체 지정 람다: with와 apply](https://github.com/hifrogie/Github/blob/main/kotlin.md/lambda.md#5-%EC%88%98%EC%8B%A0-%EA%B0%9D%EC%B2%B4-%EC%A7%80%EC%A0%95-%EB%9E%8C%EB%8B%A4-with%EC%99%80-apply)
+### 15. [코틀린 타입 시스템](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#15-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%83%80%EC%9E%85-%EC%8B%9C%EC%8A%A4%ED%85%9C)
+1. [널가능성 Nullability](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#1-%EB%84%90%EA%B0%80%EB%8A%A5%EC%84%B1-nullability)
+2. [코틀린의 원시 타입](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#2-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%98-%EC%9B%90%EC%8B%9C-%ED%83%80%EC%9E%85)
+3. [컬렉션과 배열](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#3-%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%B0%B0%EC%97%B4)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
