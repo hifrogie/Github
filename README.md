@@ -223,6 +223,12 @@
 ### 11. [Java Reference와 GC](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#11-java-reference%EC%99%80-gc)
 1. [GC](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#1-gc)
 2. [GC와 Reachability](https://github.com/hifrogie/Github/blob/main/computer.md/gc.md#2-gc%EC%99%80-reachability)
+### 12. [Test Code](https://github.com/hifrogie/Github/blob/main/computer.md/testCode.md#12-test-code)
+1. [테스트란?](https://github.com/hifrogie/Github/blob/main/computer.md/testCode.md#1-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%9E%80)
+2. [시간의 단축](https://github.com/hifrogie/Github/blob/main/computer.md/testCode.md#2-%EC%8B%9C%EA%B0%84%EC%9D%98-%EB%8B%A8%EC%B6%95)
+3. [테스트 코드 작성의 장점](https://github.com/hifrogie/Github/blob/main/computer.md/testCode.md#3-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1%EC%9D%98-%EC%9E%A5%EC%A0%90)
+4. [테스트의 종류](https://github.com/hifrogie/Github/blob/main/computer.md/testCode.md#4-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%A2%85%EB%A5%98)
+5. [TDD](https://github.com/hifrogie/Github/blob/main/computer.md/testCode.md#5-tdd%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C)
 # 객체지향
 ### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
 1. [SOLID 원칙](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-solid-%EC%9B%90%EC%B9%99)
