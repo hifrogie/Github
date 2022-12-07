@@ -48,7 +48,11 @@
     5. 이를 증명하면 다음과 같다
 
     ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F22149E4958537FEB15)
-
+4. 이진트리 순회
+    1. 전위 순회(preorder traverse) : 뿌리 - > 왼쪽 자식 - > 오른쪽 자식
+    2. 중위 순회(inorder traverse) : 왼쪽 자식 - > 뿌리 - > 오른쪽 자식
+    3. 후위 순회(postorder traverse) : 왼쪽 자식 - > 오른쪽 자식 -> 뿌리
+    4. 층별 순회(lever order traverse) : 노드의 순서대로
 ### 4. B- 트리
 1. 보통 B 트리라고 하면 B- 트리를 의미한다.
 2. B 트리는 트리 자료 구조의 일종으로 이진트리를 확장해 하나의 노드가 가질 수 있는 자식 노드의 최대 숫자가 2보다 큰 트리 구조이다.
