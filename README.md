@@ -169,6 +169,7 @@
 1. [널가능성 Nullability](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#1-%EB%84%90%EA%B0%80%EB%8A%A5%EC%84%B1-nullability)
 2. [코틀린의 원시 타입](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#2-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%98-%EC%9B%90%EC%8B%9C-%ED%83%80%EC%9E%85)
 3. [컬렉션과 배열](https://github.com/hifrogie/Github/blob/main/kotlin.md/typeSystem.md#3-%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%B0%B0%EC%97%B4)
+### 16. [코틀린의 강점](https://github.com/hifrogie/Github/blob/main/kotlin.md/strength.md#16-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%98-%EA%B0%95%EC%A0%90)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
