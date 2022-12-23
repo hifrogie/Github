@@ -430,21 +430,21 @@ public class RadixSort {
     3. array[ 1] = 2 이므로 counting[ 2] 값을 1 증가
     4. 이 과정을 마치면 다음 그림 처럼 된다.
 
-        ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FM2d0N%2FbtqEuzQKkA3%2Fkc1r9KKWnW1x7RcelhfFK0%2Fimg.png)
+![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FM2d0N%2FbtqEuzQKkA3%2Fkc1r9KKWnW1x7RcelhfFK0%2Fimg.png)
 
     5. counting 배열은 각 값의 개수가 담겨있는 배열이 된다.
     6. counting 배열의 각 값을 누적 합으로 변환시킨다.
 
-        ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmuC6D%2FbtqEtuiBgMx%2FGjorpguRqRsgvsklwgLZx0%2Fimg.png)
+![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmuC6D%2FbtqEtuiBgMx%2FGjorpguRqRsgvsklwgLZx0%2Fimg.png)
 
-        ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNaJnl%2FbtqEtuiBnYn%2FL8LK2XYYKu8PhYr0nmZpK0%2Fimg.png)
+![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNaJnl%2FbtqEtuiBnYn%2FL8LK2XYYKu8PhYr0nmZpK0%2Fimg.png)
 
     7. 정렬을 할 경우 counting 배열의 각 값은 (시작점 - 1)을 알려준다. 즉 해당 값에 대응 되는 위치에 배정하면 된다는 의미
     8. array[ 0]=7이고, counting[ 7]=12 이다. 여기서 counting[ 7]의 값에 1을 뺴준 뒤 해당 값이 새로운 배열의 인덱스 11에 위치하게 된다.
     9. array[ 1] = 2 이고, counting[ 2] = 4 이다. 여기서 counting[ 2] 의 값에 1 을 빼준 뒤 해당 값이 새로운 배열의 인덱스 3에 위치하게 된다.
     10. 안정적으로 정렬하기 위해서 array의 마지막 index 부터 순회하는 것이 좋다.
 
-        ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKBSml%2FbtqEvhosPPX%2FL70xRWd3gdGz9qXSBmiAN1%2Fimg.png)
+![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKBSml%2FbtqEvhosPPX%2FL70xRWd3gdGz9qXSBmiAN1%2Fimg.png)
 4. 시간 복잡도
     1. O(n+k)
     2. k = o(n) 이면 O(n)
