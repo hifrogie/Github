@@ -1,11 +1,15 @@
 ## 3.Memory Structure
 ### 1. 프로그램 실행 순서
 
-![실행순서](https://i.imgur.com/fbzJjII.png)
+![실행순서](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcQRqku%2Fbtru0vJ6Ixx%2F9qCTW7ChXc80fGfQUrT4B0%2Fimg.png)
 
-1. 프로그램이 정보를 읽어 메모리에 로드되는 과정을 보실 수 있을텐데, 프로그램이 실행하게 되면 OS는 메모리(RAM)에 공간을 할당 해줍니다.
-2. 할당해주는 메모리 공간은 4가지(Code,Data,Stack,Heap)가 있습니다.
+1. 자바로 개발된 프로그램을 실행하면 jvm은 os로부터 메모리를 할당받습니다.
+2. 자바 컴파일러(javac)가 자바 소스코드를(.java) 지바 바이트코드(.class)로 컴파일합니다.
+3. class loader를 통해 바이트 코드를 jvm runtime data area로 로딩합니다.
+4. runtime data area에 로딩된 바이트 코드(.class)들은 execution engine을 통해 해석합니다.
+5. 해석된 바이트 코드는 runtime data area의 각 영역에 배치되어 수행하며 이 과정에서 execution engine에 의해 gc의 작동과 스레드 동기화가 이루어집니다.
 
+- 쓰레드 동기화 : 한 쓰레드가 진행 중인 작업을 다른 스레드가 간섭하지 못하도록 막는 것
 ### 2. 코드(Code) 영역
 ![메모리 이미지](https://i.imgur.com/FdJ8Xbd.png)
 
@@ -48,3 +52,7 @@
 3. Static 영역의 데이터는 프로그램 시작 부터 종료가 될 때 까지 메모리에 남아있게 된다.
 4. 전역변수가 프로그램이 종료될때까지 어디서든 사용이 가능한 이유이기도 하다.
 5. 따라서 전역변수를 무분별하게 많이 사용하다 보면 메모리가 부족할 우려가 있어 필요한 변수만 사용할 필요가 있다.
+
+### 8. 클래스 로더 (Class Loader)
+1. 자바는 동적으로 클래스를 읽어오므로, 프로그램이 실행 중인 런타임에서야 모든 코드가 자바 가상 머신과 연결됩니다. 이렇게 동적으로 클래스를 로딩해주는 역할을 하는 것이 클래스 로더이다.
+2. 클래스 로더는 자바 바이트 코드를 묶어서 jvm이 운영체제로 부터 할당받은 메모리 영역인 Runtime Data Area로 적재합니다.
