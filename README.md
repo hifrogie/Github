@@ -176,11 +176,6 @@
 3. [코드 분석](https://github.com/hifrogie/Github/blob/main/kotlin.md/coroutine.md#3-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D)
 4. [structured concurrency](https://github.com/hifrogie/Github/blob/main/kotlin.md/coroutine.md#4-structured-concurrency)
 5. [Coroutine Builder](https://github.com/hifrogie/Github/blob/main/kotlin.md/coroutine.md#5-coroutine-builder)
-### 18. [Handler](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#18-handler)
-1. [Handler](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#1-handler)
-2. [MassageQueue](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#2-messagequeue)
-3. [Looper](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#3-looper)
-4. [Message](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#4-message)
 
 # Swift
 ### 1. [스위프트 언어적 특성](https://github.com/hifrogie/Github/blob/main/swift.md/feature.md#1-%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8-%EC%96%B8%EC%96%B4%EC%A0%81-%ED%8A%B9%EC%84%B1)
@@ -258,6 +253,12 @@
 7. [셀 정렬](https://github.com/hifrogie/Github/blob/main/computer.md/sort.md#7-%EC%85%80-%EC%A0%95%EB%A0%ACshell-sort)
 8. [기수 정렬](https://github.com/hifrogie/Github/blob/main/computer.md/sort.md#8-%EA%B8%B0%EC%88%98-%EC%A0%95%EB%A0%AC-radix-sort)
 9. [카운팅 정렬](https://github.com/hifrogie/Github/blob/main/computer.md/sort.md#9-%EC%B9%B4%EC%9A%B4%ED%8C%85-%EC%A0%95%EB%A0%ACcounting-sort)
+### 14. [Handler](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#18-handler)
+1. [Handler](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#1-handler)
+2. [MassageQueue](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#2-messagequeue)
+3. [Looper](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#3-looper)
+4. [Message](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#4-message)
+
 # 객체지향
 ### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
 1. [SOLID 원칙](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-solid-%EC%9B%90%EC%B9%99)
