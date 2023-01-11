@@ -258,6 +258,15 @@
 2. [MassageQueue](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#2-messagequeue)
 3. [Looper](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#3-looper)
 4. [Message](https://github.com/hifrogie/Github/blob/main/kotlin.md/handler.md#4-message)
+### 15. [CI/CD](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#15-cicd)
+1. [개요](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#1-%EA%B0%9C%EC%9A%94)
+2. [CI와 CD의 차이점](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#2-ci%EC%99%80-cd%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
+3. [지속적 통합](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#3-%EC%A7%80%EC%86%8D%EC%A0%81-%ED%86%B5%ED%95%A9)
+4. [지속적 제공](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#4-%EC%A7%80%EC%86%8D%EC%A0%81-%EC%A0%9C%EA%B3%B5)
+5. [지속적 배포](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#5-%EC%A7%80%EC%86%8D%EC%A0%81-%EB%B0%B0%ED%8F%AC)
+6. [일반적인 CI/CD 툴](https://github.com/hifrogie/Github/blob/main/computer.md/cicd.md#6-%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-cicd-%ED%88%B4)
+
+
 
 # 객체지향
 ### 1. [객체지향프로그래밍의 5가지 설계 원칙 SOLID](https://github.com/hifrogie/Github/blob/main/objectOriented.md/solid.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-solid)
