@@ -1,4 +1,5 @@
 # TIL List
+# [더 공부할 것](https://github.com/hifrogie/Github/blob/main/study.md/more.md#1-%EB%8D%94-%EA%B3%B5%EB%B6%80%ED%95%A0-%EA%B2%83)
 # 1. Git
 ### 1. [용어와 개념 ](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#%EB%AA%A9%EC%B0%A8)
 1. [Git](https://github.com/hifrogie/Github/blob/main/git.md/term%20n%20concept.md#1-git)
