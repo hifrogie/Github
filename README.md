@@ -181,6 +181,8 @@
 1. [jetpack compose 란?](https://github.com/hifrogie/Github/blob/main/kotlin.md/jetpackCompose.md#1-jetpack-compose-%EB%9E%80)
 2. [tutorial](https://github.com/hifrogie/Github/blob/main/kotlin.md/jetpackCompose.md#2-tutorial)
 3. [장점](https://github.com/hifrogie/Github/blob/main/kotlin.md/jetpackCompose.md#3-%EC%9E%A5%EC%A0%90)
+
+
 # Swift
 ### 1. [스위프트 언어적 특성](https://github.com/hifrogie/Github/blob/main/swift.md/feature.md#1-%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8-%EC%96%B8%EC%96%B4%EC%A0%81-%ED%8A%B9%EC%84%B1)
 1. [스위프트 언어적 특성](https://github.com/hifrogie/Github/blob/main/swift.md/feature.md#1-%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8%EC%9D%98-%EC%96%B8%EC%96%B4%EC%A0%81-%ED%8A%B9%EC%84%B1)
@@ -190,6 +192,15 @@
 1. [문자열 보간법](https://github.com/hifrogie/Github/blob/main/swift.md/var.md#1-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%B4%EA%B0%84%EB%B2%95)
 2. [변수](https://github.com/hifrogie/Github/blob/main/swift.md/var.md#2-%EB%B3%80%EC%88%98)
 3. [상수](https://github.com/hifrogie/Github/blob/main/swift.md/var.md#3-%EC%83%81%EC%88%98)
+### 3. [데이터 타입](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#3-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85)
+1. [Any](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#1-any)
+2. [AnyObject](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#2-anyobject)
+3. [nil](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#3-nil)
+4. [타입별칭](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#4-%ED%83%80%EC%9E%85-%EB%B3%84%EC%B9%AD)
+5. [튜플](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#5-%ED%8A%9C%ED%94%8Ctuple)
+6. [배열](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#6-%EC%BB%AC%EB%A0%89%EC%85%98%ED%98%95--%EB%B0%B0%EC%97%B4)
+7. [딕셔너리](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#7-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%98%95--%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC)
+8. [세트](https://github.com/hifrogie/Github/blob/main/swift.md/any.md#8-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%98%95--%EC%84%B8%ED%8A%B8)
 # ComputerScience
 ### 1. [HTTP 통신](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-http-%ED%86%B5%EC%8B%A0)
 1. [HTTP](https://github.com/hifrogie/Github/blob/main/computer.md/http.md#1-httphyper-text-transfer-protocol)
