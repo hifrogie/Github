@@ -20,6 +20,14 @@
 1. [기본적인 branch 명령어 총정리](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#1-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-branch-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC)
 2. [rebase](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#2-rebase)
 3. [Fork와 Pull Request](https://github.com/hifrogie/Github/blob/main/git.md/branch.md#3-fork%EC%99%80-pull-request)
+
+
+
+
+
+
+
+
 # 2. Java
 ### 1. [다형성](https://github.com/hifrogie/Github/blob/main/java.md/polymorphism.md#1-%EB%8B%A4%ED%98%95%EC%84%B1)
 1. [다형성이란?](https://github.com/hifrogie/Github/blob/main/java.md/polymorphism.md#1-%EB%8B%A4%ED%98%95%EC%84%B1polymorphism%EC%9D%B4%EB%9E%80)
@@ -108,6 +116,11 @@
 1. [절대경로](https://github.com/hifrogie/Github/blob/main/java.md/path.md#1-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C)
 2. [상대경로](https://github.com/hifrogie/Github/blob/main/java.md/path.md#2-%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C)
 
+
+
+
+
+
 # kotilin
 ### 1. [함수와 변수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#1-%ED%95%A8%EC%88%98%EC%99%80-%EB%B3%80%EC%88%98)
 1. [함수](https://github.com/hifrogie/Github/blob/main/kotlin.md/fun.md#1-%ED%95%A8%EC%88%98)
@@ -181,6 +194,16 @@
 1. [jetpack compose 란?](https://github.com/hifrogie/Github/blob/main/kotlin.md/jetpackCompose.md#1-jetpack-compose-%EB%9E%80)
 2. [tutorial](https://github.com/hifrogie/Github/blob/main/kotlin.md/jetpackCompose.md#2-tutorial)
 3. [장점](https://github.com/hifrogie/Github/blob/main/kotlin.md/jetpackCompose.md#3-%EC%9E%A5%EC%A0%90)
+### 19. [Class.forName()](https://github.com/hifrogie/Github/blob/main/kotlin.md/forName.md#19-classforname)
+1. [정의](https://github.com/hifrogie/Github/blob/main/kotlin.md/forName.md#1-%EC%A0%95%EC%9D%98)
+2. [메소드](https://github.com/hifrogie/Github/blob/main/kotlin.md/forName.md#2-%EB%A9%94%EC%86%8C%EB%93%9C)
+
+
+
+
+
+
+
 
 
 # Swift
