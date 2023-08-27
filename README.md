@@ -379,3 +379,5 @@
 4. [트랜잭션](https://github.com/hifrogie/Github/blob/main/android.md/fragment.md#4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
 ### 10. [apk](https://github.com/hifrogie/Github/blob/main/android.md/apk.md#10-apk)
 1. [apk](https://github.com/hifrogie/Github/blob/main/android.md/apk.md#1-apk)
+### 11. [구성 변경 처리](https://github.com/hifrogie/Github/blob/main/android.md/configChange.md#11-%EA%B5%AC%EC%84%B1-%EB%B3%80%EA%B2%BD-%EC%B2%98%EB%A6%AC)
+1. [android:configChanges](https://github.com/hifrogie/Github/blob/main/android.md/configChange.md#1-androidconfigchanges)
