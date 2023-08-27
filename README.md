@@ -232,7 +232,11 @@
 ### 5. [프로토콜]()
 ### 6. [selector](https://github.com/hifrogie/Github/blob/main/swift.md/selector.md#6-selector)
 1. [objective-c](https://github.com/hifrogie/Github/blob/main/swift.md/selector.md#1-objective-c)
-
+### 7. [viewcontroller](https://github.com/hifrogie/Github/blob/main/swift.md/viewController.md#7-uiviewcontroller)
+1. [UiViewController란?](https://github.com/hifrogie/Github/blob/main/swift.md/viewController.md#1-uiviewcontroller%EB%9E%80)
+2. [뷰와 관련된 notification을 다룬다.](https://github.com/hifrogie/Github/blob/main/swift.md/viewController.md#2%EB%B7%B0%EC%99%80-%EA%B4%80%EB%A0%A8%EB%90%9C-notification%EC%9D%84-%EB%8B%A4%EB%A3%AC%EB%8B%A4)
+3. [뷰의 회전을 다룬다.](https://github.com/hifrogie/Github/blob/main/swift.md/viewController.md#3-%EB%B7%B0%EC%9D%98-%ED%9A%8C%EC%A0%84%EC%9D%84-%EB%8B%A4%EB%A3%AC%EB%8B%A4)
+4. [뷰 컨트롤러의 콘테이너를 구현한다.](https://github.com/hifrogie/Github/blob/main/swift.md/viewController.md#4-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%9D%98-%EC%BD%98%ED%85%8C%EC%9D%B4%EB%84%88%EB%A5%BC-%EA%B5%AC%ED%98%84%ED%95%9C%EB%8B%A4)
 
 
 
