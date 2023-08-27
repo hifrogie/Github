@@ -350,6 +350,7 @@
 2. [서비스(Service)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#2-%EC%84%9C%EB%B9%84%EC%8A%A4service)
 3. [방송 수신자 (BroadCast Receiver)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#3-%EB%B0%A9%EC%86%A1-%EC%88%98%EC%8B%A0%EC%9E%90-broadcast-receiver)
 4. [콘텐트 제공자(Content Provider)](https://github.com/hifrogie/Github/blob/main/android.md/component.md#4-%EC%BD%98%ED%85%90%ED%8A%B8-%EC%A0%9C%EA%B3%B5%EC%9E%90content-provider)
+5. [구성 요소 활성화](https://github.com/hifrogie/Github/blob/main/android.md/component.md#5-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C-%ED%99%9C%EC%84%B1%ED%99%94)
 ### 4. [Layout을 파헤치자](https://github.com/hifrogie/Github/blob/main/android.md/linearLayout.md#4-layout%EC%9D%84-%ED%8C%8C%ED%97%A4%EC%B9%98%EC%9E%90)
 1. [Layout과 ViewGroup](https://github.com/hifrogie/Github/blob/main/android.md/linearLayout.md#1-layout%EA%B3%BC-viewgroup)
 2. [RelativeLayout & LinearLayout & ConstraintLayout](https://github.com/hifrogie/Github/blob/main/android.md/linearLayout.md#2-relativelayout--linearlayout--constraintlayout)
